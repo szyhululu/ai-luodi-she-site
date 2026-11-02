@@ -1,0 +1,2271 @@
+[
+ {
+  "slug": "atlasnote",
+  "href": "/zh-CN/tools/atlasnote",
+  "title": "Atlasnote Pro",
+  "desc": "Atlasnote Pro 是 Atlasnote.ai 开发的 Mac 本地知识库与 AI 工作台，支持资料研究、写作与文件任务。",
+  "status": "自家产品",
+  "img": "https://atlasnote.ai/_next/static/media/atlasnote.f8a40c9f.webp",
+  "oneLiner": "Atlasnote Pro 是 Atlasnote.ai 开发的 Mac 本地知识库与 AI 工作台，支持资料研究、写作与文件任务。",
+  "claimLabel": "为什么值得关注",
+  "claim": "资料、来源、任务过程与成果保存在一起，让每次研究都能接着用于下一项工作。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作",
+   "学生",
+   "项目管理",
+   "智能体"
+  ],
+  "domain": "/features",
+  "body": "Atlasnote Pro 是我们自家的本地知识库与 AI 工作台。将文档、网页和音视频资料收进本地资料库，在对话中选取资料或检索全库，并授权 AI 助手完成研究、写作和文件任务。\n\n研究结论保留可追溯的引用，你可以回到原文核对，并审阅研究提出的 Wiki 更新。围绕同一份资料生成摘要、译文、脑图、播客和幻灯片，保留创作成果与历史版本，供后续工作继续使用。\n\n常用方法可以保存为 Skills，配合插件和经过授权的定时任务重复执行。资料、任务记录与成果保存在本机；调用外部 AI 或媒体服务时，相关内容会按你的授权发送给所选服务。\n\n当前版本为 Beta，提供 Apple Silicon 版，要求 macOS 15 或更高版本。安装后按提示完成注册，并自行配置模型服务；图片、音频和视频创作还需配置对应服务，产品不包含云端 AI 额度。",
+  "bodyList": [],
+  "bestFor": [
+   "围绕自己的资料做研究与写作",
+   "用 AI 助手完成文件与项目任务",
+   "积累知识并复用常用工作流程"
+  ],
+  "highlights": [
+   "本地资料库：阅读、笔记与知识检索",
+   "AI 工作台：围绕资料、项目和文件夹完成任务",
+   "研究与 Wiki：追溯来源并审阅知识更新",
+   "内容创作：摘要、译文、脑图、播客与幻灯片",
+   "Skills、插件与经过授权的定时任务"
+  ],
+  "tags": [
+   "local-first",
+   "knowledge-base",
+   "ai-workspace",
+   "agents"
+  ],
+  "hero": "https://atlasnote.ai/_next/static/media/atlasnote-hero.04e9316c.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/atlasnote"
+ },
+ {
+  "slug": "baocut",
+  "href": "/zh-CN/tools/baocut",
+  "title": "BaoCut",
+  "desc": "本地优先的 Mac 字幕与口播剪辑工具，可从文本完成转写、翻译、字幕和裁切。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/baocut.webp",
+  "oneLiner": "本地优先的 Mac 字幕与口播剪辑工具，可从文本完成转写、翻译、字幕和裁切。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它以逐词时间码为唯一基准，让转写修改、字幕分行和可逆的视频裁切始终保持同步。",
+  "addedAt": "收录于 2026-08-10",
+  "officialUrl": "https://baocut.app/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "智能体",
+   "内容创作",
+   "设计"
+  ],
+  "domain": "baocut.app",
+  "body": "BaoCut 是一款 macOS 应用，把口语媒体从原始文件推进到可编辑转写、对齐字幕和清理后的口播剪辑。转写、强制对齐与说话人识别在本机运行，润色和翻译等 AI 步骤则以可审阅建议的形式交付。由于每个词都保留时间码，删除文本可以变成柔性、可逆的剪切，同时字幕继续保持同步。它可导出 SRT、VTT、ASS、Markdown 或字幕成片，并让 CLI 与 Agent Skill 使用同一批项目。BaoCut 需要 Apple Silicon 和 macOS 15 或更高版本。",
+  "bodyList": [],
+  "bestFor": [
+   "为长视频与音频制作双语字幕",
+   "通过可逆的文本剪切清理口播",
+   "希望把源媒体留在 Mac 上的私密工作流"
+  ],
+  "highlights": [
+   "本机转写、逐词时间码与说话人识别",
+   "可审阅的润色、分段与翻译 AI 流程",
+   "导出 SRT、VTT、ASS、Markdown 与字幕成片，并提供 CLI"
+  ],
+  "tags": [
+   "local-first",
+   "subtitles",
+   "video-editing"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/baocut-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/baocut"
+ },
+ {
+  "slug": "canva-ai",
+  "href": "/zh-CN/tools/canva-ai",
+  "title": "Canva AI",
+  "desc": "用文本、图像和版式 AI 工具增强设计工作流。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/canva-ai.webp",
+  "oneLiner": "用文本、图像和版式 AI 工具增强设计工作流。",
+  "claimLabel": "为什么值得关注",
+  "claim": "把生成能力放在版式所在的地方，AI 这一步不需要离开设计文件。",
+  "addedAt": "",
+  "officialUrl": "https://www.canva.com/ai-assistant/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "设计",
+   "内容创作"
+  ],
+  "domain": "www.canva.com/ai-assistant",
+  "body": "Canva 把 AI 能力做进了编辑器本身，而不是另开一个产品。你描述需求，图像生成、抠背景、文案撰写和多尺寸适配都直接作用在正在编辑的文档上。这个取舍是关键：产出落地为画布上可继续编辑的图层，而不是一个还得重做一遍的成品图。对于没有专职设计师的团队，真正吃重的功能是品牌套件——它把生成结果约束在批准过的配色和字体里，这才是批量产出不至于跑偏品牌的原因。",
+  "bodyList": [],
+  "bestFor": [
+   "社交与营销物料",
+   "没有设计师但需要合规输出的团队",
+   "演示稿、海报的快速初稿"
+  ],
+  "highlights": [
+   "编辑器内直接用文字生成和修改图像",
+   "Magic Write 生成标题与正文",
+   "品牌套件锁定配色与字体，批量产出不跑偏"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/canva-ai-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/canva-ai"
+ },
+ {
+  "slug": "capcut",
+  "href": "/zh-CN/tools/capcut",
+  "title": "剪映",
+  "desc": "字节的视频剪辑工具，AI 能力直接做进时间线，电脑端与移动端通用。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/capcut.webp",
+  "oneLiner": "字节的视频剪辑工具，AI 能力直接做进时间线，电脑端与移动端通用。",
+  "claimLabel": "为什么值得关注",
+  "claim": "AI 能力长在真实时间线里，生成出来的步骤仍可继续调整，而不是甩给你一个成品文件。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "https://www.capcut.com/",
+  "altUrl": "https://www.capcut.cn/",
+  "altLabel": "国内入口",
+  "categories": [
+   "内容创作",
+   "营销",
+   "设计"
+  ],
+  "domain": "www.capcut.com",
+  "body": "剪映把 AI 做进了剪辑界面本身，而不是另开一个生成器。文字成片、自动成片、智能抠像、调色、音频处理，全都以时间线上可继续调整的操作形式落地——这正是\"能在里面把片子做完的工具\"和\"给你一个爱要不要的渲染结果\"之间的差别。这很契合短视频和营销场景：量大，且每条都需要一些人工微调。国际版品牌名为 CapCut，是另一套独立站点。",
+  "bodyList": [],
+  "bestFor": [
+   "短视频与社交平台内容",
+   "批量产出的营销素材",
+   "不用专业剪辑软件也能完成的剪辑"
+  ],
+  "highlights": [
+   "AI 文字成片、素材自动成片",
+   "智能抠像、智能调色、超清画质、音频处理",
+   "电脑端、专业版、移动端同一套工程"
+  ],
+  "tags": [
+   "video-editing",
+   "ai-editing",
+   "short-form"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/capcut-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/capcut"
+ },
+ {
+  "slug": "chatcut",
+  "href": "/zh-CN/tools/chatcut",
+  "title": "ChatCut",
+  "desc": "用自然语言下达剪辑指令，并把结果落到可继续调整的真实多轨时间线上。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/chatcut.webp",
+  "oneLiner": "用自然语言下达剪辑指令，并把结果落到可继续调整的真实多轨时间线上。",
+  "claimLabel": "为什么值得关注",
+  "claim": "AI 改动会变成仍可手动调整的片段、轨道和字幕，而不是交付一个无法继续编辑的渲染结果。",
+  "addedAt": "收录于 2026-08-10",
+  "officialUrl": "https://chatcut.io/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "智能体",
+   "内容创作",
+   "营销",
+   "设计"
+  ],
+  "domain": "chatcut.io",
+  "body": "ChatCut 把 AI 助手放在传统多轨编辑器之上。你可以让它收紧停顿、寻找高光、添加字幕或放入 B-roll，再把结果当作普通片段、轨道和与转写文本联动的剪切继续检查与调整。它尤其适合口播、访谈、播客和社交视频：重复的粗剪步骤更快，但时间线没有被藏起来。项目会保存在云端，因此它与本地优先剪辑器采用的是不同隐私模式。",
+  "bodyList": [],
+  "bestFor": [
+   "口播、访谈与播客视频剪辑",
+   "把长视频拆成适合社交平台的短片",
+   "想用 AI 提速、又不愿放弃时间线控制的创作者"
+  ],
+  "highlights": [
+   "自然语言剪辑与基于转写文本的裁切",
+   "自动字幕、动态图形、配音与生成式 B-roll",
+   "浏览器、桌面端与 Agent 工作流"
+  ],
+  "tags": [
+   "video-editing",
+   "ai-agent",
+   "transcript-editing"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/chatcut-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/chatcut"
+ },
+ {
+  "slug": "chatgpt",
+  "href": "/zh-CN/tools/chatgpt",
+  "title": "ChatGPT",
+  "desc": "用于写作、研究、编程和效率工作的通用 AI 助手。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/chatgpt.webp",
+  "oneLiner": "用于写作、研究、编程和效率工作的通用 AI 助手。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它是“通用助手能做到什么”的默认参照系，其他工具的能力基本都拿它作基线来比。",
+  "addedAt": "",
+  "officialUrl": "https://chatgpt.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "企业运营",
+   "智能体",
+   "编程",
+   "咨询",
+   "内容创作"
+  ],
+  "domain": "chatgpt.com",
+  "body": "ChatGPT 处在助手光谱里最通用的那一端：一个对话界面把联网搜索、读文件、跑代码、生成图像都吸收进来，而不专精其中任何一项。这种广度既是优势也是取舍——几乎任何领域它都能给出一个像样的答案，而在具体领域里，专用工具通常会赢。实际用法是：问题形状还没摸清时先找它，形状清楚之后交给更专的工具。",
+  "bodyList": [],
+  "bestFor": [
+   "通用写作、研究与分析",
+   "基于文档和数据的问答",
+   "跨领域的日常推理任务"
+  ],
+  "highlights": [
+   "同一对话里同时用联网搜索和文件上传",
+   "执行代码做数据分析和画图",
+   "自定义 GPT 与记忆，承接重复性工作流"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/chatgpt-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/chatgpt"
+ },
+ {
+  "slug": "claude",
+  "href": "/zh-CN/tools/claude",
+  "title": "Claude",
+  "desc": "Anthropic 的 AI 助手：从长文档推理延伸到 Cowork 的文件、浏览器与跨应用执行。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/claude.webp",
+  "oneLiner": "Anthropic 的 AI 助手：从长文档推理延伸到 Cowork 的文件、浏览器与跨应用执行。",
+  "claimLabel": "为什么值得关注",
+  "claim": "Cowork 让 Claude 从给出文字答案的助手变成能在所选工作区采取行动的 Agent，也让文件权限与执行边界变得同答案质量一样重要。",
+  "addedAt": "",
+  "officialUrl": "https://claude.ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "智能体",
+   "企业运营",
+   "编程",
+   "咨询",
+   "内容创作"
+  ],
+  "domain": "claude.ai",
+  "body": "Claude 仍然擅长长文档阅读、审慎写作和复杂推理，但 Cowork 把产品边界从对话推进到了执行。它把 Claude Code 的 Agent 思路带到非编程知识工作：在用户选定的文件夹、浏览器和连接器范围内，Claude 可以阅读和修改资料、组织文件，并制作报告、表格或演示稿等交付物。Cowork 已进入 Claude 的付费方案，并可在桌面端使用；部分云端、移动端与远程分派能力仍处于 Beta 或逐步开放。真正需要认真设置的是权限：本地工作区可采用只读、读写或禁止删除等模式，远程会话则可能把文件送到云端处理。对重要资料，先限定目录与写入能力，再交付任务。",
+  "bodyList": [],
+  "bestFor": [
+   "长文档阅读与综合",
+   "基于本地文件制作报告、表格、演示稿等交付物",
+   "需要在明确权限内跨文件与工具完成的多步骤知识工作"
+  ],
+  "highlights": [
+   "大上下文窗口，整份报告或代码库一次读入",
+   "Artifacts 与 Projects 保存可继续迭代的结果和参考资料",
+   "Cowork 把 Agent 能力带到本地文件、浏览器、连接器和非编程任务"
+  ],
+  "tags": [
+   "long-context",
+   "writing",
+   "research",
+   "cowork"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/claude-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/claude"
+ },
+ {
+  "slug": "claude-code",
+  "href": "/zh-CN/tools/claude-code",
+  "title": "Claude Code",
+  "desc": "Anthropic 面向深度代码上下文的 AI 编程助手。",
+  "status": "在用",
+  "img": "https://atlasnote.ai/images/tools/claude-code.webp",
+  "oneLiner": "Anthropic 面向深度代码上下文的 AI 编程助手。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把 AI 从自动补全推到“端到端执行任务的代理”，现在多数编码代理的形态都沿用了它。",
+  "addedAt": "收录于 2025-10-12",
+  "officialUrl": "https://claude.com/product/claude-code",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "智能体",
+   "编程"
+  ],
+  "domain": "claude.com/product/claude-code",
+  "body": "Claude Code 是一个活在终端里、而不是编辑器侧边栏里的编码代理。实际差别在作用范围：它会遍历整个仓库、执行构建与测试命令、读取失败信息再迭代，而不是在光标处给出一条补全。所以它擅长跨文件的活——一次改名牵动三十处调用、追查某个测试为什么不稳定、把一段口述需求变成可评审的 diff。这也意味着你监督的是结果而不是按键，与自动补全是完全不同的协作姿态。",
+  "bodyList": [],
+  "bestFor": [
+   "日常开发与重构",
+   "读懂陌生代码库",
+   "把多步工程杂活自动化"
+  ],
+  "highlights": [
+   "跨整个仓库读写文件，不局限于当前打开的文件",
+   "执行命令和测试，再根据输出继续动作",
+   "Skills、hooks 与 MCP 承接项目专属工作流"
+  ],
+  "tags": [
+   "ai-coding",
+   "agent",
+   "cli"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/claude-code-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/claude-code"
+ },
+ {
+  "slug": "codex",
+  "href": "/zh-CN/tools/codex",
+  "title": "Codex",
+  "desc": "OpenAI 推出的智能体编程工具。",
+  "status": "在用",
+  "img": "https://atlasnote.ai/images/tools/codex.webp",
+  "oneLiner": "OpenAI 推出的智能体编程工具。",
+  "claimLabel": "为什么值得关注",
+  "claim": "多端同源意味着同一个代理在你所在的任何地方接手任务，而不是每个工具各配一个代理。",
+  "addedAt": "收录于 2025-10-06",
+  "officialUrl": "https://openai.com/codex/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "编程",
+   "智能体"
+  ],
+  "domain": "openai.com/codex",
+  "body": "Codex 是 OpenAI 的编码代理，设计上值得注意的一点是它不绑定单一入口。终端、IDE 插件和网页都能接到同一个代理，在一处起的任务可以在另一处查看。任务在隔离环境里执行、以 diff 形式回来供你评审，这种形态更适合派发边界清楚的改动——实现这个函数、修好这组失败的测试——而不是开放式探索。真正吃到设计红利的场景是同时推进多个互不依赖的任务。",
+  "bodyList": [],
+  "bestFor": [
+   "把边界清楚的编码任务派出去",
+   "在终端、IDE 与网页间用同一个账号协作",
+   "并行处理互不相干的改动"
+  ],
+  "highlights": [
+   "终端、IDE 插件、网页三处共用同一个代理",
+   "在隔离环境里执行任务并返回 diff",
+   "同时推进多个互不依赖的任务"
+  ],
+  "tags": [
+   "ai-coding",
+   "agent",
+   "cli"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/codex-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/codex"
+ },
+ {
+  "slug": "comet",
+  "href": "/zh-CN/tools/comet",
+  "title": "Comet",
+  "desc": "Perplexity 推出的 AI 原生浏览器。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/comet.webp",
+  "oneLiner": "Perplexity 推出的 AI 原生浏览器。",
+  "claimLabel": "为什么值得关注",
+  "claim": "把代理放进浏览器，省掉了“你在读什么”和“你在问什么”之间的复制粘贴。",
+  "addedAt": "收录于 2025-07-10",
+  "officialUrl": "https://www.perplexity.ai/comet",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "智能体"
+  ],
+  "domain": "www.perplexity.ai/comet",
+  "body": "Comet 是 Perplexity 做的浏览器，核心想法是助手本来就该知道你在看什么。你不需要把页面粘进对话框，而是直接就当前标签页提问，代理还能跨标签页动作——对比一组定价页、把六篇文章里重合的说法抽出来、填一个重复的表单。取舍也是代理式浏览的通例：在多标签页调研上确实更快，而一旦任务涉及操作你的账号，就需要盯着。",
+  "bodyList": [],
+  "bestFor": [
+   "横跨大量标签页的调研",
+   "就地总结和对比网页",
+   "把重复性的浏览杂活派出去"
+  ],
+  "highlights": [
+   "助手以当前页面和已开标签页为上下文",
+   "在浏览器里执行多步任务",
+   "搜索是内建的，不是外挂的"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/comet-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/comet"
+ },
+ {
+  "slug": "coze",
+  "href": "/zh-CN/tools/coze",
+  "title": "扣子 Coze",
+  "desc": "字节的零代码智能体搭建平台，做完能直接发布到真实渠道。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/coze.webp",
+  "oneLiner": "字节的零代码智能体搭建平台，做完能直接发布到真实渠道。",
+  "claimLabel": "为什么值得关注",
+  "claim": "分发这一步是内建的——智能体能真正上到渠道，而不是停在搭建器里当原型。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "https://www.coze.com/",
+  "altUrl": "https://www.coze.cn/",
+  "altLabel": "国内入口",
+  "categories": [
+   "智能体",
+   "企业运营",
+   "编程"
+  ],
+  "domain": "www.coze.com",
+  "body": "扣子是零代码的智能体搭建平台：在可视化界面里把提示词、工作流、插件和知识库接起来，然后发布。真正把它和提示词试验场区分开的是后半段——智能体可以发布到消息平台，也可以通过 SDK 和 API 嵌入，于是它能触达用户而不是停留在演示。这让它成为在投入工程资源之前验证某个 AI 功能的合理方式。国内版与国际版是两套独立平台，账号也各自独立。",
+  "bodyList": [],
+  "bestFor": [
+   "不写代码搭出一个智能体",
+   "把机器人发布到聊天平台",
+   "在正式开发前先验证 AI 功能"
+  ],
+  "highlights": [
+   "可视化搭建智能体、工作流与知识库",
+   "可发布到消息平台，也提供 SDK 与 API",
+   "模板库让你从一个能跑的例子起步"
+  ],
+  "tags": [
+   "agent-builder",
+   "no-code",
+   "workflow"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/coze-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/coze"
+ },
+ {
+  "slug": "cursor-2",
+  "href": "/zh-CN/tools/cursor-2",
+  "title": "Cursor 2.0",
+  "desc": "为快速、智能体辅助的软件开发打造的 AI 编辑器。",
+  "status": "在用",
+  "img": "https://atlasnote.ai/images/tools/cursor-2.webp",
+  "oneLiner": "为快速、智能体辅助的软件开发打造的 AI 编辑器。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把评审环节留在编辑器里，代理产出是带上下文的 diff，而不是从对话框粘回来的文本。",
+  "addedAt": "收录于 2025-10-30",
+  "officialUrl": "https://cursor.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "编程"
+  ],
+  "domain": "cursor.com",
+  "body": "Cursor 是基于 VS Code 的编辑器，AI 层做在内核里而不是作为插件挂上去。真正重要的结果是评审闭环：代理提出跨文件改动，你以内联 diff 的形式在文件里、带着周围代码接受或拒绝。仓库索引给了它项目级上下文，所以提问可以引用你没有明确喂给它的东西。如果你的工作本来就以编辑器为中心，这是在不离开评审现场的前提下引入代理式改动最小扰动的方式。",
+  "bodyList": [],
+  "bestFor": [
+   "以编辑器为中心的 AI 开发",
+   "需要就地评审的多文件改动",
+   "希望把 AI 装进现有 IDE 流程的团队"
+  ],
+  "highlights": [
+   "代理规划并跨文件落地改动",
+   "索引仓库带来项目级上下文",
+   "任何改动落地前先看内联 diff"
+  ],
+  "tags": [
+   "ai-coding",
+   "editor"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/cursor-2-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/cursor-2"
+ },
+ {
+  "slug": "deepseek",
+  "href": "/zh-CN/tools/deepseek",
+  "title": "DeepSeek",
+  "desc": "开放权重的国产模型，推理与编程能力突出，同时提供对话与 API。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/deepseek.webp",
+  "oneLiner": "开放权重的国产模型，推理与编程能力突出，同时提供对话与 API。",
+  "claimLabel": "为什么值得关注",
+  "claim": "把有竞争力的权重公开发布，改变的是\"谁能自己跑前沿模型\"，而不只是\"谁能调用它\"。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "https://www.deepseek.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "编程",
+   "企业运营",
+   "内容创作"
+  ],
+  "domain": "www.deepseek.com",
+  "body": "DeepSeek 是一家国内 AI 实验室，模型在推理和编程上有竞争力，同时以开放权重发布。后半句才是结构性的差别：同等能力水位的实验室多数只给 API，于是有合规约束或私有化部署要求的人被直接挡在门外，开放权重把这道门去掉了。实际使用上，需要看见推理链路的问题值得优先找它；而当某个工作负载不能离开自家基础设施时，它是那个可退守的选项。",
+  "bodyList": [],
+  "bestFor": [
+   "编程与数学推理",
+   "需要自托管开放权重模型",
+   "对成本敏感的 API 场景"
+  ],
+  "highlights": [
+   "同一账号下对话与 API 开放平台并行",
+   "推理型模型会把思考过程摊开",
+   "权重公开发布，可本地或私有化部署"
+  ],
+  "tags": [
+   "open-weights",
+   "reasoning",
+   "api"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/deepseek-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/deepseek"
+ },
+ {
+  "slug": "elevenlabs",
+  "href": "/zh-CN/tools/elevenlabs",
+  "title": "ElevenLabs",
+  "desc": "用自然逼真的语音让内容更有表现力。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/elevenlabs.webp",
+  "oneLiner": "用自然逼真的语音让内容更有表现力。",
+  "claimLabel": "为什么值得关注",
+  "claim": "质量已经高到瓶颈从音频转移到脚本，这会改变“什么内容值得录”这件事本身。",
+  "addedAt": "收录于 2024-01-31",
+  "officialUrl": "https://elevenlabs.io/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作",
+   "教育工作者",
+   "营销",
+   "学生"
+  ],
+  "domain": "elevenlabs.io",
+  "body": "ElevenLabs 是语音合成平台：文本转语音、用一小段参考音克隆音色、以及跨语种仍保留可辨识嗓音的配音。产出质量高到限制因素变成了文字而不是音频，这悄悄改变了旁白的成本结构——把一份现成文档变成可听的音频，不再需要一次录音。需要知道的是：克隆一把嗓子，先撞上的是授权问题而不是技术问题；稳妥的默认做法是用自己的声音或已获授权的音色。",
+  "bodyList": [],
+  "bestFor": [
+   "视频与课程的旁白",
+   "把书面材料转成音频",
+   "一份脚本产出多语种配音"
+  ],
+  "highlights": [
+   "文本转语音，可控制节奏与语气",
+   "用一小段样本克隆音色",
+   "配音跨语种保留同一把嗓子"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/elevenlabs-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/elevenlabs"
+ },
+ {
+  "slug": "figma-ai",
+  "href": "/zh-CN/tools/figma-ai",
+  "title": "Figma AI",
+  "desc": "在真实设计系统中，用 Agent、Make 与 MCP 推进可编辑设计、原型和生产协作。",
+  "status": "值得关注",
+  "img": "https://atlasnote.ai/images/tools/figma-ai.webp",
+  "oneLiner": "在真实设计系统中，用 Agent、Make 与 MCP 推进可编辑设计、原型和生产协作。",
+  "claimLabel": "为什么值得关注",
+  "claim": "AI 直接作用于团队正在维护的画布、组件和设计系统，生成结果不用离开真实协作环境再重建一次。",
+  "addedAt": "收录于 2026-09-03",
+  "officialUrl": "https://www.figma.com/ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "设计",
+   "内容创作",
+   "编程"
+  ],
+  "domain": "www.figma.com/ai",
+  "body": "Figma AI 不是单独的图片生成器，而是一组进入 Figma Design、FigJam 和 Figma Make 的工作流。设计 Agent 可以探索方向、处理图像、整理图层和查找团队文件；Make 则把提示或现有 Figma 设计变成代码驱动的原型与 Web 应用。更关键的是 MCP：开发 Agent 可以读取设计上下文，新的写入能力也让生产界面回到画布接受设计评审。它的优势来自团队已有的组件、变量和协作记录，而不是一次提示的惊喜。需要注意的是，Agent、部分写入和本地代码库能力仍包含 Beta 功能；可用范围还受付费套餐、Full seat 与团队 AI credits 影响。",
+  "bodyList": [],
+  "bestFor": [
+   "已经用 Figma 协作的产品设计团队",
+   "从多个界面方向快速收敛到可编辑方案",
+   "需要让设计上下文进入开发 Agent 和代码流程"
+  ],
+  "highlights": [
+   "Figma Agent 可生成设计方向、编辑图像、创建图表并搜索文件",
+   "Figma Make 把提示和现有设计变成代码驱动的原型或 Web 应用",
+   "Figma MCP 让外部 Agent 读取并写回组件、变量和设计上下文"
+  ],
+  "tags": [
+   "ui-design",
+   "prototyping",
+   "design-systems",
+   "mcp"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/figma-ai-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/figma-ai"
+ },
+ {
+  "slug": "framer-ai",
+  "href": "/zh-CN/tools/framer-ai",
+  "title": "Framer AI",
+  "desc": "从提示或 brief 生成可编辑的响应式网站，并在同一平台完成 CMS、SEO 与发布。",
+  "status": "值得关注",
+  "img": "https://atlasnote.ai/images/tools/framer-ai.webp",
+  "oneLiner": "从提示或 brief 生成可编辑的响应式网站，并在同一平台完成 CMS、SEO 与发布。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把 AI 生成的第一稿留在一个能继续设计、管理内容并直接上线的生产环境里，而不是停在一次性模板。",
+  "addedAt": "收录于 2026-09-03",
+  "officialUrl": "https://www.framer.com/ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "设计",
+   "营销",
+   "内容创作"
+  ],
+  "domain": "www.framer.com/ai",
+  "body": "Framer AI 面向的是完整的网站交付，而不只是首屏生成。你可以从提示、campaign brief 或空白画布开始，让 Agent 建立页面结构、区块和初稿文案；生成结果仍是 Framer 画布上的可编辑内容，可以继续调整响应式断点、组件、字体、效果和 CMS 字段。确认方向后，表单、SEO、分析、托管和发布都留在同一个项目中。这个闭环适合需要频繁更新的营销站，但 AI 初稿依然需要人工检查品牌语气、移动端布局、无障碍和真实内容。Agent 的使用还会消耗 AI credits，套餐额度不应等同于无限生成。",
+  "bodyList": [],
+  "bestFor": [
+   "需要快速上线营销站和活动落地页的团队",
+   "希望生成后继续精细控制视觉的设计师",
+   "不想在设计稿、建站器和托管平台之间反复交接"
+  ],
+  "highlights": [
+   "Agent 从提示生成页面结构、区块、初稿文案和视觉方向",
+   "所有结果留在画布中，可调整组件、断点、字体与动效",
+   "内置 CMS、表单、SEO、分析、托管和持续发布"
+  ],
+  "tags": [
+   "website-builder",
+   "no-code",
+   "cms",
+   "publishing"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/framer-ai-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/framer-ai"
+ },
+ {
+  "slug": "gamma",
+  "href": "/zh-CN/tools/gamma",
+  "title": "Gamma",
+  "desc": "用生成式 AI 创建精致的交互式演示文稿和文档。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/gamma.webp",
+  "oneLiner": "用生成式 AI 创建精致的交互式演示文稿和文档。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把演示稿当作响应式网页文档，省掉了让做幻灯片变慢的那部分琐碎排版。",
+  "addedAt": "",
+  "officialUrl": "https://gamma.app/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "设计",
+   "企业运营",
+   "咨询",
+   "内容创作",
+   "数据分析"
+  ],
+  "domain": "gamma.app",
+  "body": "Gamma 从提示词、大纲或你粘进去的文档生成演示稿。真正重要的设计取舍是：产出是由卡片构成的响应式网页文档，而不是固定尺寸的幻灯片——内容会重排而不是溢出到画布外，做幻灯片里最磨人的那部分基本消失了。这让它很适合内部汇报和可分享的说明稿，而不适合“必须交一份能精确调位置的 PowerPoint”的场合。",
+  "bodyList": [],
+  "bestFor": [
+   "把文档或大纲变成演示稿",
+   "快速产出内部汇报",
+   "不必是幻灯片形状的网页文档"
+  ],
+  "highlights": [
+   "从提示词、大纲或粘贴的文档生成整套演示",
+   "卡片式版式会自动重排而不是溢出",
+   "发布为链接并带浏览分析"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/gamma-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/gamma"
+ },
+ {
+  "slug": "gemini",
+  "href": "/zh-CN/tools/gemini",
+  "title": "Gemini",
+  "desc": "Google 面向搜索、效率、编程和创作的先进 AI 助手。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/gemini.webp",
+  "oneLiner": "Google 面向搜索、效率、编程和创作的先进 AI 助手。",
+  "claimLabel": "为什么值得关注",
+  "claim": "差异化在于位置而非某项单点能力：它要推理的材料本来就在同一个账号里。",
+  "addedAt": "",
+  "officialUrl": "https://gemini.google.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作",
+   "智能体",
+   "企业运营",
+   "咨询",
+   "编程"
+  ],
+  "domain": "gemini.google.com",
+  "body": "Gemini 是 Google 的助手系列，实际优势来自它所处的位置，而不是某一项单独能力。如果你的文档、邮件和表格本来就在 Workspace 里，助手不需要上传步骤就能读到，日常使用中的摩擦大半被消掉了。它也支持长输入和混合输入——文本、图像、音频、视频在一次请求里，并且可以把答案锚定到搜索结果上。取舍是：在 Google 自家界面里体验最好，离开之后就薄一些。",
+  "bodyList": [],
+  "bestFor": [
+   "已经沉在 Google Workspace 里的工作",
+   "长输入或图文音视频混合输入",
+   "日常调研与起草"
+  ],
+  "highlights": [
+   "大上下文窗口，跨文本、图像、音频、视频",
+   "与 Docs、Gmail、Drive、Sheets 打通",
+   "答案可锚定到 Google 搜索结果"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/gemini-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/gemini"
+ },
+ {
+  "slug": "glm",
+  "href": "/zh-CN/tools/glm",
+  "title": "GLM（智谱清言）",
+  "desc": "智谱的 GLM 模型家族，提供对话助手、智能体平台与开放权重三种形态。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/glm.webp",
+  "oneLiner": "智谱的 GLM 模型家族，提供对话助手、智能体平台与开放权重三种形态。",
+  "claimLabel": "为什么值得关注",
+  "claim": "托管助手、智能体平台、可下载权重三层都由同一个模型家族覆盖。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "https://chat.z.ai/",
+  "altUrl": "https://chatglm.cn/",
+  "altLabel": "国内入口",
+  "categories": [
+   "企业运营",
+   "编程",
+   "内容创作",
+   "学生"
+  ],
+  "domain": "chat.z.ai",
+  "body": "GLM 是智谱的模型家族，可以作为托管助手使用，也可以作为智能体与编程平台，还能以开放权重自己部署。覆盖面本身就是它的取向：同一个家族既承接日常助手用途，也承接产出研究报告或演示稿的智能体工作流，还承接不能离开自家基础设施的自托管场景。国际侧产品是 Z.ai，国内侧是智谱清言，两者是各自独立的服务、功能集也不完全相同，从哪个入口进取决于你在哪。",
+  "bodyList": [],
+  "bestFor": [
+   "通用助手与写作",
+   "基于开放底座做智能体与编程任务",
+   "需要自托管选项的团队"
+  ],
+  "highlights": [
+   "助手内置智能体、研究报告、PPT 制作等模式",
+   "面向开发的编程向模型变体",
+   "发布开放权重，可本地部署"
+  ],
+  "tags": [
+   "open-weights",
+   "agent",
+   "assistant"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/glm-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/glm"
+ },
+ {
+  "slug": "notebooklm",
+  "href": "/zh-CN/tools/notebooklm",
+  "title": "Google NotebookLM",
+  "desc": "基于来源材料组织文档、提炼洞察的研究助手。",
+  "status": "在用",
+  "img": "https://atlasnote.ai/images/tools/notebooklm.webp",
+  "oneLiner": "基于来源材料组织文档、提炼洞察的研究助手。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它只从你给的资料里作答，所以引用指向的是你真能去核对的地方。",
+  "addedAt": "",
+  "officialUrl": "https://notebooklm.google.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "学生",
+   "咨询",
+   "教育工作者"
+  ],
+  "domain": "notebooklm.google.com",
+  "body": "NotebookLM 把常规助手的设定反了过来：它不从开放网络作答，而是只从你上传的那批文档作答，且每条结论都链回它的出处段落。这个限制本身就是全部价值——对于文献综述、成套合同或访谈记录，一条能点开核对的引用，胜过一段流畅但需要你回头复查的答案。而 Audio Overview——把一个 notebook 变成一段口播讨论——反倒成了大多数人记住它的原因。",
+  "bodyList": [],
+  "bestFor": [
+   "精读一组固定的资料",
+   "文献与文档综述",
+   "把研究变成简报或音频摘要"
+  ],
+  "highlights": [
+   "只基于你上传的资料作答，并给出引用",
+   "Audio Overview 把整组资料变成一段口播讨论",
+   "按主题分 notebook，资料范围各自独立"
+  ],
+  "tags": [
+   "knowledge",
+   "rag",
+   "research"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/notebooklm-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/notebooklm"
+ },
+ {
+  "slug": "google-stitch",
+  "href": "/zh-CN/tools/google-stitch",
+  "title": "Google Stitch",
+  "desc": "把自然语言、图片与代码上下文变成可迭代的高保真界面和交互原型。",
+  "status": "值得关注",
+  "img": "https://atlasnote.ai/images/tools/google-stitch.webp",
+  "oneLiner": "把自然语言、图片与代码上下文变成可迭代的高保真界面和交互原型。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它填上了提示词生成代码之前最容易被跳过的一层：先把产品意图变成可讨论、可比较的界面方案。",
+  "addedAt": "收录于 2026-09-03",
+  "officialUrl": "https://stitch.withgoogle.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "设计",
+   "编程"
+  ],
+  "domain": "stitch.withgoogle.com",
+  "body": "Stitch 是 Google Labs 面向软件设计推出的 AI 画布。你可以从业务目标、文字需求或参考图开始，也可以把现有代码放进画布作为上下文，让设计 Agent 生成多条高保真界面方向，再把页面串成可点击的交互流程。它还可以从网址提取设计系统，并用 DESIGN.md 在不同设计与编程工具之间传递规则。与直接生成应用的工具相比，Stitch 更强调发散、比较和收敛，因此适合产品早期探索。不过它仍属于 Google Labs 快速演进中的产品，功能入口、协作方式和导出边界都可能变化，重要项目不应把它当作唯一设计源文件。",
+  "bodyList": [],
+  "bestFor": [
+   "在写代码前快速探索产品界面方向",
+   "把需求、参考图和现有代码放在同一画布中讨论",
+   "需要把设计规则继续交给开发工具的产品团队"
+  ],
+  "highlights": [
+   "接受文字、图片和代码作为上下文的 AI 原生无限画布",
+   "设计 Agent 可并行探索方案、给出反馈并按语音指令修改",
+   "用交互原型和 DESIGN.md 在设计与开发工具之间传递规则"
+  ],
+  "tags": [
+   "ui-design",
+   "prototyping",
+   "design-systems",
+   "design-to-code"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/google-stitch-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/google-stitch"
+ },
+ {
+  "slug": "granola",
+  "href": "/zh-CN/tools/granola",
+  "title": "Granola",
+  "desc": "把会议转录、个人笔记和日历上下文整理成可追溯、可继续提问的知识。",
+  "status": "值得关注",
+  "img": "https://atlasnote.ai/images/tools/granola.webp",
+  "oneLiner": "把会议转录、个人笔记和日历上下文整理成可追溯、可继续提问的知识。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它不只交付一份摘要，而是保留结论与原始会议证据之间的回路，让会议逐渐变成可查询的知识。",
+  "addedAt": "收录于 2026-09-03",
+  "officialUrl": "https://www.granola.ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "企业运营",
+   "项目管理",
+   "咨询"
+  ],
+  "domain": "www.granola.ai",
+  "body": "Granola 把日历事件、会议转录和你在会中写下的零散重点合并成结构化笔记。增强后的每个要点都能回到转录或原始笔记查看依据，发现遗漏时也可以编辑、换模板或重新生成。Granola Chat 不局限于单场会议：它可以在指定会议、文件夹或全部会议中查找决策、整理行动项、发现反复出现的主题，并用 Recipes 保存常用的后续处理提示。这个“捕获—整理—追问”闭环与知识管理很接近，但会议数据天然敏感。使用前应确认参会者告知、组织录音政策和共享范围；免费与付费套餐可查询的历史长度也不同。",
+  "bodyList": [],
+  "bestFor": [
+   "会议密集的产品、咨询与管理工作",
+   "需要跨多次客户访谈追踪主题和决策",
+   "希望保留手写重点、又不想会后重做纪要的团队"
+  ],
+  "highlights": [
+   "结合转录、原始笔记和日历信息生成结构化会议笔记",
+   "每条增强笔记可以回看对应的转录或原始记录",
+   "Granola Chat 可跨会议查询、提取行动项并生成跟进内容"
+  ],
+  "tags": [
+   "meeting-notes",
+   "transcription",
+   "knowledge-work",
+   "collaboration"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/granola-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/granola"
+ },
+ {
+  "slug": "grok",
+  "href": "/zh-CN/tools/grok",
+  "title": "Grok",
+  "desc": "xAI 推出的对话式 AI 助手，支持实时搜索与分析。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/grok.webp",
+  "oneLiner": "xAI 推出的对话式 AI 助手，支持实时搜索与分析。",
+  "claimLabel": "为什么值得关注",
+  "claim": "实时接入 X 是其他助手复制不了的，所以它在“读正在发生的讨论”这件事上有独特用处。",
+  "addedAt": "",
+  "officialUrl": "https://grok.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "企业运营",
+   "内容创作",
+   "数据分析",
+   "学生",
+   "智能体"
+  ],
+  "domain": "grok.com",
+  "body": "Grok 是 xAI 的助手，最能区分它的是对 X 帖子的实时直连。凡是有用信号本身就是讨论的场景——正在发展的事件、对某次发布的第一反应、这周从业者在说什么——这种接入很难替代。推论也很直接：来源是社交流，因此它继承了社交流的可靠性；它擅长搞清“大家在说什么”，不擅长搞清“什么是真的”。",
+  "bodyList": [],
+  "bestFor": [
+   "关于“现在正在发生什么”的问题",
+   "读 X 上的讨论",
+   "轻量的推理与编码求助"
+  ],
+  "highlights": [
+   "实时读取 X 上的帖子",
+   "面对更难问题的推理模式",
+   "图像理解与生成"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/grok-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/grok"
+ },
+ {
+  "slug": "gumloop",
+  "href": "/zh-CN/tools/gumloop",
+  "title": "Gumloop",
+  "desc": "用于构建 AI 自动化流程的无代码平台。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/gumloop.webp",
+  "oneLiner": "用于构建 AI 自动化流程的无代码平台。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它瞄的是“一次性提示词”和“真正的集成”之间的空档——不写管道代码也能做可重复的 AI 活。",
+  "addedAt": "收录于 2024-06-26",
+  "officialUrl": "https://www.gumloop.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "企业运营",
+   "项目管理",
+   "数据分析",
+   "咨询"
+  ],
+  "domain": "www.gumloop.com",
+  "body": "Gumloop 是 AI 工作流的可视化搭建工具：在画布上把节点连起来——抓这些页面、抽这些字段、做摘要、写进表格——产出一个同事不用碰提示词就能重跑的东西。它落在“一次性对话请求”和“写代码做集成”之间的空档里，而大量真实工作正在这个空档：线索补全、竞品监控、周期性调研。跟所有无代码链路一样，维护成本会在之后浮现——当某个来源页面改版的时候。",
+  "bodyList": [],
+  "bestFor": [
+   "把重复的调研和数据抓取自动化",
+   "不写代码的人搭 AI 工作流",
+   "把手工流程变成可复用管线"
+  ],
+  "highlights": [
+   "可视化节点画布把 AI 步骤串起来",
+   "网页抓取与信息补全作为内建节点",
+   "团队共享、可重复运行的工作流"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/gumloop-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/gumloop"
+ },
+ {
+  "slug": "heygen",
+  "href": "/zh-CN/tools/heygen",
+  "title": "HeyGen",
+  "desc": "把脚本转成适合商业沟通与营销的逼真 AI 数字人视频。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/heygen.webp",
+  "oneLiner": "把脚本转成适合商业沟通与营销的逼真 AI 数字人视频。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把“拍摄”从视频生产里去掉了，这才让更新和本地化一整个视频库变得划算。",
+  "addedAt": "",
+  "officialUrl": "https://www.heygen.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "营销",
+   "内容创作",
+   "销售"
+  ],
+  "domain": "www.heygen.com",
+  "body": "HeyGen 用数字人按脚本生成出镜视频，也可以用你自己录的参考音形做形象。真正的解放不在第一条视频，而在第十次修订：因为没有拍摄环节，改掉一句过时的话或产出十二个语种版本，是一次编辑而不是一次制作。这很契合培训材料、入职引导和产品讲解。不契合的是靠真人在场感立足的内容；而一旦是合成形象在对客户说话，说明来源就成了必要动作。",
+  "bodyList": [],
+  "bestFor": [
+   "批量产出培训与入职视频",
+   "把一条视频本地化成多语种",
+   "不用开机就能做的产品与销售讲解"
+  ],
+  "highlights": [
+   "按脚本生成数字人出镜视频",
+   "翻译同时保持口型同步",
+   "模板与品牌控制，保证批量产出一致"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/heygen-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/heygen"
+ },
+ {
+  "slug": "higgsfield-soul",
+  "href": "/zh-CN/tools/higgsfield-soul",
+  "title": "Higgsfield Soul",
+  "desc": "强调审美与写实效果，并提供丰富预设风格的图像模型。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/higgsfield-soul.webp",
+  "oneLiner": "强调审美与写实效果，并提供丰富预设风格的图像模型。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它卖的是“策展过的调性”而不是最大自由度，而这通常是拿到可用图更快的路。",
+  "addedAt": "收录于 2025-06-26",
+  "officialUrl": "https://higgsfield.ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "设计",
+   "内容创作"
+  ],
+  "domain": "higgsfield.ai",
+  "body": "Higgsfield Soul 是一个目标很具体的图像模型：高美感、编辑向的摄影质感。它不把每个参数都摊开，而是依赖策展过的风格预设——这是一个明确的取舍：控制力更少，但达到可用之前的尝试次数少得多。对于情绪板、campaign 概念和社交视觉这类“简报本身是一种感觉而不是一份规格”的场合，这个取舍是对的。如果你要的是精确的产品图或字面意义上的构图，更可控的管线会更合适。",
+  "bodyList": [],
+  "bestFor": [
+   "编辑向、时装感的图像方向把控",
+   "campaign 情绪板与概念帧",
+   "以美感为先导的图像生成"
+  ],
+  "highlights": [
+   "提供成套美学预设，而不是让你调原始提示词",
+   "一组图之间保持统一质感",
+   "人物与场景控制，便于重复出现的主体"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/higgsfield-soul-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/higgsfield-soul"
+ },
+ {
+  "slug": "ideogram",
+  "href": "/zh-CN/tools/ideogram",
+  "title": "Ideogram",
+  "desc": "生成适合营销、品牌和创作的高质量文字图像。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/ideogram.webp",
+  "oneLiner": "生成适合营销、品牌和创作的高质量文字图像。",
+  "claimLabel": "为什么值得关注",
+  "claim": "把文字渲染得能读，恰恰是多数图像模型还翻车的地方，而这正是 Ideogram 的立足点。",
+  "addedAt": "",
+  "officialUrl": "https://ideogram.ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "设计",
+   "内容创作"
+  ],
+  "domain": "ideogram.ai",
+  "body": "Ideogram 是围绕一个多数模型处理很差的问题做的图像生成器：把可读的文字放进画面里。海报、logo、包装样稿，以及任何文案承载含义的版式，正是通用模型会生成“看着像字的乱码”的场合。把字母做对，让它在概念稿环节变得有用——否则设计师得从零重做。把产出当作可交接的概念稿而不是终稿：字距和品牌精度仍然是人的工作。",
+  "bodyList": [],
+  "bestFor": [
+   "需要文字清晰可读的图像",
+   "logo、海报与字体版式",
+   "文案本身有意义的设计概念"
+  ],
+  "highlights": [
+   "生成图像内的文字渲染稳定可读",
+   "风格控制，产出接近品牌一致性",
+   "支持编辑与局部重绘"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/ideogram-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/ideogram"
+ },
+ {
+  "slug": "ima",
+  "href": "/zh-CN/tools/ima",
+  "title": "ima",
+  "desc": "腾讯的 AI 知识管家，以知识库为基础提供\"搜—读—写\"一站式体验。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/ima.webp",
+  "oneLiner": "腾讯的 AI 知识管家，以知识库为基础提供\"搜—读—写\"一站式体验。",
+  "claimLabel": "为什么值得关注",
+  "claim": "答案锚定在你自己搭的知识库上，意味着它是可核对的，而不是需要你回头再验一遍的。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "https://ima.qq.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "学生",
+   "内容创作",
+   "咨询"
+  ],
+  "domain": "ima.qq.com",
+  "body": "ima 是腾讯的知识管家，组织方式是\"搜—读—写\"的闭环而不是一个对话框。你用自己的文档搭起知识库，基于它提问，产出可以是一份演示稿、一份报告或一期播客，而不只是一段文字。最后这点正是它与通用助手的分野：交付单位是文档，不是回复。它还有一个发现广场，能浏览别人公开的知识库，因此也带了一点共享研究的性质。",
+  "bodyList": [],
+  "bestFor": [
+   "基于一批指定资料作答",
+   "以演示稿或报告收尾的调研",
+   "团队共享知识库"
+  ],
+  "highlights": [
+   "知识库让回答锚定在你自己的文档上",
+   "按主题直接生成 PPT、报告与播客",
+   "发现广场可浏览他人公开的知识库"
+  ],
+  "tags": [
+   "knowledge-base",
+   "research",
+   "rag"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/ima-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/ima"
+ },
+ {
+  "slug": "kimi",
+  "href": "/zh-CN/tools/kimi",
+  "title": "Kimi",
+  "desc": "月之暗面的 AI 助手，围绕长文档处理与智能体式任务执行构建。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/kimi.webp",
+  "oneLiner": "月之暗面的 AI 助手，围绕长文档处理与智能体式任务执行构建。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它从长文本阅读工具长起来，所以智能体能力瞄的是知识工作而不是闲聊。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "https://www.kimi.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作",
+   "学生",
+   "企业运营",
+   "智能体"
+  ],
+  "domain": "www.kimi.com",
+  "body": "Kimi 最早是\"别的工具读不下这份文档时найдешь它\"的那个助手，这个出身至今塑造着它。现在的产品把阅读能力包进了智能体功能里——搜集并整理来源的深度研究、定时任务，以及以幻灯片、文档、表格形式而非对话形式给出的产出。它的定位是\"最后要有交付物的知识工作\"，比通用助手更窄也更有用。国内的 moonshot.cn 域名现已重定向到同一站点。",
+  "bodyList": [],
+  "bestFor": [
+   "长文档的阅读与综合",
+   "带出处的深度研究",
+   "把多步知识工作派出去"
+  ],
+  "highlights": [
+   "Deep Research 自动搜集并整理资料来源",
+   "直接产出幻灯片、文档、表格等交付物",
+   "定时任务与多智能体协同执行"
+  ],
+  "tags": [
+   "long-context",
+   "agent",
+   "research"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/kimi-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/kimi"
+ },
+ {
+  "slug": "kling",
+  "href": "/zh-CN/tools/kling",
+  "title": "可灵 AI",
+  "desc": "快手的视频与图像生成模型，配有创作工作台和 API。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/kling.webp",
+  "oneLiner": "快手的视频与图像生成模型，配有创作工作台和 API。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它是少数同时有好用的创作前台和 API 的视频模型，实验与生产用的是同一套引擎。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "https://kling.ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作",
+   "设计",
+   "营销"
+  ],
+  "domain": "kling.ai",
+  "body": "可灵是快手的视频与图像生成模型。除模型本身外，它还提供用于逐镜迭代的创作工作台，以及可把生成接进管线的 API——这个组合比听上去更要紧，因为它意味着你在浏览器里试出来的东西，之后可以直接自动化。约束则是这一整类工具共通的：时长偏短，连贯性需要按镜头而不是按场次去规划。",
+  "bodyList": [],
+  "bestFor": [
+   "短视频与动态概念",
+   "开拍前的预可视化",
+   "图像与视频取自同一家供应商"
+  ],
+  "highlights": [
+   "文本与图像提示生成视频",
+   "创作工作台用于逐镜迭代",
+   "提供 API，可接入生产管线"
+  ],
+  "tags": [
+   "video-generation",
+   "image-generation",
+   "api"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/kling-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/kling"
+ },
+ {
+  "slug": "lindy",
+  "href": "/zh-CN/tools/lindy",
+  "title": "Lindy",
+  "desc": "借助自定义 AI 助手和自动化流程提高效率。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/lindy.webp",
+  "oneLiner": "借助自定义 AI 助手和自动化流程提高效率。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它瞄的是那些永远不值得专门做集成、却实实在在吃掉一天的周期性行政工作。",
+  "addedAt": "收录于 2024-02-18",
+  "officialUrl": "https://www.lindy.ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "企业运营",
+   "项目管理",
+   "咨询",
+   "智能体"
+  ],
+  "domain": "www.lindy.ai",
+  "body": "Lindy 为业务运营搭代理：盯这个收件箱、筛这些回复、把会订下来、更新 CRM 记录。它的形态是事件驱动的——有东西进来，你用自然语言写的规则就触发——正好契合那条长尾：永远不值得做正式集成、却持续消耗小时数的行政工作。需要刻意把握的是权限范围：一个对你的邮件和日历有写权限的代理，需要的是窄授权加复核习惯，而不是宽泛的许可。",
+  "bodyList": [],
+  "bestFor": [
+   "收件箱、日程与 CRM 杂活",
+   "有明文规则可循的业务运营",
+   "把周期性跟进派出去"
+  ],
+  "highlights": [
+   "由邮件、日历或 webhook 事件触发的代理",
+   "连接常见业务工具",
+   "规则用自然语言描述，不用写代码"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/lindy-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/lindy"
+ },
+ {
+  "slug": "lm-studio",
+  "href": "/zh-CN/tools/lm-studio",
+  "title": "LM Studio",
+  "desc": "在自己的电脑上发现、下载、对话并以 API 提供开放模型的桌面应用。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/lm-studio.webp",
+  "oneLiner": "在自己的电脑上发现、下载、对话并以 API 提供开放模型的桌面应用。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把模型发现、运行参数、聊天和可编程服务器放进同一个界面，缩短了从尝试开放模型到把它接入真实工作流的距离。",
+  "addedAt": "收录于 2026-08-11",
+  "officialUrl": "https://lmstudio.ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "编程",
+   "智能体",
+   "个人使用"
+  ],
+  "domain": "lmstudio.ai",
+  "body": "LM Studio 给本地模型配了一套图形界面，但能力不止停在聊天窗口。你可以搜索并下载兼容模型、比较不同大小与量化版本、调整加载和推理参数、与模型对话、添加文档，也可以通过本地 API 把已加载的模型提供给其他应用。应用、运行时和模型文件准备好之后，聊天、文档处理与本地服务器等核心流程可以离线运行；模型搜索、下载和更新仍然需要联网。相比以命令行为主的运行时，它的优势是看得见、调得动；限制依旧来自你的硬件，模型质量、上下文长度和速度取决于可用内存或显存。",
+  "bodyList": [],
+  "bestFor": [
+   "不想先学命令行、希望直接尝试本地模型的人",
+   "私密或离线的聊天与文档工作流",
+   "通过本地模型 API 开发和调试应用"
+  ],
+  "highlights": [
+   "内置模型发现、下载，以及 GGUF 与 MLX 模型的运行参数控制",
+   "本地聊天、文档对话与 MCP 工具连接",
+   "REST、OpenAI 兼容与 Anthropic 兼容 API，以及 TypeScript、Python SDK"
+  ],
+  "tags": [
+   "local-first",
+   "llm",
+   "developer-tools"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/lm-studio-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/lm-studio"
+ },
+ {
+  "slug": "manus",
+  "href": "/zh-CN/tools/manus",
+  "title": "Manus",
+  "desc": "能够完成研究、分析和效率任务的 AI 智能体。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/manus.webp",
+  "oneLiner": "能够完成研究、分析和效率任务的 AI 智能体。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它的设计是交还交付物而不是对话，这跟“助手”是不同的契约。",
+  "addedAt": "",
+  "officialUrl": "https://manus.im/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "企业运营",
+   "智能体",
+   "编程",
+   "咨询",
+   "设计"
+  ],
+  "domain": "manus.im",
+  "body": "Manus 是通用代理，瞄的是你更想派出去而不是讨论的任务：调研这个市场并给出对比、拿这份数据做出报告。它自带环境——浏览器、shell、文件——走完很多步之后交回一个成品。这个契约既是吸引力也是注意事项：你拿到的是产物而不是过程记录，而你必须复核这个产物，因为产生它的推理过程长到你不会读完。",
+  "bodyList": [],
+  "bestFor": [
+   "想整件交出去的多步任务",
+   "以交付物收尾的调研",
+   "横跨浏览、文件与代码的活"
+  ],
+  "highlights": [
+   "规划并跨多步执行一个任务",
+   "在自己的环境里使用浏览器、shell 和文件",
+   "交回成品而不是一段对话"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/manus-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/manus"
+ },
+ {
+  "slug": "microsoft-copilot",
+  "href": "/zh-CN/tools/microsoft-copilot",
+  "title": "Microsoft Copilot",
+  "desc": "贯穿 Microsoft 365 的写作、总结与自动化 AI 助手。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/microsoft-copilot.webp",
+  "oneLiner": "贯穿 Microsoft 365 的写作、总结与自动化 AI 助手。",
+  "claimLabel": "为什么值得关注",
+  "claim": "差异化在租户内的数据锚定：它在既有权限体系下、基于你组织自己的材料作答。",
+  "addedAt": "",
+  "officialUrl": "https://copilot.microsoft.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "企业运营"
+  ],
+  "domain": "copilot.microsoft.com",
+  "body": "Microsoft Copilot 是横跨 Microsoft 365 的助手层，真正有意思的不是对话框而是数据锚定。它基于你的租户作答——你的文档、邮件、会议——同时尊重既有权限，而这是外部助手在结构上做不到的事。实际用起来价值最高的场景都不起眼：把你缺席的会议补上、在文档里而不是文档旁边起草、从一份没人记得结构的表格里把某个数字捞出来。",
+  "bodyList": [],
+  "bestFor": [
+   "已标准化在 Microsoft 365 上的组织",
+   "在 Word、Excel、Outlook、Teams 里直接起草",
+   "会议回顾与后续跟进"
+  ],
+  "highlights": [
+   "嵌在 Office 应用里，而不是另开一个对话",
+   "基于你租户内的文档与邮件作答",
+   "从 Teams 生成会议摘要与待办"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/microsoft-copilot-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/microsoft-copilot"
+ },
+ {
+  "slug": "midjourney",
+  "href": "/zh-CN/tools/midjourney",
+  "title": "Midjourney",
+  "desc": "用于生成富有想象力、高完成度视觉作品的主流 AI 图像工具。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/midjourney.webp",
+  "oneLiner": "用于生成富有想象力、高完成度视觉作品的主流 AI 图像工具。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它的默认取向足够有主张，所以探索很快——而探索阶段吃的是品味，不是控制力。",
+  "addedAt": "",
+  "officialUrl": "https://www.midjourney.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作",
+   "营销",
+   "设计"
+  ],
+  "domain": "www.midjourney.com",
+  "body": "Midjourney 是家族风格最强的图像模型，在探索阶段这是优点。第一次尝试就能拿到视觉上很自信的东西，然后靠变体和风格参考迭代，而不是跟提示词较劲。这让它很适合“还在找调性”的阶段——概念美术、情绪板、编辑向插画。不适合的是执行别人已经写死的规格，那种场合里精确构图和文字位置比审美更要紧。",
+  "bodyList": [],
+  "bestFor": [
+   "概念美术与视觉探索",
+   "情绪板与风格化插画",
+   "在写下规格之前先找到调性"
+  ],
+  "highlights": [
+   "默认审美很强，几乎不用调提示词",
+   "风格参考让一组图保持同一质感",
+   "变体与放大构成的迭代流程"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/midjourney-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/midjourney"
+ },
+ {
+  "slug": "minimax",
+  "href": "/zh-CN/tools/minimax",
+  "title": "MiniMax",
+  "desc": "覆盖语言、视频、语音与音乐的多模态模型家族，并带智能体与编程层。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/minimax.webp",
+  "oneLiner": "覆盖语言、视频、语音与音乐的多模态模型家族，并带智能体与编程层。",
+  "claimLabel": "为什么值得关注",
+  "claim": "语言、视频、语音、音乐在同一个家族里，多模态管线不必从四家供应商拼起来。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "https://www.minimax.io/",
+  "altUrl": "https://www.minimaxi.com/",
+  "altLabel": "国内入口",
+  "categories": [
+   "智能体",
+   "内容创作",
+   "编程"
+  ],
+  "domain": "www.minimax.io",
+  "body": "MiniMax 交付的是一个模型家族而不是单一产品：语言模型、视频生成、语音合成、音乐，之上还有编程层和智能体工具。对于要搭跨模态管线的人——比如脚本到配音再到视频——从一家拿齐能省掉大量集成与计费上的摩擦，而这通常才是多模态工作的真实成本。它的国内外是两套独立服务，从哪个入口进取决于你的账号和数据在哪一侧。",
+  "bodyList": [],
+  "bestFor": [
+   "在一处完成多模态生成",
+   "语音与音乐制作",
+   "在同一家供应商上搭智能体团队"
+  ],
+  "highlights": [
+   "语言、视频、语音、音乐四条线的旗舰模型",
+   "为自家模型配套的编程工具",
+   "组建智能体团队处理多步任务"
+  ],
+  "tags": [
+   "multimodal",
+   "video",
+   "voice"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/minimax-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/minimax"
+ },
+ {
+  "slug": "n8n",
+  "href": "/zh-CN/tools/n8n",
+  "title": "n8n",
+  "desc": "通过灵活的可视化编排连接工具并自动化工作流。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/n8n.webp",
+  "oneLiner": "通过灵活的可视化编排连接工具并自动化工作流。",
+  "claimLabel": "为什么值得关注",
+  "claim": "选它的理由就是自托管：自动化层以及它持有的凭据，都留在你自己的基础设施里。",
+  "addedAt": "收录于 2024-05-03",
+  "officialUrl": "https://n8n.io/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "编程",
+   "企业运营",
+   "项目管理"
+  ],
+  "domain": "n8n.io",
+  "body": "n8n 是可自托管的工作流自动化平台，而自托管通常就是决定性因素。自动化会沉淀下它所触及的一切服务的凭据，把这些放在自己掌控的基础设施上，与交给一个 SaaS 是完全不同的风险姿态。另一个实际优势是逃生口：可视化节点不够用时由代码节点接手，你不会被迫把整个工作流搬到别处重做。AI 代理节点让模型坐在管线内部，而不是包在外面。",
+  "bodyList": [],
+  "bestFor": [
+   "带 AI 步骤的自托管自动化",
+   "希望自己掌控运行时的工程团队",
+   "中间需要写真代码的工作流"
+  ],
+  "highlights": [
+   "节点式工作流，节点不够用时可插代码节点",
+   "支持自托管，数据与凭据不出自家环境",
+   "AI 代理节点，与数百个集成并存"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/n8n-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/n8n"
+ },
+ {
+  "slug": "nano-banana-2",
+  "href": "/zh-CN/tools/nano-banana-2",
+  "title": "Nano Banana 2",
+  "desc": "Google 的图像模型，强调精确控制、文字渲染与世界知识。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/nano-banana-2.webp",
+  "oneLiner": "Google 的图像模型，强调精确控制、文字渲染与世界知识。",
+  "claimLabel": "为什么值得关注",
+  "claim": "“按描述改动、其余全部保留”恰恰是通用图像模型还做不好的部分。",
+  "addedAt": "收录于 2025-11-20",
+  "officialUrl": "https://gemini.google.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "设计",
+   "内容创作",
+   "个人使用",
+   "营销"
+  ],
+  "domain": "gemini.google.com",
+  "body": "Nano Banana 是 Google 图像编辑模型的外号，而“编辑”是关键词。真正重要的能力是定向改动：只改这一处、画面其余部分不动；让同一个人物在一个系列里保持可辨识；把几张参考图融进一个场景。通用图像模型往往会把整张图重新生成，把你原本喜欢的部分一起丢掉。需要注意命名不稳定——Google 用过不止一个名字发布过它，具体入口暴露的是哪个版本要现场确认。",
+  "bodyList": [],
+  "bestFor": [
+   "用一句话描述来修改已有图像",
+   "让同一主体在多张图里保持一致",
+   "把多张参考图合成一个画面"
+  ],
+  "highlights": [
+   "对话式修改，画面其余部分保持不变",
+   "一组图里人物形象保持一致",
+   "基于多张参考图做合成"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/nano-banana-2-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/nano-banana-2"
+ },
+ {
+  "slug": "notion-ai",
+  "href": "/zh-CN/tools/notion-ai",
+  "title": "Notion AI",
+  "desc": "集成在工作空间中的写作、搜索和信息检索 AI。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/notion-ai.webp",
+  "oneLiner": "集成在工作空间中的写作、搜索和信息检索 AI。",
+  "claimLabel": "为什么值得关注",
+  "claim": "优势在位置：它就在笔记所在的工作区里作答，不需要先导出。",
+  "addedAt": "收录于 2023-08-25",
+  "officialUrl": "https://www.notion.com/product/ai",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作",
+   "项目管理",
+   "企业运营",
+   "学生",
+   "教育工作者"
+  ],
+  "domain": "www.notion.com/product/ai",
+  "body": "Notion AI 是 Notion 工作区之上的助手层，价值与“你有多少知识本来就在里面”直接相关。真正吃重的功能是能横跨零散内部文档的检索——多数团队真正的问题不是写得不够多，而是找不到已经写过的东西。起草和摘要发生在页面里而不是侧边栏，AI 填充的数据库属性负责批量归类。离开 Notion 它几乎没有可提供的东西，所以选或不选都很直接。",
+  "bodyList": [],
+  "bestFor": [
+   "知识本来就沉在 Notion 里的团队",
+   "跨零散内部文档的检索",
+   "就地起草与摘要"
+  ],
+  "highlights": [
+   "基于工作区页面与已连接工具作答",
+   "在你正在编辑的页面里写作和摘要",
+   "AI 批量填充数据库属性"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/notion-ai-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/notion-ai"
+ },
+ {
+  "slug": "obsidian",
+  "href": "/zh-CN/tools/obsidian",
+  "title": "Obsidian",
+  "desc": "本地优先的知识库，底层就是你自己磁盘上的纯 Markdown 文件。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/obsidian.webp",
+  "oneLiner": "本地优先的知识库，底层就是你自己磁盘上的纯 Markdown 文件。",
+  "claimLabel": "为什么值得关注",
+  "claim": "把笔记存成自己磁盘上的纯文件，才是知识库能活得比读它的软件更久的原因。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "https://obsidian.md/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作",
+   "学生",
+   "项目管理"
+  ],
+  "domain": "obsidian.md",
+  "body": "Obsidian 是架在你本机一个 Markdown 文件夹之上的笔记软件。存储方式的选择就是它的全部论点：没有 Obsidian 你的笔记照样能读，其他工具可以直接 grep，也不受某个服务停运或改条款的摆布。反向链接和关系图谱让规模化的交叉引用变得值得做，插件生态覆盖了大部分流程缺口。它和本地模型是天然一对——一库纯文件正是本地 AI 管线想要的输入。",
+  "bodyList": [],
+  "bestFor": [
+   "长期维护的个人知识库",
+   "需要密集交叉引用的研究笔记",
+   "本地优先的工作流与 AI 插件"
+  ],
+  "highlights": [
+   "笔记就是你磁盘上一个文件夹里的纯 Markdown",
+   "全库反向链接与关系图谱",
+   "庞大的插件生态，含本地 AI 集成"
+  ],
+  "tags": [
+   "local-first",
+   "knowledge-base",
+   "markdown"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/obsidian-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/obsidian"
+ },
+ {
+  "slug": "ollama",
+  "href": "/zh-CN/tools/ollama",
+  "title": "Ollama",
+  "desc": "通过开发者友好的运行时在本地运行开放模型。",
+  "status": "在用",
+  "img": "https://atlasnote.ai/images/tools/ollama.webp",
+  "oneLiner": "通过开发者友好的运行时在本地运行开放模型。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把本地推理变成一行命令，这才让“本地优先的 AI 工作流”从愿景变成可行。",
+  "addedAt": "收录于 2026-07-17",
+  "officialUrl": "https://ollama.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "编程",
+   "其他"
+  ],
+  "domain": "ollama.com",
+  "body": "Ollama 用一条命令在你自己的机器上跑开源模型，并暴露一个大多数客户端库无需改动就能对话的本地 HTTP API。它的意义不在性能而在姿态：数据始终不出这台机器，从而一次性解掉那一整类“敏感材料能不能用 AI”的问题。它也是对着模型做开发最省钱的方式——在你还在把提示词写错的阶段，没有按 token 计费的成本。配上本地知识库，整个闭环可以完全离线。",
+  "bodyList": [],
+  "bestFor": [
+   "隐私敏感的场景",
+   "离线推理",
+   "本地开发与对着模型调试"
+  ],
+  "highlights": [
+   "一条命令拉取并运行开源模型",
+   "本地 HTTP API 兼容常见客户端库",
+   "在消费级硬件上可跑，包括 Apple 芯片"
+  ],
+  "tags": [
+   "local-first",
+   "llm",
+   "infra"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/ollama-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/ollama"
+ },
+ {
+  "slug": "perplexity",
+  "href": "/zh-CN/tools/perplexity",
+  "title": "Perplexity",
+  "desc": "把实时搜索与来源引用结合起来的 AI 答案引擎。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/perplexity.webp",
+  "oneLiner": "把实时搜索与来源引用结合起来的 AI 答案引擎。",
+  "claimLabel": "为什么值得关注",
+  "claim": "引用是内嵌可点的，核对一个答案是一次点击而不是再搜一遍。",
+  "addedAt": "",
+  "officialUrl": "https://www.perplexity.ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "智能体",
+   "企业运营",
+   "编程",
+   "咨询",
+   "内容创作"
+  ],
+  "domain": "www.perplexity.ai",
+  "body": "Perplexity 是长得像助手的搜索：给你一段综合过的答案，并内嵌链接指向它的出处页面。关键设计取舍是核对只需一次点击、而不是再搜一遍——这改变了“你能在多大程度上信任这个流程而不必信任模型”。它最擅长的是“答案在网上某处、且你有理由核对出处”的问题。当问题需要基于你自己的材料推理而不是从公开来源检索时，它就弱了。",
+  "bodyList": [],
+  "bestFor": [
+   "出处很重要的问题",
+   "需要引用的快速事实查证",
+   "对比几个来源各自的说法"
+  ],
+  "highlights": [
+   "答案内嵌所引用页面的链接",
+   "追问时保持同一条线索",
+   "聚焦模式可限定来源范围"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/perplexity-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/perplexity"
+ },
+ {
+  "slug": "qwen",
+  "href": "/zh-CN/tools/qwen",
+  "title": "千问 Qwen",
+  "desc": "阿里的 AI 助手与开放模型家族，覆盖文本、图像与视频生成。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/qwen.webp",
+  "oneLiner": "阿里的 AI 助手与开放模型家族，覆盖文本、图像与视频生成。",
+  "claimLabel": "为什么值得关注",
+  "claim": "开放权重让 Qwen 成了微调时的默认底座，这套生态是多数竞品没有的。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "https://chat.qwen.ai/",
+  "altUrl": "https://www.qianwen.com/",
+  "altLabel": "国内入口",
+  "categories": [
+   "企业运营",
+   "编程",
+   "内容创作"
+  ],
+  "domain": "chat.qwen.ai",
+  "body": "千问是阿里的模型家族及其上的助手产品。它的影响力与其说来自对话产品，不如说来自开放权重：Qwen 的检查点成了微调最常见的起点之一，大量下游工具链默认适配它。这套生态又反哺到托管产品上，如今助手侧集成了任务智能体、研究模式以及图像和视频生成。它在国内外是两套独立服务，国内产品现已改名为\"千问\"。",
+  "bodyList": [],
+  "bestFor": [
+   "中英文通用助手工作",
+   "基于开放权重模型做二次开发",
+   "图文视频混合的任务"
+  ],
+  "highlights": [
+   "助手内置任务、研究与生成多种模式",
+   "多个尺寸的开放权重模型",
+   "文本之外还有 AI 生图与 AI 生视频"
+  ],
+  "tags": [
+   "open-weights",
+   "multimodal",
+   "assistant"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/qwen-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/qwen"
+ },
+ {
+  "slug": "raycast-ai",
+  "href": "/zh-CN/tools/raycast-ai",
+  "title": "Raycast AI",
+  "desc": "把多模型 AI、系统上下文和扩展工具放进桌面的统一快捷入口。",
+  "status": "值得关注",
+  "img": "https://atlasnote.ai/images/tools/raycast-ai.webp",
+  "oneLiner": "把多模型 AI、系统上下文和扩展工具放进桌面的统一快捷入口。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它的价值不只是提供模型，而是让 AI 出现在系统命令入口，并能对用户已经安装的桌面工具采取行动。",
+  "addedAt": "收录于 2026-09-03",
+  "officialUrl": "https://www.raycast.com/core-features/ai",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "智能体",
+   "个人使用",
+   "企业运营",
+   "编程"
+  ],
+  "domain": "www.raycast.com/core-features/ai",
+  "body": "Raycast AI 把聊天、快速提问和工具执行嵌进 Raycast 的系统级启动器。它提供多家模型，并允许在同一段对话中换模型重新生成；附件、屏幕内容和当前应用上下文也能直接带入。真正形成差异的是 AI Extensions：日历、浏览器、任务管理或第三方扩展只要暴露了工具，AI 就可以选择参数并执行，默认仍会在调用前向用户确认。它适合已经依赖 Raycast 的桌面用户，但不是免费的模型聚合器：AI 与可执行扩展属于 Pro 能力，更高级模型还可能需要额外套餐。涉及日历、健康或公司数据时，也应逐个检查扩展的权限范围。",
+  "bodyList": [],
+  "bestFor": [
+   "希望少切窗口的 macOS 与 Windows 重度用户",
+   "把日历、任务、浏览器和开发工具串进 AI 工作流",
+   "需要在同一对话中比较不同模型"
+  ],
+  "highlights": [
+   "在 AI Chat 与 Quick AI 中切换和比较多家模型",
+   "读取附件、屏幕和操作系统上下文，不必手动搬运内容",
+   "AI Extensions 可调用已安装扩展的工具，并默认在执行前确认"
+  ],
+  "tags": [
+   "desktop",
+   "automation",
+   "extensions",
+   "productivity"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/raycast-ai-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/raycast-ai"
+ },
+ {
+  "slug": "replit",
+  "href": "/zh-CN/tools/replit",
+  "title": "Replit",
+  "desc": "借助 AI 辅助开发，快速构建、分享和发布软件。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/replit.webp",
+  "oneLiner": "借助 AI 辅助开发，快速构建、分享和发布软件。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把构建、运行、部署收进一处，原型是一个可访问的 URL，而不是卡在某台笔记本上。",
+  "addedAt": "收录于 2024-06-20",
+  "officialUrl": "https://replit.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "编程",
+   "教育工作者",
+   "学生"
+  ],
+  "domain": "replit.com",
+  "body": "Replit 是浏览器里的开发环境，代理、运行时和托管是同一个产品。这在做原型时最关键：你描述一个应用，它被构建并部署，你分享出去的是一个能跑的 URL，而不是一个需要别人自己配环境的仓库。取舍是托管服务的通例——你接受它的环境和限制，换来完全跳过本地配置。对于教学、以及验证一个想法有没有戏，这笔交易很划算。",
+  "bodyList": [],
+  "bestFor": [
+   "从想法到一个跑起来的应用",
+   "不配本地环境就做原型",
+   "在共享环境里学习和教学"
+  ],
+  "highlights": [
+   "代理按描述构建并部署一个可用应用",
+   "浏览器里的完整环境，无需安装",
+   "托管与协作在同一处"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/replit-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/replit"
+ },
+ {
+  "slug": "rsshub",
+  "href": "/zh-CN/tools/rsshub",
+  "title": "RSSHub",
+  "desc": "把网站和服务转换为 RSS，建立由用户掌控的信息流。",
+  "status": "在用",
+  "img": "https://atlasnote.ai/images/tools/rsshub.webp",
+  "oneLiner": "把网站和服务转换为 RSS，建立由用户掌控的信息流。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把 RSS 恢复成一个接口，这才让你能拥有自己的信息输入，而不是租用一个算法信息流。",
+  "addedAt": "收录于 2026-07-16",
+  "officialUrl": "https://docs.rsshub.app/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "其他",
+   "编程"
+  ],
+  "domain": "docs.rsshub.app",
+  "body": "RSSHub 为那些不再提供订阅源的站点生成 RSS——而这几乎是所有站点。听起来很窄，但看清它带来什么就不一样了：订阅源是一个稳定、机器可读的接口，所以它是把信息源接进下游任何东西——阅读器、摘要器、知识库——最干净的方式。自托管让“你在关注什么”这份清单保持私有，而托管型阅读器给不了这一点。维护上的现实是：站点改版会让路由失效，所以把它当作需要偶尔照看的基础设施。",
+  "bodyList": [],
+  "bestFor": [
+   "关注那些已经取消订阅源的站点",
+   "为 AI 工作流搭建输入管线",
+   "自托管、无广告的信息摄入"
+  ],
+  "highlights": [
+   "为数百个不提供 RSS 的站点生成订阅源",
+   "支持自托管，你的阅读清单不外泄",
+   "订阅源作为下游自动化的干净输入"
+  ],
+  "tags": [
+   "local-first",
+   "llm",
+   "infra"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/rsshub-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/rsshub"
+ },
+ {
+  "slug": "runway-gen-4-5",
+  "href": "/zh-CN/tools/runway-gen-4-5",
+  "title": "Runway Gen-4.5",
+  "desc": "兼顾电影感、写实效果、控制力与速度的高端视频模型。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/runway-gen-4-5.webp",
+  "oneLiner": "兼顾电影感、写实效果、控制力与速度的高端视频模型。",
+  "claimLabel": "为什么值得关注",
+  "claim": "提示词遵循度和运动质量决定了生成视频能不能用，而这一代针对的正是这两点。",
+  "addedAt": "收录于 2025-12-01",
+  "officialUrl": "https://runwayml.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作",
+   "个人使用"
+  ],
+  "domain": "runwayml.com",
+  "body": "Runway 是给真正剪片子的人做的视频生成工具，Gen-4.5 针对的是让生成素材不可用的两个失败模式：运动看着不对，以及产出忽略了提示词的一半。把这两点做对，工具就从新鲜玩意儿变成预可视化手段——值得在投入拍摄前先验证概念，或者直接产出短视频和广告向素材。时长和精确连贯性仍是约束；按镜头规划，不要按场次规划。",
+  "bodyList": [],
+  "bestFor": [
+   "短视频与动态概念",
+   "开拍前的预可视化",
+   "编辑向与广告向的动态影像"
+  ],
+  "highlights": [
+   "文本与图像提示生成视频",
+   "镜头之间的一致性控制",
+   "生成之外还有剪辑工具"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/runway-gen-4-5-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/runway-gen-4-5"
+ },
+ {
+  "slug": "slack",
+  "href": "/zh-CN/tools/slack",
+  "title": "Slack",
+  "desc": "面向团队沟通与协作的 AI 工作中心。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/slack.webp",
+  "oneLiner": "面向团队沟通与协作的 AI 工作中心。",
+  "claimLabel": "为什么值得关注",
+  "claim": "多数团队没写进文档的决策其实就活在它的归档里，所以对这份归档的检索价值格外高。",
+  "addedAt": "收录于 2025-12-12",
+  "officialUrl": "https://slack.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "项目管理",
+   "企业运营",
+   "编程",
+   "个人使用",
+   "销售"
+  ],
+  "domain": "slack.com",
+  "body": "Slack 是团队沟通工具，它出现在 AI 工具目录里的理由是归档。对多数团队来说，“某个决定为什么这么定”的真实记录是一条话题串而不是一份文档——所以 AI 回顾和频道历史检索触及的是别处不存在的材料。它也是代理真正有用的落地面，因为工作本来就在这里被讨论。对应的风险是同一件事：一份可检索的“所有说过的话”的归档，同时也是一份暴露面。",
+  "bodyList": [],
+  "bestFor": [
+   "把团队沟通当作事实记录",
+   "补上你错过的频道内容",
+   "把 AI 工具接到工作被讨论的地方"
+  ],
+  "highlights": [
+   "AI 回顾与跨频道历史检索",
+   "Huddles、canvas 与话题串在同一工作区",
+   "对机器人和代理开放的深度集成面"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/slack-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/slack"
+ },
+ {
+  "slug": "spline-ai",
+  "href": "/zh-CN/tools/spline-ai",
+  "title": "Spline AI",
+  "desc": "用文字或图片生成可继续编辑、可添加交互并可发布到 Web 的 3D 内容。",
+  "status": "值得关注",
+  "img": "https://atlasnote.ai/images/tools/spline-ai.webp",
+  "oneLiner": "用文字或图片生成可继续编辑、可添加交互并可发布到 Web 的 3D 内容。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它生成的是编辑器里的真实 3D 内容，而不是一张看起来像 3D 的平面图，因此还能进入交互设计和发布流程。",
+  "addedAt": "收录于 2026-09-03",
+  "officialUrl": "https://spline.design/solutions/ai-3d-generation",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "设计",
+   "内容创作"
+  ],
+  "domain": "spline.design/solutions/ai-3d-generation",
+  "body": "Spline AI 把文字提示和参考图片转成可编辑的 3D 对象、无缝材质或完整场景。生成内容直接进入 Spline 编辑器，设计师可以继续修改几何、材质、灯光、动画、物理和交互事件，再以 Web 嵌入、代码、图片或视频形式交付。它降低的是从空白场景到第一个可用对象的门槛，而不是取消 3D 设计本身；网页中的模型仍需要控制面数、纹理体积、加载时间和移动端性能。免费方案可以试用 AI 能力，但高频生成与更复杂的生产工作仍应先确认额度、导出和商用边界。",
+  "bodyList": [],
+  "bestFor": [
+   "没有完整 3D 建模经验的产品与视觉设计师",
+   "为网站、原型和活动页面制作交互式 3D",
+   "需要快速探索物体、材质和场景方向"
+  ],
+  "highlights": [
+   "从文本提示或参考图片生成 3D 对象、材质和完整场景",
+   "生成结果可继续调整几何、灯光、动画、物理与交互事件",
+   "支持 Web 嵌入、代码导出、图像与视频等交付方式"
+  ],
+  "tags": [
+   "3d",
+   "generative-design",
+   "web-embeds",
+   "interactive"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/spline-ai-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/spline-ai"
+ },
+ {
+  "slug": "suno",
+  "href": "/zh-CN/tools/suno",
+  "title": "Suno AI",
+  "desc": "用生成式音乐模型把文字提示转成录音室品质的歌曲。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/suno.webp",
+  "oneLiner": "用生成式音乐模型把文字提示转成录音室品质的歌曲。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它产出的是完整编排而不是循环片段，这才让结果能当一首曲子用，而不是一个素材。",
+  "addedAt": "",
+  "officialUrl": "https://suno.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作"
+  ],
+  "domain": "suno.com",
+  "body": "Suno 从一段描述生成完整的歌——编排、人声、结构，而这正是“能用的曲子”和“还得自己往上搭的循环片段”之间的差别。用于视频配乐、播客垫乐，以及正式授权前的占位曲，这个程度够了。需要如实说明的是权利问题：生成式音乐的训练来源与归属尚未有定论，所以任何商业用途，在曲子发布前先确认你账号适用的授权条款。",
+  "bodyList": [],
+  "bestFor": [
+   "视频与播客的背景音乐",
+   "快速勾勒一个歌曲想法",
+   "正式授权前的占位配乐"
+  ],
+  "highlights": [
+   "按文字描述生成带人声的完整歌曲",
+   "风格与流派引导",
+   "可对段落迭代，不必整首重生成"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/suno-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/suno"
+ },
+ {
+  "slug": "synthesia",
+  "href": "/zh-CN/tools/synthesia",
+  "title": "Synthesia",
+  "desc": "直接根据文本制作包含数字人和配音的 AI 视频。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/synthesia.webp",
+  "oneLiner": "直接根据文本制作包含数字人和配音的 AI 视频。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它针对的是这个问题的企业版形态——一个必须在多语种下持续保鲜的大型视频库。",
+  "addedAt": "",
+  "officialUrl": "https://www.synthesia.io/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作",
+   "营销",
+   "设计"
+  ],
+  "domain": "www.synthesia.io",
+  "body": "Synthesia 按脚本生成主讲视频，明确瞄准企业场景：规模化的培训、合规与内部沟通。它的成本账算在维护而不是创作上——政策一变，把四十条视频的八个语种版本更新掉，是一次脚本修改而不是四十次重拍。对任何在维护培训库的人来说，这是个真实约束。模板与品牌控制的存在理由相同：当产出的人很多时，保持结果一致。",
+  "bodyList": [],
+  "bestFor": [
+   "企业培训与合规视频",
+   "多语种内部沟通",
+   "需要频繁更新的视频库"
+  ],
+  "highlights": [
+   "按脚本生成数字人主讲，无需拍摄",
+   "一份源脚本产出多语种版本",
+   "模板与品牌控制，保证规模化产出一致"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/synthesia-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/synthesia"
+ },
+ {
+  "slug": "tailscale",
+  "href": "/zh-CN/tools/tailscale",
+  "title": "Tailscale",
+  "desc": "基于 WireGuard、以身份为核心的私有网络，用更少的网络配置安全连接设备与服务。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/tailscale.webp",
+  "oneLiner": "基于 WireGuard、以身份为核心的私有网络，用更少的网络配置安全连接设备与服务。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把远程访问从一项路由与防火墙工程，收敛为一条身份策略：安装、登录，再决定谁能访问什么。",
+  "addedAt": "收录于 2026-08-20",
+  "officialUrl": "https://tailscale.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "编程",
+   "企业运营",
+   "个人使用"
+  ],
+  "domain": "tailscale.com",
+  "body": "Tailscale 会把分散在不同物理网络中的设备与服务组成一个私有网络，也就是 tailnet。用户通过身份提供商完成认证，每台接入的设备都会获得加密的节点身份，Tailscale 再使用 WireGuard 建立端到端加密连接：条件允许时由设备直接互联，无法直连时也只通过加密中继传输。这样一来，访问开发机、打开自托管服务，或连接不同云上的基础设施，都不必先把端口暴露到公网。MagicDNS 给设备分配容易记住的名称；子网路由可以接入无法安装客户端的设备；出口节点则能让上网流量经过一台可信设备。它降低了连接门槛，但不会替你完成权限设计：团队仍应按最小权限原则明确谁、从什么设备、可以访问哪些资源。",
+  "bodyList": [],
+  "bestFor": [
+   "随时安全访问家中实验室、服务器与开发机",
+   "跨办公室、云环境和家庭网络连接团队与服务",
+   "用基于身份的访问替代端口转发和传统 VPN 配置"
+  ],
+  "highlights": [
+   "基于 WireGuard 的端到端加密点对点连接",
+   "面向用户、设备与服务的身份访问策略",
+   "MagicDNS、子网路由、出口节点与 Tailscale SSH"
+  ],
+  "tags": [
+   "zero-trust",
+   "networking",
+   "remote-access",
+   "wireguard"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/tailscale-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/tailscale"
+ },
+ {
+  "slug": "uu-remote",
+  "href": "/zh-CN/tools/uu-remote",
+  "title": "UU远程",
+  "desc": "网易出品的免费远程控制工具，把 4K 144 帧的游戏串流当作第一场景。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/uu-remote.webp",
+  "oneLiner": "网易出品的免费远程控制工具，把 4K 144 帧的游戏串流当作第一场景。",
+  "claimLabel": "为什么值得关注",
+  "claim": "远程控制工具大多按画质与时长分档收费，它把 4K 高帧免费给出来，等于把远程游戏从付费特权变成默认能力。",
+  "addedAt": "收录于 2026-08-07",
+  "officialUrl": "https://uuyc.163.com/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "个人使用",
+   "其他",
+   "企业运营"
+  ],
+  "domain": "uuyc.163.com",
+  "body": "UU远程是网易的远程控制工具，前身是面向游戏串流的 GameViewer。它与向办公场景看齐的同类分野正在于此：最高 4K 144 帧、真彩模式、手柄与按键映射，这套配置是为了让你在手机或电视上远程玩自己电脑里的 3A 游戏真正成立，而不只是看清桌面。底层用 P2P 直连把延迟压到毫秒级。办公与协助场景照常覆盖——文件传输不限速、多屏协作、远程开机都在。所有功能免费，这在按画质分档收费的远控市场里是它最直接的一张牌。",
+  "bodyList": [],
+  "bestFor": [
+   "在手机、平板或电视上远程玩自己电脑里的游戏",
+   "临时连回办公室或家里的电脑取文件、办公",
+   "给家人朋友做远程协助"
+  ],
+  "highlights": [
+   "最高 4K 144 帧与真彩模式的串流画质，全部功能免费",
+   "P2P 直连毫秒级延迟，手柄、按键映射、多点触控都有适配",
+   "覆盖 Windows、macOS、iOS、Android、TV，支持远程开机与不限速文件传输"
+  ],
+  "tags": [
+   "remote-desktop",
+   "gaming",
+   "office"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/uu-remote-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/uu-remote"
+ },
+ {
+  "slug": "v0",
+  "href": "/zh-CN/tools/v0",
+  "title": "v0",
+  "desc": "把提示、截图或 Figma 设计变成可编辑、可测试并可部署的全栈 Web 应用。",
+  "status": "值得关注",
+  "img": "https://atlasnote.ai/images/tools/v0.webp",
+  "oneLiner": "把提示、截图或 Figma 设计变成可编辑、可测试并可部署的全栈 Web 应用。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把设计输入、源代码、运行预览和部署放进同一条迭代链，减少原型在交给工程时被重新实现一次。",
+  "addedAt": "收录于 2026-09-03",
+  "officialUrl": "https://v0.app/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "智能体",
+   "编程",
+   "设计"
+  ],
+  "domain": "v0.app",
+  "body": "v0 已经从组件生成器发展成面向完整 Web 应用的开发环境。它能读取文字、截图、mockup 或 Figma 设计，生成界面和功能代码；Design Mode 直接覆盖在运行预览上，视觉调整会形成可审查、可回退的新源码版本。项目还可以继续接入数据库、认证、API 和 Vercel 服务，并让 Agent 使用终端、浏览器、Web 搜索或 MCP 工具完成测试与修复。它尤其适合 Next.js、React、Tailwind 和 shadcn/ui 路线。代价是默认栈与 Vercel 生态倾向很强；“可以部署”也不等于已经通过生产级的安全、性能、无障碍和数据边界审查。",
+  "bodyList": [],
+  "bestFor": [
+   "把界面想法快速推进到可运行原型",
+   "需要设计模式与代码编辑并存的产品开发",
+   "使用 Next.js、React、Tailwind 与 Vercel 的团队"
+  ],
+  "highlights": [
+   "从自然语言、截图和 Figma 文件生成高保真界面与代码",
+   "Design Mode 在真实预览上调整样式，并把修改写回源码版本",
+   "支持后端逻辑、数据库集成、终端、浏览器测试、Git 与部署"
+  ],
+  "tags": [
+   "full-stack",
+   "design-to-code",
+   "prototyping",
+   "vercel"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/v0-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/v0"
+ },
+ {
+  "slug": "vapi",
+  "href": "/zh-CN/tools/vapi",
+  "title": "Vapi",
+  "desc": "构建并部署用于销售和客服的可定制 AI 语音智能体。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/vapi.webp",
+  "oneLiner": "构建并部署用于销售和客服的可定制 AI 语音智能体。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它替你搞定了让语音代理变难的延迟与打断这套管道，留给你的是对话设计。",
+  "addedAt": "",
+  "officialUrl": "https://vapi.ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "销售",
+   "编程"
+  ],
+  "domain": "vapi.ai",
+  "body": "Vapi 是语音代理的开发者基础设施：语音识别、模型、语音合成与电话线路被接成一条你只需配置、不必自己组装的管线。它真正在卖的是最难的那部分——亚秒级的轮次切换，以及对方插话时的优雅处理，这正是“能用的语音代理”和“难以忍受的语音代理”之间的分界。剩下的是设计工作：代理被允许做什么、什么时候必须转人工、以及听错了怎么办。",
+  "bodyList": [],
+  "bestFor": [
+   "要做语音代理的开发者",
+   "电话客服与信息收集流程",
+   "把重复的来电或外呼自动化"
+  ],
+  "highlights": [
+   "语音、模型、电话线路作为一条管线暴露 API",
+   "打断处理与低延迟轮次切换",
+   "支持工具调用，代理可在通话中执行动作"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/vapi-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/vapi"
+ },
+ {
+  "slug": "veo-3-1",
+  "href": "/zh-CN/tools/veo-3-1",
+  "title": "Veo 3.1",
+  "desc": "Google 升级版视频生成模型。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/veo-3-1.webp",
+  "oneLiner": "Google 升级版视频生成模型。",
+  "claimLabel": "为什么值得关注",
+  "claim": "原生音频加上较强的提示词遵循度，让它属于“产出不需要再单独配声”的少数模型。",
+  "addedAt": "收录于 2025-10-15",
+  "officialUrl": "https://deepmind.google/models/veo/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "内容创作"
+  ],
+  "domain": "deepmind.google/models/veo",
+  "body": "Veo 是 Google 的视频模型，和 Sora 一样，它有意义的一步是音频——包括对白——与画面一起生成。参考图让你可以引导画面质感和主体，而不是反复重摇直到碰上一个对的。如果你的管线本来就在 Google 体系里，通过其创作产品和 API 接入就是实际的差异点。约束在这一整类工具上是共通的：时长偏短，连贯性需要按镜头而不是按场次去规划。",
+  "bodyList": [],
+  "bestFor": [
+   "自带音频的视频生成",
+   "电影感短片与概念稿",
+   "Google 体系内的视频工作流"
+  ],
+  "highlights": [
+   "视频生成同时产出同步音频与对白",
+   "用参考图引导画面质感与主体",
+   "通过 Google 创作产品与 API 接入"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/veo-3-1-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/veo-3-1"
+ },
+ {
+  "slug": "wispr-flow",
+  "href": "/zh-CN/tools/wispr-flow",
+  "title": "Wispr Flow",
+  "desc": "在任何输入框里，把自然口述转换成经过清理、纠错和格式化的文字。",
+  "status": "值得关注",
+  "img": "https://atlasnote.ai/images/tools/wispr-flow.webp",
+  "oneLiner": "在任何输入框里，把自然口述转换成经过清理、纠错和格式化的文字。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把语音输入从单独的转录页面变成跨应用的输入层，让想法直接落到正在使用的工具里。",
+  "addedAt": "收录于 2026-09-03",
+  "officialUrl": "https://wisprflow.ai/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "个人使用",
+   "企业运营",
+   "内容创作",
+   "编程"
+  ],
+  "domain": "wisprflow.ai",
+  "body": "Wispr Flow 在 macOS、Windows、iOS 和 Android 的文本输入位置工作：按下快捷键或麦克风后自然说话，结果会直接进入当前应用，并自动去掉停顿词、理解“改成……”这样的自我修正、补标点和整理列表。个人词典会学习姓名与术语，团队还能共享词典和常用片段；在代码场景中，它会识别文件名、变量命名和开发术语。中文已在支持范围内，但官方也明确说明非英语准确率仍低于英语，中英混说可能出现错写，部分 Styles 能力只支持英语。它依赖联网处理，敏感内容和企业使用还应先核对训练开关、保留政策与组织合规要求。",
+  "bodyList": [],
+  "bestFor": [
+   "通过口述起草邮件、文档、消息和 AI 提示",
+   "经常输入人名、产品名和技术术语的团队",
+   "希望在桌面与移动设备保持同一套语音输入习惯"
+  ],
+  "highlights": [
+   "支持 100 多种语言，包括简体与繁体中文",
+   "自动处理口头语、自我修正、标点和列表格式",
+   "个人与团队词典、常用片段，以及面向开发者的语法识别"
+  ],
+  "tags": [
+   "dictation",
+   "speech-to-text",
+   "productivity",
+   "voice"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/wispr-flow-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/wispr-flow"
+ },
+ {
+  "slug": "workbuddy",
+  "href": "/zh-CN/tools/workbuddy",
+  "title": "WorkBuddy",
+  "desc": "腾讯的 AI 工作台，由分角色的专家智能体团队端到端执行办公任务。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/workbuddy.webp",
+  "oneLiner": "腾讯的 AI 工作台，由分角色的专家智能体团队端到端执行办公任务。",
+  "claimLabel": "为什么值得关注",
+  "claim": "它把智能体组织成一支分工的团队而不是单个助手，这才让一个人能覆盖整条工作流。",
+  "addedAt": "收录于 2026-07-25",
+  "officialUrl": "https://www.codebuddy.cn/work/",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "智能体",
+   "企业运营",
+   "项目管理"
+  ],
+  "domain": "www.codebuddy.cn/work",
+  "body": "WorkBuddy 是腾讯的 AI 工作台，组织方式的核心是\"团队\"而非\"助手\"：一组分角色的专家智能体——运营、设计、数据、开发等——从一句指令出发并行规划与执行。它瞄准的场景很具体：一人公司补上招不起的岗位；市场与竞品调研直接产出报告或演示稿；把业务数据变成带优化建议的分析结论。产品以桌面客户端形态提供，支持 MCP 生态和自定义 Skills 扩展，目前处于公测阶段。",
+  "bodyList": [],
+  "bestFor": [
+   "需要一个人顶一支团队的个体与小微团队",
+   "一句指令完成调研并产出报告",
+   "把业务数据变成带建议的分析结论"
+  ],
+  "highlights": [
+   "分角色专家智能体，覆盖运营、设计、数据、开发等岗位",
+   "一句话指令自主规划并交付完整结果",
+   "支持 MCP 生态与自定义 Skills 扩展能力"
+  ],
+  "tags": [
+   "agent",
+   "office",
+   "mcp"
+  ],
+  "hero": "https://atlasnote.ai/images/tools/workbuddy-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/workbuddy"
+ },
+ {
+  "slug": "zapier",
+  "href": "/zh-CN/tools/zapier",
+  "title": "Zapier",
+  "desc": "通过无代码工具和 AI 连接应用、自动化工作流。",
+  "status": "",
+  "img": "https://atlasnote.ai/images/tools/zapier.webp",
+  "oneLiner": "通过无代码工具和 AI 连接应用、自动化工作流。",
+  "claimLabel": "为什么值得关注",
+  "claim": "产品本身就是集成广度：大多数 SaaS 组合的连接器已经存在，什么都不用自己造。",
+  "addedAt": "",
+  "officialUrl": "https://zapier.com/ai",
+  "altUrl": "",
+  "altLabel": "",
+  "categories": [
+   "企业运营"
+  ],
+  "domain": "zapier.com/ai",
+  "body": "Zapier 负责 SaaS 之间的自动化，选它的理由是覆盖面——大多数应用两两之间的连接器已经现成，所以工作是配置而不是搭建。AI 步骤现在就坐在这些工作流里，而这也是多数团队第一次把模型放进真实流程的实际方式：给这条来件分类、给这份表单回复做摘要、起草这封回信。相对自托管方案的取舍是：你的凭据和数据要经过它的平台。",
+  "bodyList": [],
+  "bestFor": [
+   "不写代码连接各类 SaaS",
+   "横跨多个应用的业务流程",
+   "给既有流程加一个 AI 步骤"
+  ],
+  "highlights": [
+   "数千个应用集成",
+   "带条件与过滤的多步工作流",
+   "工作流内可用 AI 动作与代理"
+  ],
+  "tags": [],
+  "hero": "https://atlasnote.ai/images/tools/zapier-hero.webp",
+  "detailUrl": "https://atlasnote.ai/zh-CN/tools/zapier"
+ }
+]

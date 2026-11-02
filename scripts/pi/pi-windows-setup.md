@@ -1,0 +1,199 @@
+WINDOWS PATH · 安装与第一次启动
+
+# Windows 中文路径：安装并启动 Pi
+
+你在 Windows 电脑上打开了蓝皮书，却发现第 1、2 课写的是 Mac 终端、`Command` 快捷键和 `/Users/...` 路径。不要把这些命令逐字改成 Windows 格式，也不要同时混用命令提示符、PowerShell、WSL 和 Git Bash。
+
+这条中文路径先解释 Windows 上的三种运行环境，再把第一次安装固定在最容易复现的 Git Bash 路线上。通过本页验收后，直接进入[第 3 课：登录与模型设置](https://pi.xiaomovps.com/guide/connect-model)，再回到共同主线。
+
+## 先选择运行环境
+
+Pi 可以原生运行在 Windows，也可以完整运行在 WSL。真正重要的不是“哪条路线最强”，而是项目文件、开发工具和 Shell 必须位于同一个你能解释清楚的环境中。
+
+| 路线 | Pi 与项目放在哪里 | 适合情况 | 本书处理 |
+| --- | --- | --- | --- |
+| 原生 Windows + Git Bash | Pi、Node.js 和项目主要位于 Windows；命令工具使用 Git Bash | 第一次安装、文件主要在 Windows、希望步骤最少 | **本页默认路线，提供完整实操和验收** |
+| 原生 Windows + PowerShell 工具 | Pi 仍是 Windows 进程，可把模型面对的默认工具改为 PowerShell | 工作依赖 PowerShell 模块或 Windows 原生命令 | 基础路线完成后再按官方文档配置，不作为首次安装前置 |
+| 完整 WSL | Pi、Node.js、Git 和项目都位于选定的 Linux 发行版 | 开发环境本来就在 Linux/WSL，熟悉 WSL 文件与网络边界 | 按 Linux 路线安装，不在 Windows 与 WSL 之间混装 Pi |
+
+如果拿不准，选择第一行。不要因为电脑已经安装 WSL，就让 Windows 的 Node.js、WSL 的 npm、Git Bash 的路径和 PowerShell 命令混在同一次安装里。已经长期在 WSL 中开发的读者，可以直接跟随 [Pi 官方 Windows 指南](https://pi.dev/docs/latest/windows)的 WSL 路线，再使用本书后续课程的 Linux 命令。
+
+>
+> **本页采用的路线**
+>
+> Pi 原生运行在 Windows 时默认使用 **Git Bash**。官方依次查找自定义 Bash 路径、Git for Windows 的默认安装位置 `C:\Program Files\Git\bin\bash.exe`，最后才查找 PATH 中的其他 `bash.exe`。本页面向第一次安装的读者，只使用 Git for Windows 默认路线，不配置 Cygwin、MSYS2、WSL 或可选 PowerShell 工具。
+
+Windows 读者也按“四样准备”开始：现有的 Windows 电脑、Git Bash 终端、Pi Agent，以及一种可用的模型访问方式。**不需要为了学习 Pi 更换 Mac 或 Linux 设备，也不需要安装 iTerm2**；iTerm2 是 macOS 软件。前两样和 Pi 的安装在本页完成，订阅或 API Key 留到[下一课](https://pi.xiaomovps.com/guide/connect-model)选择。
+
+如果已经安装 [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install)，它可以作为窗口界面，但默认配置通常打开 PowerShell。第一次跟随本页时，直接从开始菜单打开 **Git Bash**，确认自己运行的是同一套命令；不要因为窗口名字叫 Terminal，就在 PowerShell 中照抄 Git Bash 步骤。
+
+## 先分清两个输入位置
+
+这一页会在两个地方输入内容：
+
+1. **Git Bash 窗口**：输入 `pwd`、`npm`、`pi` 等普通终端命令。
+2. **Pi 底部编辑区**：Pi 打开后输入消息，以及 `/quit` 这样的 Pi 内部命令。
+
+在网页复制代码仍使用 `Ctrl+C`。粘贴到 Git Bash 时可以按 `Shift+Insert`，也可以在窗口中右键选择粘贴。粘贴后先核对整行，再按 `Enter`；不要把代码框外的示例输出一起输入。
+
+输错但还没有按 `Enter` 时，按 `Ctrl+C` 取消当前输入。命令已经开始运行后，不要为了催促它而反复按键。
+
+## 1. 安装并确认 Git Bash
+
+从 [Git for Windows 官方网站](https://git-scm.com/download/win)下载安装程序。第一次使用时保留默认安装位置；本课不要求更改编辑器、终端模拟器或其他高级选项。
+
+安装完成后，关闭旧终端。从 Windows 开始菜单搜索并打开 **Git Bash**。不要打开“命令提示符”，也不要把本页代码先放进 PowerShell。
+
+在 Git Bash 中逐行执行：
+
+```bash
+git --version
+bash --version | sed -n '1p'
+test -f "/c/Program Files/Git/bin/bash.exe" && echo "PASS: Pi 能找到默认 Git Bash"
+```
+
+通过时应看到 Git 版本、Bash 版本，最后再看到一行 `PASS`。版本数字可以不同。
+
+如果前两条有版本号、最后一条没有输出，说明 Git Bash 可能装在了其他位置。这不等于 Git 已损坏，但本页的默认路线尚未通过。第一次安装建议重新使用默认位置；已经明确维护自定义环境的读者，再参考 [Pi 官方 Windows 设置](https://pi.dev/docs/latest/windows)配置 `shellPath`。
+
+### 小检查
+
+- [ ] 我打开的是 Git Bash。
+- [ ] `git --version` 和 `bash --version` 都有输出。
+- [ ] 默认路径检查显示 `PASS`。
+
+## 2. 安装并检查 Node.js
+
+Pi 的 npm 安装方式需要 Node.js 和 npm。从 [Node.js 官方下载页](https://nodejs.org/en/download)下载当前 LTS 版并完成安装。安装结束后，关闭所有 Git Bash 窗口，再重新打开一个新的 Git Bash，让新的 PATH 生效。
+
+执行：
+
+```bash
+node --version
+npm --version
+```
+
+两条命令都应返回版本号，并且 Node.js 不低于 `22.19.0`。最低版本要求核验于 2026-09-23；发布后的变化以 [Pi 官方 Quickstart](https://pi.dev/docs/latest/quickstart)为准。
+
+如果出现 `command not found`，先确认 Node.js 安装程序已经完成，再完全关闭并重开 Git Bash。不要先从网上复制陌生的 PATH 修改命令，也不要在多个 Node.js 安装器之间来回切换。
+
+## 3. 建立 Windows 专用练习目录
+
+Windows 路径常写成 `C:\Users\你的用户名\...`，Git Bash 会把同一个位置显示成 `/c/Users/你的用户名/...`。本书后续命令使用 `/`，这是 Git Bash 的正常写法，不需要改成反斜杠。
+
+在 Git Bash 中建立一个空白练习目录：
+
+```bash
+mkdir ~/pi-practice
+cd ~/pi-practice
+pwd
+ls -A
+```
+
+`pwd` 应以 `/pi-practice` 结尾；`ls -A` 不显示文件名，才说明目录为空。这个目录通常对应资源管理器里的 `C:\Users\你的用户名\pi-practice`。
+
+如果 `mkdir` 显示 `File exists`，不要直接使用可能留有旧文件的目录。改用新名字并记住它：
+
+```bash
+mkdir ~/pi-practice-2
+cd ~/pi-practice-2
+pwd
+ls -A
+```
+
+>
+> **为什么不直接使用整个用户目录**
+>
+> 练习目录能让任务范围和产物更容易核对，但它不是安全沙箱。Pi 的工具仍以你的 Windows 用户权限运行。不要在 `~`、桌面根目录、整个下载目录或装有真实工作的仓库上层直接启动 Pi。
+
+## 4. 安装 Pi 并确认命令可用
+
+仍在 Git Bash 中执行官方 npm 安装命令：
+
+```bash
+npm install -g --ignore-scripts @earendil-works/pi-coding-agent
+```
+
+等待命令结束、重新出现可输入行后，再执行：
+
+```bash
+pi --version
+command -v pi
+```
+
+第一条应显示 Pi 版本号，第二条应显示 Git Bash 实际找到的 `pi` 命令位置。npm 路线不固定间接依赖；以后更新时如果 Pi 显示迁移提示，先阅读[生命周期管理](https://pi.xiaomovps.com/guide/lifecycle-management)，不要在本页连续运行两种安装方式。安装命令核验于 2026-09-23，后续以 [Pi 官方 Quickstart](https://pi.dev/docs/latest/quickstart) 为准。
+
+如果安装过程出现 `npm ERR!`、`EPERM` 或 `Access is denied`：
+
+- 不要先改用管理员身份反复安装。
+- 等命令结束，保存从安装命令到最后一行错误的完整文字。
+- 关闭其他可能正在运行的 Pi 或 Node.js 进程，再重开 Git Bash，只用同一条官方命令重试一次。
+- 仍然失败时，记录 `node --version`、`npm --version` 和完整错误；不要删除不认识的系统目录。
+
+如果安装完成但 `pi` 显示 `command not found`，完全关闭 Git Bash 后重新打开，再运行 `pi --version`。仍失败时保留 `npm prefix -g` 和错误输出，再进行针对性排查，不要随机追加 PATH。
+
+## 5. 从练习目录第一次启动
+
+确认当前位置后启动 Pi：
+
+```bash
+cd ~/pi-practice
+pwd
+pi
+```
+
+如果你使用了 `pi-practice-2`，三处课程中的目录名都要换成自己的实际名字。Pi 打开后，底部状态栏显示的工作目录应与刚才的 `pwd` 一致。
+
+第一次启动可能直接出现登录提示。这表示 Pi 已经启动，认证留到下一课。现在在 **Pi 底部编辑区**输入：
+
+```text
+/quit
+```
+
+退出后应回到 Git Bash。再执行一次 `pi`，确认能够重新打开；随后可以再次 `/quit`，也可以继续下一课。
+
+## 6. 以后怎样跟随蓝皮书主线
+
+从下一课开始，Windows 用户继续使用 Git Bash，并遵守这组固定替换：
+
+| 主线中的写法 | Windows Git Bash 使用 |
+| --- | --- |
+| `~/Downloads/pi-practice` | `~/pi-practice` |
+| `/Users/你的用户名/...` | `/c/Users/你的用户名/...` |
+| `shasum -a 256` | `sha256sum` |
+| `Command+C` / `Command+V` | 网页复制用 `Ctrl+C`，Git Bash 粘贴用 `Shift+Insert` |
+
+`curl`、`sed`、`find`、`test` 等后续练习命令继续在 Git Bash 中执行。看到蓝皮书写“普通终端”时，Windows 用户应理解为“Git Bash”。
+
+Pi 官方还提供可选的 `powershell` 工具，但它不是本书入门路线的前置条件。即使启用该工具，Pi 编辑区里的 `!` 和 `!!` 仍使用 Bash。先把一条路线跑通，再决定是否增加第二种 Shell。
+
+## 本页验收
+
+- 我已经明确选择原生 Windows + Git Bash，而不是一边操作一边切换 Shell。
+- Git Bash 的 Git、Bash 和默认路径检查全部通过。
+- `node --version` 不低于本页要求，`npm --version` 有输出。
+- 我建立了空白的 `~/pi-practice`，并能说出它对应的 Windows 路径。
+- `pi --version` 有输出，`command -v pi` 能找到命令。
+- 我能从练习目录打开 Pi，用 `/quit` 回到 Git Bash，再重新打开。
+- 我知道后续课程中的路径和指纹命令应怎样替换。
+
+通过后，不需要再照抄 macOS 的第 1、2 课，直接继续登录。
+
+[下一课，登录账号并选择模型 →](https://pi.xiaomovps.com/guide/connect-model)
+
+已经安装完成、现在需要升级或卸载？查看 [安装后生命周期管理](https://pi.xiaomovps.com/guide/lifecycle-management)。
+
+### 本页依据
+
+- [Pi 官方 Windows 设置](https://pi.dev/docs/latest/windows)
+- [Pi 官方 Quickstart](https://pi.dev/docs/latest/quickstart)
+- [Git for Windows](https://git-scm.com/download/win)
+- [Node.js 下载页](https://nodejs.org/en/download)
+
+安装命令、Node.js 要求与 Windows 三条运行路线核验于 2026-09-23。Pi、Node.js 或 Git for Windows 更新后，应优先复查上述官方页面。
+
+2026-10-12 仅对照 [Pi v1.1.0 固定 Windows 文档](https://github.com/earendil-works/pi/blob/v1.1.0/packages/coding-agent/docs/windows.md)与更新源码做文字复查；没有 Windows 环境，未更新上面的实机核验日期。
+
+---
+
+> 本文转载自 [Pi Coding Agent 学习蓝皮书](https://pi.xiaomovps.com/guide/windows-setup)，原项目以 MIT License 发布；依据许可要求，保留原版权声明与来源链接。

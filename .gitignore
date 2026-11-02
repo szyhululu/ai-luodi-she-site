@@ -1,0 +1,37 @@
+# 依赖与构建产物
+node_modules/
+.next/
+out/
+nextbuild/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# 部署元数据与内部工作日志（含沙箱信息，勿公开）
+.wbapp_*.genie
+.workbuddy/
+
+# 环境变量
+.env
+.env.*
+!.env.example
+
+# 数据库
+data/*.db
+!data/app.db
+data/*.db-journal
+data/*.db-shm
+data/*.db-wal
+data/*.bak
+data/*.bak-*
+data/*.private*
+
+# data/files 里的演示资料需要一起提交
+data/files/*
+!data/files/.gitkeep
+!data/files/**
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.log

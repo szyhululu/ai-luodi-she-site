@@ -1,0 +1,54 @@
+PRACTICE LAB · 从材料到验收
+
+# 实操案例
+
+这里不重复讲一遍概念。每个案例都归属于一个蓝皮书模块，从一份明确材料开始，写清任务、限制、预期结果和失败后的恢复方式，让读者可以在自己的环境里完整复现。
+
+## 案例结构
+
+每个正式案例都应包含：
+
+1. 可以下载或自行准备的练习材料；
+2. 一段可以直接交给 Pi 的任务说明；
+3. 执行过程中应该看到的关键现象；
+4. 不依赖 Agent 自述的验收方法；
+5. 出错后保留现场和恢复的方法。
+
+## 案例路线图
+
+八个案例把课程中的方法落到固定材料、可复制任务、关键现象、独立验收和失败恢复。前七个案例练习单项能力，最后一个毕业项目把 14 课串进同一条真实工作流。教学代码只用于最小、非破坏性练习；涉及真实桌面通知、远程服务器或陌生插件的进阶效果，仍以实际环境验收为准。
+
+| 顺序 | 模块 | 案例 | 核心证据 |
+| --- | --- | --- | --- |
+| 01 | 模块二 | [会议记录行动清单](https://pi.xiaomovps.com/cases/meeting-notes) | 输入指纹不变，三项字段逐项对应 |
+| 02 | 模块三 | [压缩前后对照](https://pi.xiaomovps.com/cases/compaction-before-after) | 同一 Session、记忆回答与磁盘恢复分开检查 |
+| 03 | 模块四 | [把方法整理成 Skill](https://pi.xiaomovps.com/cases/first-skill) | 显式加载、生成新文件、退出后停用 |
+| 04 | 模块四 | [加载最小 Extension](https://pi.xiaomovps.com/cases/first-extension) | 命令出现、执行、重启后消失 |
+| 05 | 模块四 | [两路独立审阅](https://pi.xiaomovps.com/cases/independent-review) | 两份隔离证据由主会话统一合并 |
+| 06 | 模块五 | [从检查点恢复](https://pi.xiaomovps.com/cases/checkpoint-recovery) | 三篇材料不重不漏，进度与产物一致 |
+| 07 | 模块五 | [任务前安全审阅](https://pi.xiaomovps.com/cases/safe-review) | 未知保留为未知，危险动作没有执行 |
+| 08 | 综合 | [Pi 蓝皮书毕业项目](https://pi.xiaomovps.com/cases/graduation-project) | 需求、实施、检查点、只读审阅与人工验收闭环 |
+
+模块一暂不另设 CASE：安装、Windows 路径、登录和练习目录本身已经是逐步实操。模块三只新增一个对照实验，不增加新课。
+
+如果练习中出现启动、模型、Session、Context、Skill 或 Extension 问题，先保留现场，再按[Pi 故障排查手册](https://pi.xiaomovps.com/reference/troubleshooting)建立干净基线。排查完成后回到同一个案例继续，不要在报错时同时改任务、模型和插件。
+
+>
+> **案例与个人经验的边界**
+>
+> 小墨同学札记可以提供案例线索，但不会直接充当操作依据。涉及命令、版本、插件和权限的内容，需要重新核验后再发布。
+
+## 做完基础案例，再换一种任务
+
+这两项是可选迁移练习，不改变 CASE 01–08 的课程编号。
+
+- [从资料到可核对的草稿](https://pi.xiaomovps.com/cases/content-workflow)：从两份冲突材料中整理事实表、待确认草稿与未知项，适合内容写作者。
+- [修复一个小程序](https://pi.xiaomovps.com/cases/code-repair)：先复现两个失败测试，只修实现，再亲自验证四个测试和修改范围，适合想开始处理代码的读者。
+
+## 选学案例
+
+- [用 Pi Durable Assistant 观察断点恢复](https://pi.xiaomovps.com/cases/durable-assistant)：不填 API Key，在本机运行一个基于 Pi Durable 的个人 Agent，于长任务中途模拟崩溃，检查任务是否接着完成、有没有重复执行。适合读完 [Pi Durable 入门专篇](https://pi.xiaomovps.com/guide/pi-durable) 后动手。
+
+---
+
+> 本文转载自 [Pi Coding Agent 学习蓝皮书](https://pi.xiaomovps.com/cases/)，原项目以 MIT License 发布；依据许可要求，保留原版权声明与来源链接。

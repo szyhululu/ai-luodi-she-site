@@ -1,0 +1,97 @@
+MODULE 01 · STEP 04
+
+# 进入练习目录，确认基础设置
+
+安装和登录已经完成，现在还需要确认 Pi 会从哪里开始工作。这一步会直接影响它看到的项目内容，也决定下一课的练习文件放在哪里。
+
+>
+> **Windows 用户**
+>
+> 继续使用 Git Bash，把本课及后续课程中的 `~/Downloads/pi-practice` 换成 `~/pi-practice`。如果忘记路径对应关系，回到 [Windows 中文安装路径](https://pi.xiaomovps.com/guide/windows-setup)查看对照表。
+
+## 1. 从明确的目录启动
+
+先在 Pi 底部编辑区输入 `/quit`，按 `Return`。当你重新看到普通终端的命令提示符时，再逐行执行：
+
+```bash
+cd ~/Downloads/pi-practice
+pwd
+pi
+```
+
+第一行进入练习目录，第二行打印当前位置，第三行启动 Pi。每输入一行就按一次 `Return`，等这条命令结束再输下一行。
+
+如果你在第 1 课使用了 `pi-practice-2` 或其他名字，这里也要把 `pi-practice` 替换成自己的练习目录名。
+
+`pwd` 的结果应当以 `/Downloads/pi-practice` 结尾。Pi 打开后，再看一眼底部状态栏，确认当前工作目录没有变。
+
+如果 `cd` 提示 `No such file or directory`，表示前面的练习目录没有创建成功或名字不一致。回到 [安装前检查](https://pi.xiaomovps.com/guide/before-install)，重新建立同名目录。
+
+如果目录不对，不要发送任务。退出 Pi，回到终端重新 `cd` 到正确位置。
+
+## 2. 只检查现在需要的设置
+
+输入 `/model`，确认已经选中一个可用模型。如果需要更改，在列表中选择；希望下次继续使用时，按 `Ctrl+S` 保存为默认模型。
+
+输入 `/settings` 可以打开常用设置。这一阶段保持默认值就够了。主题、会话压缩和其他选项会在真正遇到需求时再讲。
+
+Pi 1.1.0 默认全屏显示；`Home`／`End` 移动输入框光标，全屏记录的首尾改用 `Ctrl+Home`／`Ctrl+End`。若启动时只看到版本和按键提示，可能设置了 `quietStartup: "header"`；它会隐藏模型范围与资源列表，不代表资源加载失败。需要核对资源时，可用 `pi --verbose` 启动。
+
+如果不小心打开了不认识的设置页，按 `Esc` 返回。本课不要跟着别人的截图修改大量选项，不同版本和终端的显示可能不同。
+
+## 3. 正确理解项目信任
+
+全新空目录通常不会出现项目信任提示。当目录里存在项目级 `.pi` 配置、Extension、Skill 或其他项目资源时，Pi 才可能询问是否信任。
+
+只信任你自己创建或已经检查的项目。对来源不明的仓库，先拒绝加载项目资源，再检查 `.pi/` 和 `.agents/skills/`。
+
+出现信任提示时，用这张最小决策卡：
+
+- 自己刚建的空练习目录：先确认路径和内容；没有项目资源通常不会提示。
+- 从别人那里下载的项目：先拒绝或退出，在普通终端只查看 `.pi/`、`.agents/skills/` 中有哪些文件，再阅读内容。
+- 不知道文件来源、看不懂 Extension 或安装脚本：本课不信任，也不继续运行。
+- 已经逐项检查并决定信任：确认的是“允许加载项目资源”，不是获得了安全隔离。
+
+>
+> **Project Trust 不是沙箱**
+>
+> 拒绝项目资源，不会把 Pi 限制在当前目录。内置的读取、写入、编辑和命令工具仍以当前用户权限运行。需要真正隔离时，应使用容器、虚拟机或策略沙箱。
+>
+> 还有一个容易漏掉的例外：官方当前说明，`AGENTS.override.md`、`AGENTS.md` 和 `CLAUDE.md` 这类上下文文件默认会加载，不受 Project Trust 拒绝决定保护，除非显式关闭上下文文件加载。面对陌生仓库时仍需先查看这些文件，不能只检查 `.pi/`。
+
+## 4. 做最终检查
+
+在进入第一个文件任务前，逐项确认：
+
+- [ ] 我能打开终端，用 `pwd` 看到当前位置。
+- [ ] `node --version`、`npm --version` 和 `pi --version` 都返回版本号。
+- [ ] 我只在第 1 课新建的空白练习目录运行 Pi。
+- [ ] 底部状态栏显示正确的工作目录和模型。
+- [ ] 我已经收到一次无工具调用的模型回复。
+- [ ] 我知道用 `Esc` 中止生成，用 `/quit` 退出 Pi。
+
+能做到这些，就已经具备了第一次任务的前置条件。
+
+验收完成后可以停留在 Pi 编辑区，下一课直接从这里开始；也可以用 `/quit` 回到普通终端。无论选择哪种状态，下一课提交任务前都要重新确认 `pwd` 或状态栏仍指向同一个练习目录。
+
+>
+> **如果有一项没通过**
+>
+> 停在当前课，只解决这一项。保留完整错误文字、你执行的命令和 `pwd` 结果。不要同时重装 Node.js、Pi 和终端，否则会很难判断究竟哪一步起了作用。
+
+[下一课，整理会议记录并独立验收 →](https://pi.xiaomovps.com/guide/first-task)
+
+需要先了解怎样升级、换账号或卸载时，查看 [安装后生命周期管理](https://pi.xiaomovps.com/guide/lifecycle-management)。
+
+### 本模块依据
+
+- [Pi Quickstart](https://pi.dev/docs/latest/quickstart)
+- [Pi 使用说明](https://pi.dev/docs/latest/usage)
+- [Pi 设置说明](https://pi.dev/docs/latest/settings)
+- [Pi 安全说明](https://pi.dev/docs/latest/security)
+
+2026-10-12 在独立练习目录实测 Pi 1.1.0 的全屏启动、`/model`、`/settings`、`Esc` 返回、`/quit`、再次启动与无工具连通测试；另在独立配置中确认 `Home`／`End` 能编辑输入首尾、`quietStartup: true` 隐藏版本、`"header"` 保留版本。记录首尾快捷键与项目信任边界仅对照[固定版本按键说明](https://github.com/earendil-works/pi/blob/v1.1.0/packages/coding-agent/docs/keybindings.md)和[安全说明](https://github.com/earendil-works/pi/blob/v1.1.0/packages/coding-agent/docs/security.md)核对，未重新做全部信任场景测试。
+
+---
+
+> 本文转载自 [Pi Coding Agent 学习蓝皮书](https://pi.xiaomovps.com/guide/ready-to-work)，原项目以 MIT License 发布；依据许可要求，保留原版权声明与来源链接。

@@ -1,0 +1,3166 @@
+[
+ {
+  "slug": "mattpocock-skills",
+  "rank": 1,
+  "title": "小而可改的工程 skill 集",
+  "desc": "Matt Pocock 每天在用的 agent skill 集：拷问需求到没有歧义、把对话转成规格与工单、红绿重构施工、按固定循环查疑难 bug。刻意做小做散，让你能改，而不是接管流程。",
+  "author": "Matt Pocock",
+  "starsText": "20.5万 Star",
+  "stars": 205181,
+  "coverPath": "/images/skills/mattpocock-skills.webp",
+  "repos": [
+   "https://github.com/mattpocock/skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "/grill-me 我要做这个改动，问到设计树每个分支都有答案为止，先别写代码。",
+   "把刚才这段讨论转成规格，再拆成带阻塞关系的工单。",
+   "这个 bug 走 diagnosing-bugs 的流程：先建一个会因为它变红的反馈循环，再最小化。"
+  ],
+  "version": "1.2.2",
+  "cats": [
+   "工程开发",
+   "产品与项目"
+  ],
+  "tags": [
+   "开发",
+   "自动化",
+   "项目管理"
+  ],
+  "detail": "它们按谁能调用分两类：斜杠命令（如 /grill-me）负责编排，agent 自己能取用的那些装可复用纪律。作者点名治四种翻车：你以为它懂了其实没懂——先拷问到设计树每个分支都有答案；它二十个词说一个词的事——把项目黑话沉淀进 CONTEXT.md 当共享语言；代码跑不通——红绿重构先写失败测试；一团泥球——agent 写得快熵涨得也快，架构巡检隔几天跑一次。作者也说明巡检只是普查不是抢救，给候选不替你解开。"
+ },
+ {
+  "slug": "andrej-karpathy-skills",
+  "rank": 2,
+  "title": "写给编码代理的 Karpathy 四原则",
+  "desc": "一份 65 行的 CLAUDE.md，把 Karpathy 点名的四类编码代理毛病写成可检查的约束：不替你猜、不过度设计、不顺手改无关代码、动手前先定验收标准。",
+  "author": "multica-ai",
+  "starsText": "20万 Star",
+  "stars": 199973,
+  "coverPath": "/images/skills/andrej-karpathy-skills.webp",
+  "repos": [
+   "https://github.com/multica-ai/andrej-karpathy-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "创业者",
+   "职场人士"
+  ],
+  "usages": [
+   "先别写代码：把你对这个需求的假设逐条列出来，如果有两种读法就都摆出来让我选。",
+   "这个 bug 先写一个能复现它的测试，再改到测试通过；除必须改的行以外不要碰其他代码。",
+   "按简洁优先重审这段实现：有没有为单次使用造的抽象、没人要求的可配置项、给不可能发生的分支写的错误处理？"
+  ],
+  "version": "1.0.0",
+  "cats": [
+   "工程开发",
+   "产品与项目"
+  ],
+  "tags": [
+   "开发",
+   "知识管理"
+  ],
+  "detail": "四条准则每条都配了一句能当场判定的检验。动手前先把假设说出来，需求有两种读法就都摆上桌，不许默默挑一条。砍抽象靠一问——资深工程师会说这过度设计吗；卡住顺手重构靠另一问——每一行改动能不能追溯到我的要求。祈使句则要改写成可验证的目标：「加个校验」变成「先写非法输入的测试，再让它通过」。权衡作者也写在明处：偏保守而非快，琐碎改动不必上全套。"
+ },
+ {
+  "slug": "gstack",
+  "rank": 3,
+  "title": "gstack：把 AI 编程变成一条完整交付流水线",
+  "desc": "Garry Tan 的开源 AI 工程工作流：把产品推演、工程与设计评审、实现、代码审查、真实浏览器 QA、安全审计、发布和复盘拆成能前后接力的专业技能。支持 Claude Code、Codex 等多种代理。",
+  "author": "Garry Tan",
+  "starsText": "12.7万 Star",
+  "stars": 127274,
+  "coverPath": "/images/skills/gstack.webp",
+  "repos": [
+   "https://github.com/garrytan/gstack"
+  ],
+  "date": "2026-08-10",
+  "bestFor": [
+   "创业者",
+   "开发者",
+   "职场人士"
+  ],
+  "usages": [
+   "加载 gstack，先用 office-hours 追问并重构这个产品想法，先写设计文档，不要实现。",
+   "加载 gstack，用 autoplan 依次做 CEO、设计、工程和开发者体验评审，把隐藏假设和测试计划写清楚。",
+   "加载 gstack，先 review 当前分支，再对这个预发布地址做 qa；修复后复验，但不要发布。"
+  ],
+  "version": "1.2.0",
+  "cats": [
+   "工程开发",
+   "产品与项目"
+  ],
+  "tags": [
+   "开发",
+   "项目管理",
+   "自动化"
+  ],
+  "detail": "它把 Think → Plan → Build → Review → Test → Ship → Reflect 当作一条 sprint，而不是让代理从一句模糊需求直接冲到写代码。office-hours 先重构问题，plan 系列锁产品、架构、设计和开发者体验，review 与 investigate 查代码和根因，qa 用真实浏览器验收，cso 做安全审计，ship 与 land-and-deploy 处理交付，retro 把经验带回下一轮；上一步的设计文档、测试计划和审查结果会成为下一步输入。安装脚本会适配 Claude Code、Codex、Cursor、OpenCode 等 host；使用遥测默认关闭，只有主动选择才会发送有限的匿名运行数据，不上传代码、路径、仓库名或提示词。"
+ },
+ {
+  "slug": "ui",
+  "rank": 4,
+  "title": "shadcn/ui：把组件源码搬进你的项目",
+  "desc": "不是装一个 npm 依赖，而是把组件源码拷进你的仓库，从此这段代码归你改。官方说法是「拿它搭出你自己的组件库」——起点是别人的，终点是你的。",
+  "author": "shadcn-ui",
+  "starsText": "12.1万 Star",
+  "stars": 120601,
+  "coverPath": "/images/skills/ui.webp",
+  "repos": [
+   "https://github.com/shadcn-ui/ui"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "设计师",
+   "职场人士"
+  ],
+  "usages": [
+   "按 shadcn/ui 的方式把这个组件加进来，我要的是能改的源码，不是一个依赖。",
+   "这个组件的交互要改，直接改仓库里的源码，别再包一层。",
+   "照 ui.shadcn.com 的文档，把这套组件的主题变量接到我们现有的设计令牌上。"
+  ],
+  "version": "0.3.0",
+  "cats": [
+   "工程开发"
+  ],
+  "tags": [
+   "开发"
+  ],
+  "detail": "README 只有三句话，态度倒很清楚：开源、开放源码、用它搭你自己的组件库。它的分发方式不是版本依赖而是源码拷贝——组件进了你的仓库就是你的文件，改样式改行为都不再受上游版本约束；代价在另一头，上游的改进不会自动流下来，要不要跟、怎么合都是你自己的决定。文档在 ui.shadcn.com，MIT 协议。"
+ },
+ {
+  "slug": "ui-ux-pro-max-skill",
+  "rank": 5,
+  "title": "UI UX Pro Max：按需求生成整套设计系统",
+  "desc": "给它项目背景，它按内置的推理规则挑出页面结构、UI 风格、配色、字体搭配和关键效果，直接给一份成型的设计系统，而不是让你从空白页开始配色。",
+  "author": "nextlevelbuilder",
+  "starsText": "11.4万 Star",
+  "stars": 113879,
+  "coverPath": "/images/skills/ui-ux-pro-max-skill.webp",
+  "repos": [
+   "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "设计师",
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "这是一个高端瑜伽馆的落地页项目，按它生成一套设计系统，包含配色、字体配对和页面结构。",
+   "给这个 SaaS 后台挑一种 UI 风格，要求无障碍到 WCAG AA，并说明它适合什么行业。",
+   "把生成的配色和字体方案转成 Tailwind 的主题变量。"
+  ],
+  "version": "2.13.0",
+  "cats": [
+   "设计与视频",
+   "产品与项目"
+  ],
+  "tags": [
+   "图像与设计",
+   "项目管理"
+  ],
+  "detail": "输出是一份能照着做的方案：页面按哪几段排、CTA 放在哪、选哪种风格、它适合什么行业、主色辅色和 CTA 色给到十六进制、字体配对连 Google Fonts 链接一起给，还标了无障碍到 WCAG AA。底子是一个可搜索的库——UI 风格、配色、字体配对、落地页结构都分类存着，推理引擎从里面挑而不是现编。装法是 npm 上的 uipro 命令行，Claude Code、Cursor、Windsurf 等都能接。"
+ },
+ {
+  "slug": "caveman",
+  "rank": 6,
+  "title": "压缩输出：65% 是散文场景，不是全局",
+  "desc": "六档强度，含三档文言文压缩。作者在专门的文档里写清了：65% 只是十条聊天式提示的平均值，真实编码场景由第三方跑八十六个任务测出来是 8.5%。",
+  "author": "Julius Brussee",
+  "starsText": "9.6万 Star",
+  "stars": 96173,
+  "coverPath": "/images/skills/caveman.webp",
+  "repos": [
+   "https://github.com/JuliusBrussee/caveman"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "切到 lite 档，我这轮回答不长。",
+   "这段用文言压一下，别丢掉数字和否定词。",
+   "把我的 CLAUDE.md 压一遍，看看能省多少输入。"
+  ],
+  "version": "1.10.0",
+  "cats": [
+   "工程开发"
+  ],
+  "tags": [
+   "开发",
+   "自动化",
+   "项目管理"
+  ],
+  "detail": "更该看的是它什么时候是净亏：技能本身每轮增加约一千到一千五百输入 token，如果省下的输出少于这个数，你就是在花钱用它。作者点名列了净亏场景：简短编码问答、按请求计费的场景、以及一次 token 反而翻倍的用户报告——他没能复现但如实收录，结论是「想让石头有用不等于石头有用」。规则里有反直觉的一条：禁止自造缩写，因为分词切法与全词相同。"
+ },
+ {
+  "slug": "taste-skill",
+  "rank": 7,
+  "title": "Taste Skill v2：从艺术方向到浏览器验收",
+  "desc": "给 AI 编程助手的网页设计技能组，涵盖艺术方向、参考图生成与浏览器验收，适合落地页、品牌官网和作品集。",
+  "author": "Leonxlnx",
+  "starsText": "9.6万 Star",
+  "stars": 95691,
+  "coverPath": "/images/skills/taste-skill.webp",
+  "repos": [
+   "https://github.com/Leonxlnx/taste-skill"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "设计师",
+   "开发者"
+  ],
+  "usages": [
+   "用 Taste Skill v2 为这个品牌做官网，结合现有素材选择艺术方向，说明为什么适合。",
+   "用 image-to-code 先生成并分析产品的网页参考图，再按选定方向实现落地页。",
+   "在桌面、平板和手机宽度下检查页面，对照截图修正最影响观感的三处问题，并列出图片来源。"
+  ],
+  "version": "2.0.0",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "图像与设计",
+   "开发"
+  ],
+  "detail": "v2 从 247 个精选网站提炼出 20 种设计方向，每次给出 3 个候选，结合项目素材确定构思、版式、字体和配色。自有图片优先，也能从开放图库查图并署名。在桌面、平板、手机三种宽度下检查页面，再看截图修正，最多三轮。默认面向公开网页；后台界面可选配套的极简或柔和风格技能。需 Node 22+ 及 Chrome、Edge 或 Chromium，查图需联网；官方估计单次约 30–45 分钟、数十万 token。"
+ },
+ {
+  "slug": "manimgl",
+  "rank": 8,
+  "title": "ManimGL：用 Python 写出精确的数学动画",
+  "desc": "3Blue1Brown 作者 Grant Sanderson 持续维护的程序化动画引擎：用 Python 场景精确控制公式、几何对象、坐标系与变换，边写边预览，再渲染成图片或视频。",
+  "author": "Grant Sanderson",
+  "starsText": "9.3万 Star",
+  "stars": 92929,
+  "coverPath": "/images/skills/manimgl.webp",
+  "repos": [
+   "https://github.com/3b1b/manim"
+  ],
+  "date": "2026-09-03",
+  "bestFor": [
+   "内容创作者",
+   "开发者",
+   "教育工作者",
+   "学生与研究者"
+  ],
+  "usages": [
+   "用 ManimGL 把矩阵剪切讲成 30 秒动画：先列分镜，再生成可运行的 Scene，低清预览确认后再导出视频。",
+   "把这四步等式推导做成 TransformMatchingStrings 动画，让相同符号连续移动，不要每一步都整屏淡入淡出。",
+   "检查这段 ManimGL 场景的构图、节奏和公式对应关系，修完后先保存关键帧，再渲染最终视频。"
+  ],
+  "version": "1.7.2",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "视频",
+   "开发",
+   "教学与研究"
+  ],
+  "detail": "这条收录指向原作者维护的 ManimGL，而不是 2020 年分出的 Manim Community。你在 Scene 的 construct() 方法里创建文字、LaTeX 公式、图形、坐标平面等 Mobject，再用 self.play、animate、ReplacementTransform 或 TransformMatchingStrings 编排出现、移动、形变与公式推导；OpenGL 预览窗口支持平移、缩放和三维视角，self.embed() 还能进入 IPython 交互模式即时试动作。命令行可以只看预览、跳到某一段、保存最终帧，或写出并打开视频。直接安装的包名是 manimgl，不是 manim 或 manimlib；当前版本要求 Python 3.10 以上，并依赖 FFmpeg 与 OpenGL，公式排版需要可选的 LaTeX，Linux 还需要 Pango。仓库自身是一套动画引擎，并不包含标准 SKILL.md，但能读写 Python、执行命令和查看渲染结果的 Agent 可以把它作为数学讲解视频的生产后端。项目采用 MIT 许可。"
+ },
+ {
+  "slug": "open-design",
+  "rank": 9,
+  "title": "Open Design：本地跑的开源设计引擎",
+  "desc": "把 Claude Design 那套「问清需求→定方向→生成→评审→交付」搬成本地文件：技能、模板、设计系统和插件都在你机器上，本地的 coding agent 直接读写。",
+  "author": "nexu-io",
+  "starsText": "8.4万 Star",
+  "stars": 83994,
+  "coverPath": "/images/skills/open-design.webp",
+  "repos": [
+   "https://github.com/nexu-io/open-design"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "设计师",
+   "开发者",
+   "内容创作者"
+  ],
+  "usages": [
+   "按我们团队的 DESIGN.md 出一版落地页原型，导出成 HTML。",
+   "把这份季度汇报做成演示稿，用现有设计系统的配色，最后导出 PPTX。",
+   "给这个功能做一段 HyperFrames 动效，导出 MP4。"
+  ],
+  "version": "0.18.0",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "图像与设计",
+   "幻灯片",
+   "视频"
+  ],
+  "detail": "产出不是画布上的像素，是真 CSS、真字体、真组件的单页产物：原型、看板、演示稿、图片、视频，导出走 HTML/PDF/PPTX/MP4。团队的 DESIGN.md 是品牌合同，约束每一份输出。桌面端本地优先，原生支持 macOS 与 Windows，接得上 Claude Code、Codex、Cursor 等二十多种本地 CLI，也能 BYOK 接 OpenAI 兼容端点。Apache 2.0，另有付费模型服务。"
+ },
+ {
+  "slug": "agent-skills",
+  "rank": 10,
+  "title": "从 /spec 到 /ship 的 24 个 skill",
+  "desc": "八条斜杠命令对着开发生命周期一路排下去：定规格、拆计划、逐片施工、跑测试、评审、审性能、简化、上线。写 API 时自动激活接口设计那条，写界面时自动激活前端那条。",
+  "author": "Addy Osmani",
+  "starsText": "8.2万 Star",
+  "stars": 82046,
+  "coverPath": "/images/skills/agent-skills.webp",
+  "repos": [
+   "https://github.com/addyosmani/agent-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者"
+  ],
+  "usages": [
+   "/spec 先把这个功能要做成什么样定下来，别写代码。",
+   "/build auto 按刚批准的计划一路做完，每个任务单独提交，失败就停下来找我。",
+   "/webperf 审一遍这个页面的性能，先测量再谈要不要优化。"
+  ],
+  "version": "0.6.6",
+  "cats": [
+   "工程开发"
+  ],
+  "tags": [
+   "开发",
+   "项目管理",
+   "自动化"
+  ],
+  "detail": "值得单说 /build auto：批准一次计划，它把每个任务连着做完，中间不再等你点头。作者写明它省掉的是任务之间那个人，不是验证：每个任务照样测试驱动、单独提交，遇到失败或高风险步骤会停。装法是 npx skills add，能装进七十多种 agent。有个坑作者自己挂在 README 上：只装单条 skill 时根目录的 references/ 不会跟着复制，共享清单会缺，记在 issue #361。"
+ },
+ {
+  "slug": "understand-anything",
+  "rank": 11,
+  "title": "Understand Anything：把代码库读成图",
+  "desc": "多智能体流水线扫一遍项目，把每个文件、函数、类和依赖建成知识图谱，再给你一个能点、能搜、能问的仪表盘。也能读知识库和文档。",
+  "author": "Egonex-AI",
+  "starsText": "7.8万 Star",
+  "stars": 77682,
+  "coverPath": "/images/skills/understand-anything.webp",
+  "repos": [
+   "https://github.com/Egonex-AI/Understand-Anything"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者"
+  ],
+  "usages": [
+   "对这个仓库跑一次 /understand，建完图后告诉我核心模块之间是怎么依赖的。",
+   "切到业务视图，把这套代码对应的业务流程和关键步骤讲一遍。",
+   "这个函数被谁调用、又依赖了什么？在图上给我一条导览路径。"
+  ],
+  "version": "2.9.4",
+  "cats": [
+   "工程开发"
+  ],
+  "tags": [
+   "开发",
+   "知识管理"
+  ],
+  "detail": "除了结构图还有一层业务视图：代码怎么对应到真实业务流程，域、流程、步骤横向排开。指向 Karpathy 那种 LLM wiki 时，它先用确定性解析器抽出 wikilink 和分类，再让 LLM 找隐含关系、抽实体、提炼主张，把 wiki 变成能走的图。仪表盘完全跑在本地只读磁盘，不发 LLM 请求、数据不出机器。首次全量分析很吃 token，作者建议在包月套餐或本地模型上做初始化；之后默认增量，只重算改动的文件。"
+ },
+ {
+  "slug": "career-ops",
+  "rank": 12,
+  "title": "career-ops：投之前先筛掉不值得投的",
+  "desc": "给一个职位链接，它按五个加权维度打一到五分，另有一项单独评估这岗位是不是真在招人，用来识别骗招和幽灵岗。定位是过滤器：低于四分它建议你别投。",
+  "author": "santifer",
+  "starsText": "6.3万 Star",
+  "stars": 62959,
+  "coverPath": "/images/skills/career-ops.webp",
+  "repos": [
+   "https://github.com/santifer/career-ops"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "所有人"
+  ],
+  "usages": [
+   "把这个职位链接评一下：五个维度分别打分，并单独告诉我它像不像幽灵岗。",
+   "按这份 JD 定制我的简历，输出 ATS 友好的 PDF，不要替我投出去。",
+   "批量评估这十个岗位，只把四分以上的留给我看。"
+  ],
+  "version": "1.25.0",
+  "cats": [
+   "产品与项目",
+   "写作与研究"
+  ],
+  "tags": [
+   "写作",
+   "自动化",
+   "项目管理"
+  ],
+  "detail": "打分不看关键词，是拿你的经历和 JD 对着推理，所以头几次不会准，作者写明了这点：先把简历、职业故事、擅长什么、想避开什么喂进去，像带一个新招的猎头，第一周学你，之后才顶用。评完给 ATS 友好的定制简历、求职信和求职邮件草稿，但它从不替你投递、不替你发信，点下去那一下永远是你的。另有面试故事库、谈薪话术和合同条款陪读。作者本人用它评了七百多个岗位，最后拿到一个 Head of Applied AI。"
+ },
+ {
+  "slug": "last30days",
+  "rank": 13,
+  "title": "last30days：搜人，不搜编辑",
+  "desc": "一个话题、一家公司或一个人，它并行搜二十来个平台最近三十天的真实讨论，按点赞、投票和真金白银的赔率排序，最后由一个 agent 裁判合成一份简报。",
+  "author": "mvanhorn",
+  "starsText": "5.7万 Star",
+  "stars": 57386,
+  "coverPath": "/images/skills/last30days.webp",
+  "repos": [
+   "https://github.com/mvanhorn/last30days-skill"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "所有人"
+  ],
+  "usages": [
+   "/last30days 查一下这家公司最近三十天的真实讨论，给我一份带引用的简报。",
+   "这个技术方案最近一个月社区里踩了哪些坑？重点看 Reddit 和 HN 的高赞评论。",
+   "明天要见这个人，把他最近的帖子、播客和提交记录合成一页给我。"
+  ],
+  "version": "3.18.4",
+  "cats": [
+   "内容与知识"
+  ],
+  "tags": [
+   "知识管理",
+   "数据分析"
+  ],
+  "detail": "每个平台都是带自己 API、令牌和登录态的围墙花园，没有哪个 AI 能一次搜全：Google 碰不到 Reddit 评论和 X 帖子。破法是你自己带钥匙和会话，让 agent 一次全搜。Reddit、HN、Polymarket、GitHub 开箱即用；X、YouTube、TikTok 等跑一次向导解锁；小红书要本地跑一个登录态服务、再显式加参数才会搜。"
+ },
+ {
+  "slug": "impeccable",
+  "rank": 14,
+  "title": "Impeccable：59 条不用 LLM 的设计检测",
+  "desc": "一条 skill 加一个 CLI 和浏览器扩展，23 条命令共用一个入口。那 59 条检测规则是确定性的，跑起来不需要 LLM，也不需要 API key。",
+  "author": "Paul Bakaus",
+  "starsText": "5.6万 Star",
+  "stars": 55876,
+  "coverPath": "/images/skills/impeccable.webp",
+  "repos": [
+   "https://github.com/pbakaus/impeccable"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "设计师",
+   "职场人士"
+  ],
+  "usages": [
+   "先跑 impeccable init，这是产品界面不是落地页，把 DESIGN.md 建起来。",
+   "对这个页面跑一次检测，把确定性规则的命中逐条列出来。",
+   "这个界面太像 AI 生成的，收一遍渐变、缓动和辉光。"
+  ],
+  "version": "4.0.4",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "开发",
+   "自动化"
+  ],
+  "detail": "检测分两类：一类抓 AI 味——侧边 tab 边框、紫蓝渐变、bounce 缓动；一类抓通用质量——行长、内边距过挤、触点过小、标题跳级。确定性规则与需 LLM 的批评检查分得很清，性能和可访问性走后者，不在免 API key 的 59 条里。先跑 init：它问这界面是品牌页还是产品页，再写 PRODUCT.md 和 DESIGN.md。作者写明起点是 Anthropic 的 frontend-design。"
+ },
+ {
+  "slug": "remotion",
+  "rank": 15,
+  "title": "Remotion：用 React 写视频",
+  "desc": "视频框架本身用 React 描述画面，配套另有 12 条 skill 教 agent 怎么用它——skill 要单独装，不是框架自带。",
+  "author": "Remotion",
+  "starsText": "5.6万 Star",
+  "stars": 55611,
+  "coverPath": "/images/skills/remotion.webp",
+  "repos": [
+   "https://github.com/remotion-dev/remotion"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "开发者"
+  ],
+  "usages": [
+   "用 Remotion 做一段十秒的数据可视化视频，先读 best-practices 那条。",
+   "把这段路线做成地图动画，从洛杉矶到纽约。",
+   "给这个视频加字幕，再用 Lambda 批量渲染多语言版本。"
+  ],
+  "version": "4.0.506",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "视频",
+   "开发"
+  ],
+  "detail": "12 条各管一段：建项目、写标记、用 Studio、渲染、地图动画、字幕、交互、多媒体、升级，拿不准用哪条就先读那条伞形的 best-practices。文档那条能实时把官方文档抓成 markdown。渲染出口有 Node API、Lambda、Vercel 和客户端。许可要先看清楚：个人、三人以内的营利组织、非营利和评估期免费商用，超过这个规模的公司必须买 Company License，5.0 版许可还会变。"
+ },
+ {
+  "slug": "ppt-master",
+  "rank": 16,
+  "title": "PPT Master：把材料做成真正原生的 PowerPoint",
+  "desc": "给它 PDF、DOCX、网页、现成 PPTX 或一个主题，它先理清叙事，再生成可继续编辑的原生 PPTX；不是把整页图片塞进幻灯片，也不只是在模板里换字。",
+  "author": "Hugo He",
+  "starsText": "5万 Star",
+  "stars": 49935,
+  "coverPath": "/images/skills/ppt-master.webp",
+  "repos": [
+   "https://github.com/hugohe3/ppt-master"
+  ],
+  "date": "2026-08-28",
+  "bestFor": [
+   "职场人士",
+   "内容创作者",
+   "创业者",
+   "教育工作者"
+  ],
+  "usages": [
+   "把这份季度报告 PDF 做成 10 页中文汇报，先确认叙事和视觉方向，图表保留可编辑数据。",
+   "从这套品牌手册和参考 PPT 提炼可复用的 Deck 模板，再用它生成新品发布稿。",
+   "保留这个现成 PPTX 的页面内容和顺序，只补讲者备注、自动换页和旁白。"
+  ],
+  "version": "5.0.0",
+  "cats": [
+   "文档与幻灯片",
+   "设计与视频"
+  ],
+  "tags": [
+   "幻灯片",
+   "图像与设计",
+   "自动化",
+   "视频"
+  ],
+  "detail": "核心是先做逻辑、再做视觉、最后编译成 PowerPoint 原生对象。普通生成会从材料、叙事模式和信息层级出发，手写 SVG 页面，再转成可编辑 DrawingML；需要时可输出原生形状与连接线、可回到数据工作簿的图表和表格、公式、转场、动画、讲者备注、旁白乃至视频。它还把工作分成四条明确路线：从主题或资料生成新 PPTX；从参考材料提炼可复用的 Brand、Style、Layout 或 Deck 工作区；填充现有 PPTX 的原生页面壳；在不改变可见页面的前提下添加备注、音频、计时或转场。真正的母版和布局只在模板或结构化路线里生成，SmartArt、嵌入视频、宏等不在支持范围。它是本地运行的开源工作流，需要 Python 和一个能读写文件、执行命令的 AI Agent；效果上限由模型与迭代决定，不承诺一键完美成稿。"
+ },
+ {
+  "slug": "obsidian-skills",
+  "rank": 17,
+  "title": "Obsidian 的原生文件格式怎么写",
+  "desc": "五条技能让 agent 直接写 Obsidian 原生格式：Markdown 的 wikilink、Bases 的视图与公式、JSON Canvas 的白板节点，外加官方 CLI。",
+  "author": "Steph Ango",
+  "starsText": "4.4万 Star",
+  "stars": 44184,
+  "coverPath": "/images/skills/obsidian-skills.webp",
+  "repos": [
+   "https://github.com/kepano/obsidian-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "职场人士",
+   "学生与研究者"
+  ],
+  "usages": [
+   "把这些笔记整理成一个 Obsidian canvas，按主题分组并连好线。",
+   "给这个 vault 建一个 base 视图，按标签筛选并加一列公式统计。",
+   "用 defuddle 把这几个网页抽成干净 markdown 再存进 vault。"
+  ],
+  "version": "1.0.1",
+  "cats": [
+   "内容与知识",
+   "写作与研究"
+  ],
+  "tags": [
+   "写作",
+   "知识管理",
+   "自动化"
+  ],
+  "detail": "JSON Canvas 是无限画布的开放格式，管白板上的节点、边和分组，不是笔记之间的关系图谱。Bases 是 Obsidian 1.9 起内置的数据库功能，不是第三方的 Dataview。CLI 那条还覆盖插件与主题开发。defuddle 把网页抽成干净 markdown，作者写明目的是省 token。OpenCode 用户注意：要整仓库 clone，只拷内层目录装不上，装完还要重启。"
+ },
+ {
+  "slug": "marketingskills",
+  "rank": 18,
+  "title": "49 条营销技能，共用一个产品底座",
+  "desc": "转化优化、内容文案、SEO 与发现、付费分发、留存、增长工程、销售运营各成一类。关键在底座：其余每条动手前都先读 product-marketing 那条，了解产品、受众和定位。",
+  "author": "Corey Haines",
+  "starsText": "4.3万 Star",
+  "stars": 43160,
+  "coverPath": "/images/skills/marketingskills.webp",
+  "repos": [
+   "https://github.com/coreyhaines31/marketingskills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "创业者",
+   "职场人士"
+  ],
+  "usages": [
+   "先把 product-marketing 那条填好：我们的产品、受众和定位。",
+   "按 cro 那条审一遍这个落地页，给出可实验的改动清单。",
+   "只装 SEO 和文案相关的那几条，其余不要。"
+  ],
+  "version": "2.10.0",
+  "cats": [
+   "营销增长"
+  ],
+  "tags": [
+   "写作",
+   "发布分发",
+   "数据分析"
+  ],
+  "detail": "所以它不是四十几个互不相干的提示词，而是一棵以产品定位为根的树。可以选装：`--skill cro copywriting` 只拿你要的两条。有个升级坑作者写在明处：v2.0 重命名了 17 条技能，还把 page-cro 和 form-cro 并成了 cro，从 v1.x 升上来会留下一堆同名并存的旧目录，README 附了删除命令。上下文文件也从 .claude/ 迁到了 .agents/，旧路径仍然兜底。"
+ },
+ {
+  "slug": "academic-research-skills",
+  "rank": 19,
+  "title": "学术流水线：两道诚信门卡着",
+  "desc": "四条技能串成十阶段流水线：检索、写作、评审、修订、定稿。写完和定稿前各有一道诚信门，跑一份七模式的阻断式清单，不过就不出稿。",
+  "author": "Cheng-I Wu（吳政宜）",
+  "starsText": "4.1万 Star",
+  "stars": 41057,
+  "coverPath": "/images/skills/academic-research-skills.webp",
+  "repos": [
+   "https://github.com/Imbad0202/academic-research-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "学生与研究者",
+   "教育工作者"
+  ],
+  "usages": [
+   "按这条流水线走一遍：先检索文献，写完停在诚信门等我看。",
+   "核一遍这篇稿子里的所有引用，哪些论断其实没被原文支持？",
+   "用评审那条给这篇打分，说明它落在哪一档、该小修还是大修。"
+  ],
+  "version": "3.19.0",
+  "cats": [
+   "写作与研究"
+  ],
+  "tags": [
+   "写作",
+   "教学与研究",
+   "知识管理"
+  ],
+  "detail": "引用核查同时打 Semantic Scholar、OpenAlex、Crossref 做三角验证，每条引用带引文、页码、章节三层锚点，审计代理按锚点抓回原文判断论断是否真被支持。评审 0-100 分：80 以上接受、65–79 小修、50–64 大修、50 以下拒稿。作者立场很硬：AI 是副驾不是主驾，选题、方法和数据解释仍归人，也明说不帮你掩盖用过 AI。跑一篇约 4–6 美元。许可 CC BY-NC，禁商用。"
+ },
+ {
+  "slug": "agent-browser",
+  "rank": 20,
+  "title": "给 agent 用的浏览器 CLI",
+  "desc": "Rust 写的原生 CLI，daemon 常驻并经 CDP 驱动 Chrome。主体是确定性命令，不是自然语言操控——那只存在于一个子命令里，还得先配好网关密钥。",
+  "author": "vercel-labs",
+  "starsText": "4万 Star",
+  "stars": 40020,
+  "coverPath": "/images/skills/agent-browser.webp",
+  "repos": [
+   "https://github.com/vercel-labs/agent-browser"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "内容创作者"
+  ],
+  "usages": [
+   "打开这个页面做一次快照，把可点的元素连引用一起列给我。",
+   "用 batch 一次跑完这几步：登录、进设置页、导出 CSV。",
+   "只允许访问这个站点自己的域名，其余全拦掉，然后抓一遍性能指标。"
+  ],
+  "version": "0.33.2",
+  "cats": [
+   "工程开发",
+   "产品与项目"
+  ],
+  "tags": [
+   "自动化",
+   "开发",
+   "数据分析"
+  ],
+  "detail": "快照输出的是可访问性树，元素带确定性引用，agent 拿到引用直接点，不必反复查 DOM。默认操作超时 25 秒，作者写明是故意压在 CLI 那道 30 秒 IPC 超时之下，好让 daemon 返回正经错误。凭据保险库始终本地加密，模型看不到密码；域名白名单会连带拦住子资源、WebSocket 和 sendBeacon。还能当 MCP server 跑。坑写在明处：点击被同意横幅遮住会直接失败，要先处理遮挡再快照。"
+ },
+ {
+  "slug": "hyperframes",
+  "rank": 21,
+  "title": "HyperFrames：写 HTML，渲染出 MP4",
+  "desc": "把 HTML、CSS、媒体和可跳转的动画渲染成确定性的 MP4。确定性是关键：同样的输入永远出同样的帧，所以能定位、能预览、能重来。",
+  "author": "heygen-com",
+  "starsText": "4万 Star",
+  "stars": 39639,
+  "coverPath": "/images/skills/hyperframes.webp",
+  "repos": [
+   "https://github.com/heygen-com/hyperframes"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "开发者",
+   "职场人士"
+  ],
+  "usages": [
+   "用 /hyperframes 做一段十秒的产品开场：标题淡入、背景视频、配一段轻音乐。",
+   "把这份数据做成一段动态图表视频，动画要可跳转，最后渲染成 MP4。",
+   "这段动效渲染出来和预览不一致，帮我查是哪一帧的时间轴没对上。"
+  ],
+  "version": "0.7.94",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "视频",
+   "自动化",
+   "开发"
+  ],
+  "detail": "它教给 agent 的是一整条制作流程：先定片子结构，再写合法的 HTML，把动画挂成可跳转的时间轴，配上素材，跑 lint，预览，最后渲染。十九个 skill 按需加载，先读 /hyperframes——它是路由和能力地图，任何「给我做个视频」的请求都由它分派。装的时候要带 --full-depth：不带的话取的是注册表快照，比主干晚几个小时，你会拿到旧版本。Apache 2.0，需要 Node 22 以上。"
+ },
+ {
+  "slug": "scientific-agent-skills",
+  "rank": 22,
+  "title": "158 条科研技能，别一次全装",
+  "desc": "覆盖生信、化学信息学、质谱蛋白组、临床药理、医学影像、地理空间、材料、天文；数据库那条给 78 个公共库做确定性、带出处的访问。",
+  "author": "K-Dense",
+  "starsText": "3.3万 Star",
+  "stars": 32767,
+  "coverPath": "/images/skills/scientific-agent-skills.webp",
+  "repos": [
+   "https://github.com/K-Dense-AI/scientific-agent-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "学生与研究者",
+   "职场人士",
+   "开发者"
+  ],
+  "usages": [
+   "只装生信相关的那几条，其余不要。",
+   "用数据库那条查这个基因在几个公共库里的记录，带出处。",
+   "这条技能的许可是什么？和仓库整体一致吗？"
+  ],
+  "version": "2.62.0",
+  "cats": [
+   "内容与知识",
+   "写作与研究",
+   "工程开发"
+  ],
+  "tags": [
+   "数据分析",
+   "写作",
+   "教学与研究",
+   "自动化"
+  ],
+  "detail": "作者主动劝阻一次装全部，理由说得很实在：早期他们自己写全部技能时全装是合理的，现在有大量社区贡献，未必逐条深审过；何况 158 条加起来是很大的常驻上下文，建议只装一个主题子集。安全上用第三方扫描器每周增量扫、至少每三十天全量重扫，结果公开在仓库里。还有一点容易忽略：每条技能的许可写在自己的文件里，可能不同于仓库整体的 MIT。临床类反复标注仅供研究。"
+ },
+ {
+  "slug": "googleworkspace-cli",
+  "rank": 23,
+  "title": "Workspace 命令行：运行时读 API 定义",
+  "desc": "Rust 写的单二进制，不内置静态命令表，而是运行时读 Google 的 Discovery 服务动态建命令树，缓存 24 小时。README 两处声明它不是官方支持的产品。",
+  "author": "googleworkspace",
+  "starsText": "3万 Star",
+  "stars": 30222,
+  "coverPath": "/images/skills/googleworkspace-cli.webp",
+  "repos": [
+   "https://github.com/googleworkspace/cli"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "按服务挑 scope 登录，只要 drive、gmail 和 sheets。",
+   "把这个日历这周的日程导成 JSON。",
+   "这条命令报了退出码 3，参数哪里不对？"
+  ],
+  "version": "0.22.5",
+  "cats": [
+   "工程开发",
+   "产品与项目"
+  ],
+  "tags": [
+   "自动化",
+   "数据分析",
+   "项目管理"
+  ],
+  "detail": "所以 Google 新增端点会被自动拾取，不必等工具更新。输出全是结构化 JSON，退出码分级：成功零、API 错一、认证错二、参数错三、Discovery 拉取失败四。另有一层手写的加号前缀命令负责常见场景，前缀是为了永不与自动生成的方法名撞车。有个几乎人人会踩的坑：未验证的 OAuth 应用最多约 25 个 scope，而推荐预设含 85 个以上，必然失败，得按服务挑；还必须把自己加成 test user。"
+ },
+ {
+  "slug": "vercel-labs-agent-skills",
+  "rank": 24,
+  "title": "Vercel 团队的九条前端技能",
+  "desc": "React 性能那条有 40 多条规则按影响力分八类排序，界面设计那条按 100 多条规则审 UI，写作那条按 80 多条审文档，还有一条专审 Vercel 账单。",
+  "author": "vercel-labs",
+  "starsText": "3万 Star",
+  "stars": 29785,
+  "coverPath": "/images/skills/vercel-labs-agent-skills.webp",
+  "repos": [
+   "https://github.com/vercel-labs/agent-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "内容创作者"
+  ],
+  "usages": [
+   "按 React 性能那 40 多条规则审这个组件，先看请求瀑布。",
+   "这个页面按界面设计规则审一遍，重点看焦点态和动效。",
+   "查一下上个月哪些路由最费钱。"
+  ],
+  "version": "",
+  "cats": [
+   "工程开发",
+   "产品与项目"
+  ],
+  "tags": [
+   "开发",
+   "自动化",
+   "写作"
+  ],
+  "detail": "写作那条的规则很具体：禁用 easy、simple、quick 这类词，代码块限 80 列 25 行，价格页必须用表格，还要求披露 AI 参与。账单那条的方法论值得单说——先采集 Vercel 指标，只调查指标指向的路由和文件，产出按成本与性能排序的报告，而不是漫无目的地优化。部署那条从 package.json 自动识别 40 多种框架，但产出是可认领部署：所有权要你另行 claim 才转到自己账号。"
+ },
+ {
+  "slug": "emilkowalski-skills",
+  "rank": 25,
+  "title": "Emil：九条设计工程与动效技能",
+  "desc": "把 Vercel、Linear 的设计工程经验拆成九条技能：从零做动效、严格审查和全库改进，也补上动效词汇、Apple 设计原则、组件库选择与多方案原型。",
+  "author": "Emil Kowalski",
+  "starsText": "2.7万 Star",
+  "stars": 27368,
+  "coverPath": "/images/skills/emilkowalski-skills.webp",
+  "repos": [
+   "https://github.com/emilkowalski/skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "设计师",
+   "开发者",
+   "职场人士"
+  ],
+  "usages": [
+   "按 emil 的规则审一遍这个页面的动效，逐条说明哪里该改。",
+   "给这个弹层做入场动画，曲线、时长和属性都要说明为什么这么选。",
+   "为这个设置面板做三套明显不同的原型，放进切换器让我并排比较。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "图像与设计",
+   "开发"
+  ],
+  "detail": "主技能讲的是那些不会写进需求、却会累积成体验差距的小判断：入场该用 ease-out，不该用迟钝的 ease-in；有些界面需要半透明阴影，而不是一道生硬实线。其余八条各管一段：从零搭动画、审查现有动画、生成全库改进计划、寻找真正值得动的地方、把模糊感觉翻成准确动效词汇、从 WWDC 设计分享提炼网页原则、避免手搓已有组件，以及一次做出多版界面放进切换器比较。作者也把边界说清楚：AI 放大领域经验，不替代学习设计和代码。"
+ },
+ {
+  "slug": "frontend-slides",
+  "rank": 26,
+  "title": "Frontend Slides：给不会设计的人做网页幻灯",
+  "desc": "做法是「给你看，不问你说」——不让你用词描述审美偏好，而是先生成几版视觉预览让你挑，选定后再往下做。也能把现成的 PPTX 转成网页。",
+  "author": "Zara Zhang",
+  "starsText": "2.7万 Star",
+  "stars": 27000,
+  "coverPath": "/images/skills/frontend-slides.webp",
+  "repos": [
+   "https://github.com/zarazhangrui/frontend-slides"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "把这篇文章做成网页幻灯，先给我三版风格预览再往下做。",
+   "把这个 pptx 转成网页 deck，图片和内容都要保留。",
+   "这套 deck 换成加粗风模板，再导出一份 PDF。"
+  ],
+  "version": "2.1.0",
+  "cats": [
+   "文档与幻灯片"
+  ],
+  "tags": [
+   "幻灯片"
+  ],
+  "detail": "交付物是单个 HTML 文件，CSS 和 JS 全内联，没有 npm、构建和框架，固定 16:9，代码带注释可改。风格刻意避开一眼假的 AI 味——作者原话「再见了，白底紫渐变」。加粗风模板包来自作者的另一个仓库，渐进加载，取不到时安全预设兜底。PPTX 转换保留原文件的图片和内容。它打包成 Claude Code 插件，核心 SKILL.md 也能被其他有文件和 shell 权限的 agent 读。"
+ },
+ {
+  "slug": "pm-skills",
+  "rank": 27,
+  "title": "PM 插件市场：9 个插件、68 条技能",
+  "desc": "不是单纯的技能集合，是插件市场。技能按上下文自动加载，42 条命令把多条技能串成端到端流程，插件按 PM 领域分组。",
+  "author": "Paweł Huryn",
+  "starsText": "2.5万 Star",
+  "stars": 24898,
+  "coverPath": "/images/skills/pm-skills.webp",
+  "repos": [
+   "https://github.com/phuryn/pm-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "走一遍 discover：发散、列假设、排优先级、设计实验。",
+   "用优先级框架那条对比几种排序方法，说明各自适用场景。",
+   "这个仓库先反向文档化，再审文档和代码的差距。"
+  ],
+  "version": "2.1.0",
+  "cats": [
+   "产品与项目"
+  ],
+  "tags": [
+   "项目管理",
+   "数据分析"
+  ],
+  "detail": "机制看 discover 那条最清楚：它串起发散想法、识别假设、给假设排优先级、设计实验四条技能，跑完还会推荐下一条命令，顺着提示走就是一条完整流程。有个平台限制必须先说：Codex 能装同一份市场，但 Codex 插件不暴露斜杠命令——42 条工作流装得上、跑不了；Gemini CLI、Cursor 这些只能手工拷技能目录，同样只有技能没有命令。作者建议整插件安装，因为一条工作流通常依赖同包里的多条技能。"
+ },
+ {
+  "slug": "superclaude-framework",
+  "rank": 28,
+  "title": "SuperClaude：30 条 sc: 前缀命令",
+  "desc": "向 Claude Code 注入行为指令与斜杠命令，装完命令都带 sc: 前缀——照旧文档敲 /implement 是找不到的。七种行为模式，二十个 agent。",
+  "author": "SuperClaude-Org",
+  "starsText": "2.4万 Star",
+  "stars": 23742,
+  "coverPath": "/images/skills/superclaude-framework.webp",
+  "repos": [
+   "https://github.com/SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "/sc 列一下都有哪些命令。",
+   "用标准档做一次深度研究，来源可信度低于 0.6 的别用。",
+   "先不装 MCP，我想看看基础版能到什么程度。"
+  ],
+  "version": "4.3.0",
+  "cats": [
+   "工程开发",
+   "产品与项目"
+  ],
+  "tags": [
+   "开发",
+   "自动化",
+   "项目管理",
+   "知识管理"
+  ],
+  "detail": "深度研究有可引用的四档参数：快速 5 到 10 个源、1 跳、约两分钟；标准 10 到 20 源、3 跳、约五分钟；深度 20 到 40 源；穷尽 40 源以上。来源可信度打分零到一，阈值 0.6、目标 0.8。有两条必须先知道：老文档里的 TypeScript 插件系统尚不可用，计划放到 5.0；MCP 服务器全部可选，不装功能完整，装了才是两到三倍速度和少三到五成 token。声明与 Anthropic 无关联。"
+ },
+ {
+  "slug": "guizang-ppt-skill",
+  "rank": 29,
+  "title": "歸藏网页 PPT：两套锁定的视觉系统",
+  "desc": "把文章或 Markdown 做成单文件 HTML 横向翻页 PPT，顺带出配图和多平台封面。两套视觉系统按内容性质选：叙事观点走电子杂志，事实方法论走瑞士国际主义。",
+  "author": "歸藏",
+  "starsText": "2.3万 Star",
+  "stars": 23300,
+  "coverPath": "/images/skills/guizang-ppt-skill.webp",
+  "repos": [
+   "https://github.com/op7418/guizang-ppt-skill"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "内容创作者",
+   "创业者"
+  ],
+  "usages": [
+   "按这篇文章做一份瑞士风网页 PPT，七页上下，帮我配两三张图。",
+   "这份方法论文档做成杂志风 deck，再出一张 21:9 的公众号封面。",
+   "跑一遍版式校验和 checklist，P0 问题都修掉再交给我。"
+  ],
+  "version": "1.1.0",
+  "cats": [
+   "文档与幻灯片"
+  ],
+  "tags": [
+   "幻灯片"
+  ],
+  "detail": "瑞士那套有 22 种锁定版式（Cover、KPI Tower、Closing Manifesto 等），杂志那套有 10 种布局；正文页只能从版式里选，不许临时发明结构。质量控制是它最实在的地方：脚本校验版式、图片槽位、标题对齐和危险 SVG，还会用 Playwright 后验测量溢出、底部空白和导航安全线，最后对照 checklist 自检，P0 必须全过。封面能从同一份内容出 21:9、1:1、3:4 等比例。"
+ },
+ {
+  "slug": "larksuite-cli",
+  "rank": 30,
+  "title": "飞书官方 CLI：三层命令",
+  "desc": "加号前缀的快捷命令给人和 AI 同用，带智能默认和 dry-run；一百多条 API 命令与平台端点一一对应；再往下 lark-cli api 能裸调两千五百多个接口。",
+  "author": "larksuite",
+  "starsText": "1.6万 Star",
+  "stars": 16197,
+  "coverPath": "/images/skills/larksuite-cli.webp",
+  "repos": [
+   "https://github.com/larksuite/cli"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "所有人"
+  ],
+  "usages": [
+   "把这个多维表格这个月的记录导成 CSV。",
+   "查一下这个方法要什么 scope，用 schema 命令看。",
+   "以 bot 身份发这条消息，不要用我的身份。"
+  ],
+  "version": "1.0.84",
+  "cats": [
+   "产品与项目",
+   "内容与知识",
+   "工程开发"
+  ],
+  "tags": [
+   "自动化",
+   "知识管理",
+   "项目管理"
+  ],
+  "detail": "有个反直觉的约定要记：成功的 JSON 信封里没有 code 和 msg 字段，判断成败要看 ok 或退出码，不能沿用裸接口的 code 等于零。README 有整节「使用前必读」，说得比多数项目都直白：模型幻觉、执行不可预测、提示注入这些风险固有存在，授权后 agent 会以你的身份在授权范围内行动，可能泄露敏感数据；强烈建议别动默认安全设置，也别把配套机器人拉进群聊。"
+ },
+ {
+  "slug": "stop-slop",
+  "rank": 31,
+  "title": "Stop Slop：删掉文字里的 AI 痕迹",
+  "desc": "AI 写作有固定的短语、结构和节奏。这条技能把这些痕迹拆成能逐条排查的清单，改完再按五个维度打分。",
+  "author": "Hardik Pandya",
+  "starsText": "1.5万 Star",
+  "stars": 15232,
+  "coverPath": "/images/skills/stop-slop.webp",
+  "repos": [
+   "https://github.com/hardikpandya/stop-slop"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "所有人"
+  ],
+  "usages": [
+   "按 stop-slop 把这段改成人话，逐条说明你删掉了哪类套路。",
+   "给这篇稿子按五个维度打分，低于 35 分就直接重写。",
+   "这段里的破折号、疑问词开头和被动语态都替我改掉。"
+  ],
+  "version": "",
+  "cats": [
+   "写作与研究"
+  ],
+  "tags": [
+   "写作"
+  ],
+  "detail": "查三层。短语层：清嗓式开场、强调拐杖、商业黑话、所有副词、含糊的断言、自我点评。结构层：二元对比、否定式罗列、戏剧性断句、修辞设问和被动语态。句子层是硬规则：不许用疑问词开头、不许用破折号、不许连串短句、不许用懒惰的极端词、必须主动语态。打分是方向感、节奏、信任、真实感、密度各一到十分，五十分里低于三十五就该重写。参考文件按需加载，把 SKILL.md 放进系统提示就能开工。"
+ },
+ {
+  "slug": "claude-seo",
+  "rank": 32,
+  "title": "Claude SEO：25 个子技能并行跑审计",
+  "desc": "技术 SEO、内容质量、Schema 标记、面向 AI 搜索的优化、本地与跨境 SEO 各由专门代理负责，并行跑完出一份排好优先级的行动清单。",
+  "author": "AgriciDaniel",
+  "starsText": "1.3万 Star",
+  "stars": 13443,
+  "coverPath": "/images/skills/claude-seo.webp",
+  "repos": [
+   "https://github.com/AgriciDaniel/claude-seo"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "创业者"
+  ],
+  "usages": [
+   "对这个站点跑一次完整 SEO 审计，出一份带优先级的行动清单。",
+   "检查我们的 Schema 标记和 E-E-A-T 信号，哪些会影响 AI 搜索里的引用。",
+   "这条建议的依据是什么？给我它的先行指标和失败判据。"
+  ],
+  "version": "2.2.4",
+  "cats": [
+   "营销增长"
+  ],
+  "tags": [
+   "发布分发",
+   "数据分析"
+  ],
+  "detail": "最值得说的是它对自己的要求：任何一条建议都不许只说「应该这么做」，必须附上它依据的观察、依赖关系、一个「怎么才算这条失败了」的检验，以及一个先行指标。作者管这叫可证伪而不是推销。全站审计最多同时开十五个专门代理，把原本几小时的活压到几分钟，依据取自 Google 的一手文档而不是二手总结。开源版是 MIT 的完整版本，另有一个需要社区会员的私有镜像用来尝鲜。"
+ },
+ {
+  "slug": "gsap-skills",
+  "rank": 33,
+  "title": "GSAP 官方的八条动画技能",
+  "desc": "按主题分：核心补间、时间轴、ScrollTrigger、插件、工具函数、React、性能、框架集成。另有一份 llms.txt 当索引给 agent 用。",
+  "author": "GreenSock（官方）",
+  "starsText": "1.3万 Star",
+  "stars": 13084,
+  "coverPath": "/images/skills/gsap-skills.webp",
+  "repos": [
+   "https://github.com/greensock/gsap-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "设计师",
+   "开发者"
+  ],
+  "usages": [
+   "用 GSAP 给这个区块做滚动触发动画，先读 scrolltrigger 那条。",
+   "这段文字用 SplitText 拆成逐字入场，注意性能。",
+   "在 React 里正确清理 GSAP 动画，按 gsap-react 那条的写法。"
+  ],
+  "version": "1.0.0",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "图像与设计",
+   "开发"
+  ],
+  "detail": "最值得知道的一条是许可变了：Webflow 收购 GSAP 之后，原来要付费的 Club 插件——SplitText、MorphSVG 等——全部免费且含商用，直接从公共 npm 包装，不再需要 .npmrc、令牌或私有源。仓库同时维护 Claude 和 Cursor 两套插件清单。有个坑写在明处：Copilot 不加载 Cursor 或 Claude 的 skill 文件，得自己把指令复制进目标仓库。"
+ },
+ {
+  "slug": "anatomy",
+  "rank": 34,
+  "title": "Anatomy：用交互插图讲清原理",
+  "desc": "让 AI 把机器原理和技术概念画成可交互的等轴测插图，可生成 SVG、独立网页或 React 组件，适合文档、科普文章和产品页。",
+  "author": "Ryan (wheresryan22)",
+  "starsText": "1.3万 Star",
+  "stars": 12834,
+  "coverPath": "/images/skills/anatomy.webp",
+  "repos": [
+   "https://github.com/wheresryan22/anatomy"
+  ],
+  "date": "2026-10-15",
+  "bestFor": [
+   "设计师",
+   "开发者",
+   "教育工作者",
+   "内容创作者"
+  ],
+  "usages": [
+   "/anatomy 给技术文档做一张交互插图：用带 8 个抽屉的机械柜解释 LRU 缓存，展示读取、写入与淘汰；浅色主题，输出独立 HTML。",
+   "/anatomy 用剖面咖啡机讲清水从水箱经过泵、锅炉和冲煮头的路径，点击按钮显示流动；输出 SVG 和网页预览。",
+   "$anatomy 为 React 教学页面画一个有 4 个工位的机械转台，解释任务队列与并发限制；支持键盘操作，并提供静态预览。"
+  ],
+  "version": "1.1.0",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "图像与设计",
+   "开发",
+   "教学与研究"
+  ],
+  "detail": "用 npx skills add wheresryan22/anatomy 安装；Claude Code 用 /anatomy，Codex 用 $anatomy。先把概念转为具体机械，再用 SVG 搭建零件、动作和读数，并检查结构与画面。可叠加 WebGL 火焰、水波；3D 仍为测试版。构建需 Node 20.10+，验收需 Chrome。适合机制讲解，复杂插图耗时较长。"
+ },
+ {
+  "slug": "kami",
+  "rank": 35,
+  "title": "Kami：让文档像印出来的纸",
+  "desc": "作者的判断是：AI 早就能写出好文档，缺的不是能力而是约束——没有设计系统，每次生成都会漂成灰扑扑的通用排版。Kami 给的就是那套约束。",
+  "author": "Tw93",
+  "starsText": "1万 Star",
+  "stars": 10367,
+  "coverPath": "/images/skills/kami.webp",
+  "repos": [
+   "https://github.com/tw93/kami"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "内容创作者"
+  ],
+  "usages": [
+   "把这份调研整理成一份长文档，最后导出 PDF。",
+   "给我做一份一页纸的产品简介，中文，A4 尺寸。",
+   "这份财报点评按 Kami 的财报模板排，图表用它自己的 SVG 样式。"
+  ],
+  "version": "1.12.0",
+  "cats": [
+   "文档与幻灯片"
+  ],
+  "tags": [
+   "写作",
+   "图像与设计"
+  ],
+  "detail": "一套约束语言配八种文档模板：一页纸、长文、正式信件、作品集、简历、幻灯、财报点评和更新日志。视觉上只给一种：暖羊皮纸底 #f5f4ed、墨蓝 #1B365D 作唯一强调色、层级靠衬线字撑起来。作者说得很明确，这不是 UI 框架而是印刷品的约束系统，文档该读起来像排好的页面、不像仪表盘。不用敲斜杠命令，自然说一句就触发；日韩走尽力而为的 CJK 路径，交付前会做一次视觉检查。"
+ },
+ {
+  "slug": "dontbesilent-dbskill",
+  "rank": 36,
+  "title": "29 条技能加一条路由，每轮只选一条",
+  "desc": "路由机制是核心：读上下文后每轮只选一条技能，做完再按你是否指定下一步，三选一——回路由重判、进指定技能、留在当前。",
+  "author": "dontbesilent",
+  "starsText": "9256 Star",
+  "stars": 9256,
+  "coverPath": "/images/skills/dontbesilent-dbskill.webp",
+  "repos": [
+   "https://github.com/dontbesilent2025/dbskill"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "创业者",
+   "内容创作者"
+  ],
+  "usages": [
+   "用路由判一下我这个问题该走哪条。",
+   "这个商业问题走诊断那条，别的先不用。",
+   "把这轮结论存下来，下次接着聊。"
+  ],
+  "version": "2.18.15",
+  "cats": [
+   "内容与知识"
+  ],
+  "tags": [
+   "写作"
+  ],
+  "detail": "知识库有一手出处：累计一万六千多条推文，本轮处理一万两千多条，筛出四千两百条实质内容，最终四千一百七十六个知识原子，按季度拆分并以 jsonl 公开，作者说可以拿去建自己的检索。本地数据默认落在家目录下，有存档、恢复和报告三条命令负责跨对话保留，更新时不动这些存档。许可是 CC BY-NC，个人非商业可用，商用需单独授权。"
+ },
+ {
+  "slug": "pstack",
+  "rank": 37,
+  "title": "pstack：让 Cursor 按工程流程交付",
+  "desc": "Lauren Tan（poteto）的 Cursor 技能合集，串起代码调查、架构设计、并行开发、审查和运行验证，让复杂任务有可检查的完成依据。",
+  "author": "Lauren Tan (poteto)",
+  "starsText": "9176 Star",
+  "stars": 9176,
+  "coverPath": "/images/skills/pstack.webp",
+  "repos": [
+   "https://github.com/cursor/plugins/tree/main/pstack"
+  ],
+  "date": "2026-09-30",
+  "bestFor": [
+   "开发者",
+   "职场人士"
+  ],
+  "usages": [
+   "/poteto-mode 修复这个偶发滚动跳动：先复现并定位原因，再修改代码，用浏览器验证修复结果。",
+   "/architect 先梳理这个新功能的调用方式、数据类型和模块边界，再确定实现方案。",
+   "/interrogate 审查当前分支的改动，重点找行为回归、结构复杂度和缺失的验证证据。"
+  ],
+  "version": "0.15.5",
+  "cats": [
+   "工程开发"
+  ],
+  "tags": [
+   "开发",
+   "自动化"
+  ],
+  "detail": "在 Cursor 中用 /add-plugin pstack 安装，再运行 /setup-pstack 选择模型与推理预算。日常从 /poteto-mode 开始，它会按任务选择修复缺陷、性能优化、重构等流程，并在需要时调用其他技能：/how 解释代码如何运行，/why 追溯设计原因，/architect 先明确接口与类型，/arena 比较多种实现，/swarm 分配并行工作，/interrogate 审查改动。重点是先拿证据、尽量减少代码，再用实际运行验证结果；多模型与并行执行的开销取决于配置。部分配套能力需要另装 Cursor Team Kit。插件采用 MIT 许可；本页星标属于整个 cursor/plugins 仓库。"
+ },
+ {
+  "slug": "ian-xiaohei-illustrations",
+  "rank": 38,
+  "title": "小黑：给文章配一套手绘插画",
+  "desc": "注意这是 Codex 技能，不在 Claude 生态。风格写死：纯白底、黑色细手绘线、红橙蓝三色中文手写批注，主体只占画面四到六成。",
+  "author": "Ian（伊恩）",
+  "starsText": "9072 Star",
+  "stars": 9072,
+  "coverPath": "/images/skills/ian-xiaohei-illustrations.webp",
+  "repos": [
+   "https://github.com/helloianneo/ian-xiaohei-illustrations"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "设计师",
+   "内容创作者"
+  ],
+  "usages": [
+   "给这篇文章出一份分镜，四到八张，一张只讲一件事。",
+   "这个概念画成低科技的物理隐喻，别用抽象气泡。",
+   "人物再画小一点，主体占四成就够。"
+  ],
+  "version": "1.0.0",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "图像与设计"
+  ],
+  "detail": "固定 IP 叫小黑：圆头两点眼、无嘴、窄矩形身体，胸口一个橙点就是全画唯一的点缀色。作者给它定的自检标准很硬——如果去掉小黑画面仍然完全成立，说明它太装饰了。八种结构类型可选：流程、系统局部、前后对比、角色状态、概念隐喻、方法分层、地图路线、小漫画分镜。一张图只表达一件事。作者也写明了失败清单：人物画到半个画面高，几何敏感时模型会过度发挥，要加负向约束。"
+ },
+ {
+  "slug": "web-access",
+  "rank": 39,
+  "title": "给 agent 补上联网能力",
+  "desc": "工具选择分四种：搜索、抓取、curl、CDP 驱动浏览器，另有 Jina 作为可选预处理。兼容 Cursor、Gemini CLI、Codex CLI，不只 Claude Code。",
+  "author": "一泽 Eze",
+  "starsText": "8555 Star",
+  "stars": 8555,
+  "coverPath": "/images/skills/web-access.webp",
+  "repos": [
+   "https://github.com/eze-is/web-access"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "内容创作者"
+  ],
+  "usages": [
+   "打开这个页面，把正文抽出来，注意别触发反爬。",
+   "起十个子 agent 并行查这十个站点，共用一个浏览器代理。",
+   "这个站点上次是怎么登录的？按沉淀的经验再走一遍。"
+  ],
+  "version": "2.5.2",
+  "cats": [
+   "内容与知识",
+   "工程开发"
+  ],
+  "tags": [
+   "自动化",
+   "知识管理"
+  ],
+  "detail": "CDP 代理是一个常驻的 HTTP 服务，暴露开页、执行、点击、按坐标点击、上传、截图、滚动这些接口；点击有三种方式，按坐标那种走真实鼠标。开出来的 tab 闲置十五分钟自动关。两个作者特意写明的东西：站点操作经验会按域名跨会话沉淀，以及多个子 agent 可以共享一个代理、按 tab 隔离。还有一条风险提示要求每次执行前原样展示：用浏览器自动化操作社交平台有账号封禁风险，建议用小号。"
+ },
+ {
+  "slug": "html-anything",
+  "rank": 40,
+  "title": "HTML Anything：本地跑的 HTML 编辑器",
+  "desc": "它的主张是 Markdown 只是草稿，人真正在读的是 HTML。零 API key，直接复用你已经登录的编码 CLI 会话，在本地把草稿变成能发的成品。",
+  "author": "nexu-io",
+  "starsText": "8102 Star",
+  "stars": 8102,
+  "coverPath": "/images/skills/html-anything.webp",
+  "repos": [
+   "https://github.com/nexu-io/html-anything"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "设计师",
+   "职场人士"
+  ],
+  "usages": [
+   "把这篇 Markdown 排成杂志风格的 HTML 文章，再导一份公众号版。",
+   "这份数据报告做成网页版，图表用它自带的模板。",
+   "同一篇内容出一张小红书图卡和一张推文卡。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频",
+   "文档与幻灯片",
+   "写作与研究"
+  ],
+  "tags": [
+   "写作",
+   "图像与设计",
+   "幻灯片",
+   "发布分发"
+  ],
+  "detail": "它会自动探测 PATH 上的九种编码 CLI（Claude Code、Cursor、Codex 等），所以不需要你另配密钥。七十五套可组合模板覆盖九类交付物：杂志文章、演讲 deck、简历、海报、小红书图卡、推文卡、网页原型、数据报告和 HyperFrames 视频。成品能一键导到公众号、X 和知乎，也能直接下 .html 或 .png。团队来自 open-design，这个更聚焦。Apache 2.0。"
+ },
+ {
+  "slug": "stitch-skills",
+  "rank": 41,
+  "title": "Stitch 设计技能：装前先接 MCP",
+  "desc": "三个插件打包十五条技能，覆盖代码转设计、静态 HTML 抽取、一句话出五页站点、走查视频生成。硬前置是先注册好 Stitch 的 MCP 服务端。",
+  "author": "google-labs-code",
+  "starsText": "7925 Star",
+  "stars": 7925,
+  "coverPath": "/images/skills/stitch-skills.webp",
+  "repos": [
+   "https://github.com/google-labs-code/stitch-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "设计师",
+   "职场人士"
+  ],
+  "usages": [
+   "把这个前端项目抽成设计系统，再上传成 Stitch 设计。",
+   "一句话生成一个五页站点，生成完自动跑校验。",
+   "把这个跑着的页面抽成自包含 HTML，CSS 和图片都内联。"
+  ],
+  "version": "1.0",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "开发",
+   "图像与设计",
+   "自动化"
+  ],
+  "detail": "每条技能固定四件套：SKILL.md 当任务说明、scripts 放校验与执行器、resources 放清单与风格指南、examples 放语法正确的黄金样例。代表能力里，code-to-design 把前端代码抽成设计系统再上传，extract-static-html 把跑着的应用抽成内联 CSS 和图片的自包含文件。两点作者写在明处：这不是 Google 官方支持的产品；技能之间常有依赖，选装要自己带齐。"
+ },
+ {
+  "slug": "waza",
+  "rank": 42,
+  "title": "Waza：八条工程习惯，按阶段分工",
+  "desc": "把规划、界面、调试、审查、读写、研究和 Agent 健康检查拆成八条小型 Skill；每条只有一个触发点和一个结束条件，可在 Codex、Claude Code 等工具中按需调用。",
+  "author": "Tw93",
+  "starsText": "6790 Star",
+  "stars": 6790,
+  "coverPath": "/images/skills/waza.webp",
+  "repos": [
+   "https://github.com/tw93/Waza"
+  ],
+  "date": "2026-08-08",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "内容创作者"
+  ],
+  "usages": [
+   "先用 /think 质疑这个功能需求，收敛成一份能直接实现的计划。",
+   "这个回归问题交给 /hunt，确认根因之后再提出修复。",
+   "用 /read 抓原始资料，再用 /learn 研究，最后用 /write 把成稿去掉 AI 腔。"
+  ],
+  "version": "3.34.0",
+  "cats": [
+   "工程开发",
+   "写作与研究",
+   "设计与视频"
+  ],
+  "tags": [
+   "开发",
+   "写作",
+   "知识管理",
+   "项目管理"
+  ],
+  "detail": "Waza 刻意不做自动编排。/think、/ui 负责设计，/hunt、/check 负责解决和验收，/read、/write 负责表达，/learn、/health 负责研究与维护；技能之间的交接必须由你手动触发，所以不会在未经确认时一路跑到发布。项目同时提供 npx skills 安装、Claude 与 Codex 原生插件，以及 Claude Desktop 压缩包；状态栏和英文纠错等规则是可选附加项，不是使用这八条技能的前提。作者称这些规则来自七个项目的三百多次真实会话。"
+ },
+ {
+  "slug": "trailofbits-skills",
+  "rank": 43,
+  "title": "Trail of Bits 的 39 个安全插件",
+  "desc": "按智能合约安全、代码审计、恶意软件分析、验证、逆向、移动安全等九类编排，39 个插件里共 77 份 SKILL.md，其中代码审计一类就占 19 个。",
+  "author": "trailofbits",
+  "starsText": "6457 Star",
+  "stars": 6457,
+  "coverPath": "/images/skills/trailofbits-skills.webp",
+  "repos": [
+   "https://github.com/trailofbits/skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "内容创作者"
+  ],
+  "usages": [
+   "审一遍这份 Rust 代码，输出 SARIF 给我。",
+   "这批告警帮我做误报核验，逐条说明判断依据。",
+   "按七条判据给这个漏洞报告分诊：受理、驳回还是要补材料？"
+  ],
+  "version": "",
+  "cats": [
+   "工程开发",
+   "内容与知识"
+  ],
+  "tags": [
+   "开发",
+   "数据分析",
+   "自动化"
+  ],
+  "detail": "C 和 Rust 的审计都用聚簇并行 worker 并输出 SARIF；误报核验单独一条，设了强制的 gate review；漏洞分诊那条用七条法谚式判据决定受理、驳回还是补材料。仓库有个 Trophy Case 记实战战果，目前只有一条——常数时间分析在 RustCrypto 里发现了 ML-DSA 签名的计时侧信道。目录里还混着不少非安全项：解读性格测评、排查 MCP 故障，甚至抽塔罗牌。许可 CC BY-SA。"
+ },
+ {
+  "slug": "gc-minimal-zine-poster",
+  "rank": 44,
+  "title": "Minimal Zine Poster：安静的纸张杂志海报",
+  "desc": "把主题、句子、文章或照片压缩成一个视觉隐喻：纸张质感、大量留白、小尺寸拼贴或焦点、实验性文字，再用一个高纯度颜色收住画面。",
+  "author": "LiamGvchi",
+  "starsText": "6444 Star",
+  "stars": 6444,
+  "coverPath": "/images/skills/gc-minimal-zine-poster.webp",
+  "repos": [
+   "https://github.com/LiamGvchi/gc-minimal-zine-poster"
+  ],
+  "date": "2026-08-20",
+  "bestFor": [
+   "内容创作者",
+   "设计师"
+  ],
+  "usages": [
+   "把这篇文章提炼成一个视觉隐喻，再生成一张极简 zine 海报。",
+   "用这张人物照片做海报，保留人物身份和服装，只改变排版与纸张质感。",
+   "分析这组参考图的固定规则和可变规则，再做一张关于旧书的全新海报。"
+  ],
+  "version": "0.3.1",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "图像与设计",
+   "发布分发"
+  ],
+  "detail": "它不只给一段漂亮提示词，而是先判断任务属于直接生成、照片输入、参考图分析、只要 Prompt，还是分析后生成。照片还会被明确标成编辑对象、风格参考或局部素材，并选择高、中、低三档保留强度；人物、宠物、产品默认高保真，优先使用原照片裁片而不是重画身份。生成阶段只挑一个核心关系和一套变化配方，布局、焦点、文字分布、纸张、强调色和装饰符号都要落到可见细节。最终要同时在全图和缩略图尺度验收，避免变成商业广告、满版插画或泛化拼贴模板；默认交付最终 Prompt 和实际生成图。"
+ },
+ {
+  "slug": "product-manager-skills",
+  "rank": 45,
+  "title": "70 条产品经理技能，三层结构",
+  "desc": "工作流层管天到周级的完整流程，交互层先问三到五个上下文问题再给编号建议，组件层是三十到九十分钟能做完的模板，另有六条命令把它们串起来。",
+  "author": "Dean Peters",
+  "starsText": "6274 Star",
+  "stars": 6274,
+  "coverPath": "/images/skills/product-manager-skills.webp",
+  "repos": [
+   "https://github.com/deanpeters/Product-Manager-Skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "用 discover 那条流程走一遍：先发散想法，再列假设并排优先级。",
+   "按这个市场写一份 PRD，每条论断标出是事实、推断还是假设。",
+   "给这个功能排优先级，说明你用的是哪个框架、为什么。"
+  ],
+  "version": "0.83",
+  "cats": [
+   "产品与项目"
+  ],
+  "tags": [
+   "项目管理"
+  ],
+  "detail": "新增的自主调研模式有个硬要求：每条论断必须打上「事实 / 推断 / 假设」三选一的标签，并配一份不许编造清单。作者还解释了一个取舍：拒绝用 Claude Code 的 $ARGUMENTS 模板语法，因为它只在 Claude Code 里展开，在 Desktop 或 Codex 里会渲染成字面量；改成每条技能写纯语言的输入段，校验器会因缺输入段或出现裸 $ARGUMENTS 而判失败。许可 CC BY-NC-SA。"
+ },
+ {
+  "slug": "n8n-skills",
+  "rank": 46,
+  "title": "n8n 工作流的 14 条技能加一层 hook",
+  "desc": "硬前置是 n8n-mcp 服务器：没有它这些技能基本失效。除了 14 条能力技能，还有一条常驻路由技能和三个 hook 负责把它们在对的时候拉进上下文。",
+  "author": "Romuald Członkowski",
+  "starsText": "5989 Star",
+  "stars": 5989,
+  "coverPath": "/images/skills/n8n-skills.webp",
+  "repos": [
+   "https://github.com/czlonkowski/n8n-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "搭这条工作流，webhook 的数据结构按 $json.body 来。",
+   "这个 Code 节点老出错，对照那十条模式看看是哪一类。",
+   "校验通过了，还剩哪些风险？"
+  ],
+  "version": "1.28.1",
+  "cats": [
+   "工程开发",
+   "产品与项目"
+  ],
+  "tags": [
+   "自动化",
+   "开发",
+   "项目管理"
+  ],
+  "detail": "hook 是这套东西真正的机制：会话开始注入路由技能，查高风险节点前弹对应提醒——重复查会重复触发，因为重查通常意味着你在反复权衡同一个决策；校验之后再按节点类型路由到剩余风险所在。数字都在明处：支持 525 个以上节点，示例取自 2653 个以上工作流模板，Code 节点的十条模式覆盖六成二以上的失败。反复出现的头号坑：webhook 数据在 $json.body 下面。"
+ },
+ {
+  "slug": "thermo-nuclear-code-quality-review",
+  "rank": 47,
+  "title": "Thermo-Nuclear Review：对结构性代码债零放水",
+  "desc": "一条极严格的可维护性审查 Skill：不满足于“能跑”，专查失控的大文件、随机特例、意大利面分支、薄抽象和模糊类型边界，并寻找能直接删掉复杂度的重构路径。",
+  "author": "Cursor",
+  "starsText": "5770 Star",
+  "stars": 5770,
+  "coverPath": "/images/skills/thermo-nuclear-code-quality-review.webp",
+  "repos": [
+   "https://github.com/cursor/plugins/tree/main/cursor-team-kit/skills/thermo-nuclear-code-quality-review"
+  ],
+  "date": "2026-08-28",
+  "bestFor": [
+   "开发者",
+   "职场人士"
+  ],
+  "usages": [
+   "调用 thermo-nuclear-code-quality-review，审查当前分支相对 main 的改动，先列结构性阻断项。",
+   "重点检查这次改动有没有把文件推过 1000 行，或把功能特例塞进共享流程。",
+   "不要给命名和格式小修；找一个能删掉最多分支与辅助层的 code-judo 重构方案。"
+  ],
+  "version": "1.2.0",
+  "cats": [
+   "工程开发"
+  ],
+  "tags": [
+   "开发"
+  ],
+  "detail": "它从当前分支的改动出发，不把“能跑”当作通过标准。审查优先找结构性退化和能一举删掉复杂度的 code-judo 重构：文件是否因这次改动越过 1000 行、共享流程里是否散落功能特例、同一条件是否反复出现、抽象是否只是在转发、any、unknown 或强制转换是否掩盖真实契约，以及本可并行或原子完成的流程是否被写得脆弱。建议也不止于改名和格式，而是拆模块、把逻辑归还给真正拥有它的层、用清晰类型重塑状态、合并重复分支或直接删除多余包装。输出要求少而硬：先给阻断性的结构问题，再给可执行的简化方向，低价值的小毛病不能淹没大问题。它默认不会由模型自动触发，需要你明确点名调用；Cursor Team Kit 还配有一个同名审查 Agent。"
+ },
+ {
+  "slug": "browser-act-skills",
+  "rank": 48,
+  "title": "BrowserAct：三种浏览器模式加人工接管",
+  "desc": "Python CLI，三种模式：复用本地 Chrome 登录态、隐私模式每次全新指纹加代理轮换、固定身份供多账号并行。它是商业产品的开源本地端。",
+  "author": "BrowserAct Team",
+  "starsText": "5211 Star",
+  "stars": 5211,
+  "coverPath": "/images/skills/browser-act-skills.webp",
+  "repos": [
+   "https://github.com/browser-act/skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "创业者",
+   "内容创作者"
+  ],
+  "usages": [
+   "用本地 Chrome 的登录态打开这个后台，把数据导出来。",
+   "这个站点要验证码，生成接管链接给我。",
+   "开三个固定身份的浏览器，三个账号并行跑。"
+  ],
+  "version": "",
+  "cats": [
+   "工程开发",
+   "营销增长",
+   "其他"
+  ],
+  "tags": [
+   "自动化",
+   "开发",
+   "数据分析"
+  ],
+  "detail": "破封锁分三层：环境层做指纹伪装和代理切换，执行层有验证码自动处理和受保护页面抽取，最后是人工层——生成一个实时 URL 让你从任意设备接管，完事 agent 继续。为 LLM 设计的部分很实在：state 返回带索引的文本列表，然后你就 click 3、input 2，不用解析 DOM。免费与付费的界线写在明处：只有托管代理和超过前五个的隐私浏览器收费，隐私那一系需要登录。敏感操作必须逐次显式批准。"
+ },
+ {
+  "slug": "git-story-film",
+  "rank": 49,
+  "title": "git-story-film：把 Git 历史拍成动画",
+  "desc": "把真实的提交、版本与回滚编成约两分钟的手绘动画，适合产品发布、项目周年和开源介绍。先确认故事、角色与分镜，再在浏览器中预览整片，最后导出 4K/60fps MP4。",
+  "author": "EverMind-AI",
+  "starsText": "5160 Star",
+  "stars": 5160,
+  "coverPath": "/images/skills/git-story-film.webp",
+  "repos": [
+   "https://github.com/EverMind-AI/Raven/tree/main/skills/git-story-film"
+  ],
+  "date": "2026-10-04",
+  "bestFor": [
+   "开发者",
+   "内容创作者",
+   "创业者"
+  ],
+  "usages": [
+   "用 git-story-film 为这个 GitHub 仓库做一部约两分钟的中文介绍动画。面向第一次接触产品的人，先提出故事方向和要核对的提交依据。",
+   "用 git-story-film 讲清这次版本发布的来龙去脉：挑出关键功能、一次回滚和最终改进，先给我角色设定与前 30 秒分镜。",
+   "在 git-story-film 的 Studio 中检查字幕、节奏和提交日期，等我确认整片后再导出 4K/60fps MP4。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "视频",
+   "写作"
+  ],
+  "detail": "将 Raven 仓库中的完整 skills/git-story-film 目录复制到 ~/.claude/skills/ 或项目的 .claude/skills/，保留引擎、脚本与示例，再用 /git-story-film 加目标仓库链接开始。七步流程依次交付故事方向、角色设定、完整提纲、前 30 秒分镜、整片动画、Studio 预览和成片，每步都等待确认；提交哈希、日期和数量应能回查。运行需要 Node 22+、Google Chrome、ffmpeg 和 Python 3.8+。默认用字幕叙述、合成配乐，不含录制旁白。附带 128 秒 Raven 示例及中文源文件，可从中改编自己的影片。本页配图取自该示例，星标属于整个 Raven 仓库；技能未单独声明版本号。"
+ },
+ {
+  "slug": "humanlayer-skills",
+  "rank": 50,
+  "title": "HumanLayer Skills：讲清代码与改动",
+  "desc": "面向 Claude Code 的六个独立技能：用图讲清代码、生成可视化 PR 说明、改进项目指令、收紧 React 类型，并搭建持续改进代码库的自动化流程。",
+  "author": "HumanLayer",
+  "starsText": "4729 Star",
+  "stars": 4729,
+  "coverPath": "/images/skills/humanlayer-skills.webp",
+  "repos": [
+   "https://github.com/humanlayer/skills"
+  ],
+  "date": "2026-09-30",
+  "bestFor": [
+   "开发者",
+   "职场人士"
+  ],
+  "usages": [
+   "/show-me 用最简洁的调用树或流程图解释登录流程，标出状态在哪里创建、保存和读取。",
+   "/visual-pr 为当前改动创建或更新 PR，用一张结构图讲清修改原因、实现方式和评审注意事项。",
+   "/design-control-loop 帮我设计一个逐步消除过宽 React 属性类型的流程，先确认目标和检查方法，再搭建自动化。"
+  ],
+  "version": "",
+  "cats": [
+   "工程开发"
+  ],
+  "tags": [
+   "开发",
+   "自动化",
+   "写作"
+  ],
+  "detail": "先按需安装，例如 npx skills add humanlayer/skills --skill show-me，再在 Claude Code 中调用 /show-me。它会选择调用树、流程图、代码差异或 HTML 页面解释当前问题；visual-pr 则创建或更新带可视化结构说明的 PR，可能涉及提交、推送和发布。improve-claude-md 用条件化指令重写 CLAUDE.md，narrow-react-prop-types 根据真实运行路径收紧组件属性类型。另两条面向持续改进：build-iterated-agentic-loop 生成项目技能、GitHub Actions 工作流和反馈记忆文件；design-control-loop 先与你确定目标、测量方式与执行策略，再实现可在本地运行的组件并接入定时工作流。自动化所需权限和凭据需按项目配置。仓库采用 MIT 许可，各技能独立版本，不设统一技能版本。"
+ },
+ {
+  "slug": "remotion-dev-skills",
+  "rank": 51,
+  "title": "Remotion 官方的 12 条视频技能",
+  "desc": "建工程、写标记、开 Studio、渲染各一条，另有地图动画、字幕、交互、多媒体和升级；拿不准用哪条就先读那条伞形的 best-practices。",
+  "author": "remotion-dev",
+  "starsText": "4474 Star",
+  "stars": 4474,
+  "coverPath": "/images/skills/remotion-dev-skills.webp",
+  "repos": [
+   "https://github.com/remotion-dev/skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "内容创作者",
+   "职场人士"
+  ],
+  "usages": [
+   "先读 best-practices，再给这个视频建工程。",
+   "做一段地图飞越动画，用 GeoJSON 数据。",
+   "升级 Remotion 和已装的技能，把不兼容的地方一起改掉。"
+  ],
+  "version": "4.0.520",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "视频",
+   "开发",
+   "自动化"
+  ],
+  "detail": "地图那条点名支持 Mapbox、MapLibre、MapTiler、GeoJSON 和 CesiumJS 的三维飞越。文档那条能检索官方文档并按 Markdown 取回任意页面，用于动手前先确认当前 API，而不是凭训练数据里的旧写法。升级那条会一并升 Remotion、相关包和已装的技能自身。交互那条治的是一个具体毛病：元素在 Studio 里选不中、改不了。README 只有一百行，没写任何已知限制。"
+ },
+ {
+  "slug": "ip-as-logo",
+  "rank": 52,
+  "title": "IP as Logo：极简可爱的品牌角色",
+  "desc": "先理解产品与角色主题，提出三种有依据的 IP 方向，再生成六张彼此独立的方形候选；每张只用两种角色色和一个纯色背景，大而圆的下角构图在 32×32 仍能识别。",
+  "author": "s1dashu",
+  "starsText": "4459 Star",
+  "stars": 4459,
+  "coverPath": "/images/skills/ip-as-logo.webp",
+  "repos": [
+   "https://github.com/s1dashu/ip-as-logo-skill"
+  ],
+  "date": "2026-08-28",
+  "bestFor": [
+   "创业者",
+   "内容创作者",
+   "设计师"
+  ],
+  "usages": [
+   "为我的 AI 笔记产品设计一个极简可爱的 IP，先给三种方向，再生成六张候选。",
+   "把一只小幽灵做成深海军蓝背景的圆润品牌角色，左右下角各出三张。",
+   "读取当前产品信息，替我推导三个适合商业使用的动物 IP 方向。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "图像与设计"
+  ],
+  "detail": "它把角色当作一个需要极度简化的品牌符号：外轮廓只由四到七个大形状组成，最多保留一个物种识别特征、两块内部色区和极小的五官，角色从左下或右下进入并占画面约八成半到九成半。用户没有指定角色时，它会先读产品上下文，再给出三个分别对应产品价值的方向；默认六张方案在左右下角各占三张，并全部作为独立全分辨率图片生成。生图前必须确认可用的是 GPT Image 2、Seedance 5.0 Pro、Nano Banana Pro 或 Nano Banana 2 这类高质量模型，不能退回 SVG 假装完成。生成提示词只描述方形角色画面，不把“Logo、品牌标志或 App 图标”这类用途透露给图像模型；每批按一次随机创作处理，保留并交付全部结果，不自动筛掉、重试或后处理。"
+ },
+ {
+  "slug": "swiftui-agent-skill",
+  "rank": 53,
+  "title": "SwiftUI 代码审查，不是代码生成",
+  "desc": "它的定位是审查器：按九步逐项加载参考文件，从废弃 API、视图结构、数据流、导航一路查到无障碍、性能和代码卫生。",
+  "author": "Paul Hudson",
+  "starsText": "4417 Star",
+  "stars": 4417,
+  "coverPath": "/images/skills/swiftui-agent-skill.webp",
+  "repos": [
+   "https://github.com/twostraws/swiftui-agent-skill"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "内容创作者"
+  ],
+  "usages": [
+   "审一遍这个 SwiftUI 视图，按影响力排优先级。",
+   "这个文件里有哪些已废弃的 API？给改前改后。",
+   "只审导航和数据流这两块，别的先不看。"
+  ],
+  "version": "1.1.0",
+  "cats": [
+   "工程开发"
+  ],
+  "tags": [
+   "开发"
+  ],
+  "detail": "输出格式被写死：按文件分组、指出行号、命名违反的规则、给改前改后的代码、结尾按影响力排序，没问题的文件直接跳过。规则细到具体 API：foregroundStyle 取代 foregroundColor、clipShape 取代 cornerRadius、导航栏两个已废弃的位置要换、禁止用加号拼接 Text。基线是 iOS 26 和 Swift 6.2。贡献指南写明 token 预算是硬约束：别重复模型已知的东西。"
+ },
+ {
+  "slug": "photo-abstract-editorial",
+  "rank": 54,
+  "title": "Photo Abstract Editorial：照片与抽象记忆面板",
+  "desc": "保留原照片，不套滤镜也不重画；只从画面里的空间、节奏和色彩关系提炼一块极简抽象面板，再配一个两到五词的英文标题，组成竖版编辑作品。",
+  "author": "ZzzLc0405",
+  "starsText": "4409 Star",
+  "stars": 4409,
+  "coverPath": "/images/skills/photo-abstract-editorial.webp",
+  "repos": [
+   "https://github.com/ZzzLc0405/photo-abstract-editorial"
+  ],
+  "date": "2026-08-20",
+  "bestFor": [
+   "内容创作者",
+   "设计师"
+  ],
+  "usages": [
+   "用 photo-abstract-editorial 把这张照片做成摄影与抽象面板组合的竖版编辑作品。",
+   "保留原片，只从构图和色彩关系提炼下方的抽象记忆面板。",
+   "给这张照片做一版更克制的象牙白编辑海报，标题只用两到五个英文词。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "图像与设计"
+  ],
+  "detail": "它先从照片里识别三到六个决定性事实，例如人物或物体的相对位置、比例、轴线、重叠、光线和留白。原片始终放在上方或主区域，只允许为构图做等比缩放或轻微裁切；下方是连续的象牙白平面，用一组主要标记和最多两组辅助标记重新组织这些事实，颜色也只能从原图提取。两块区域直接相接，不加边框、阴影、胶带或拼贴效果。人物被压缩成短竖线或渐收色块，地标建筑最多保留一到三个识别线索。仓库许可允许个人、教育和非商业使用，不允许商业使用。"
+ },
+ {
+  "slug": "beautiful-html-templates",
+  "rank": 55,
+  "title": "34 套 HTML 幻灯模板与一份操作手册",
+  "desc": "不是 skill，是模板库加一份给 agent 的操作手册。34 套模板共 358 张幻灯，每套带十二个字段的元数据：气质、场合、语气、正式度、密度、适合与不适合什么。",
+  "author": "Zara Zhang",
+  "starsText": "4081 Star",
+  "stars": 4081,
+  "coverPath": "/images/skills/beautiful-html-templates.webp",
+  "repos": [
+   "https://github.com/zarazhangrui/beautiful-html-templates"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "职场人士"
+  ],
+  "usages": [
+   "先问我场合和气质，再给三套候选各出一张封面。",
+   "这套模板缺一个对比页，按它自己的字体和色板补一张。",
+   "别换字体，把这几页的内容替换掉就行。"
+  ],
+  "version": "",
+  "cats": [
+   "文档与幻灯片"
+  ],
+  "tags": [
+   "幻灯片"
+  ],
+  "detail": "手册规定的第一步是强制提问：先问场合和气质两个问题并等回答，作者写明「即使 brief 看起来很明显也要问，用户的品味常常出人意料」。匹配原则是模板有气质、没有行业：好问题是「要显得权威还是温暖」，坏问题是「这是金融还是科技」。三条硬禁令：绝不换字体、绝不改色、绝不混用两套模板的版式。但允许在单套模板内部原创新版式，验收标准是把新页夹在两张原页中间，看它是否显然属于这里。"
+ },
+ {
+  "slug": "notfair",
+  "rank": 56,
+  "title": "目标循环加 28 条营销技能",
+  "desc": "两个形态：一个本地跑的目标循环应用，和一个含 28 条营销技能的插件。技能覆盖 Google Ads、Meta Ads 和 SEO，其中 SEO 占 20 条。",
+  "author": "nowork-studio",
+  "starsText": "3320 Star",
+  "stars": 3320,
+  "coverPath": "/images/skills/notfair.webp",
+  "repos": [
+   "https://github.com/nowork-studio/NotFair"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "创业者",
+   "开发者"
+  ],
+  "usages": [
+   "给这个目标定基线，指标查询你写，我要能复现。",
+   "这轮只允许改一件事，说明你预期什么变化、多久能看出来。",
+   "这条 SEO 建议先出 PR，我看过再合。"
+  ],
+  "version": "0.25.9",
+  "cats": [
+   "营销增长",
+   "其他"
+  ],
+  "tags": [
+   "自动化",
+   "数据分析",
+   "项目管理"
+  ],
+  "detail": "目标循环的纪律很硬：平台机械测量指标，agent 永远不自报自己被考核的数字；每次检查最多允许一个新动作，且必须登记可证伪的预期和观察窗口，窗口内锁住被动过的资源。立项即量化——agent 自己写指标查询，平台再在服务端重跑同一条验证。护栏是行为层的，作者明说不是操作系统级沙箱；OAuth token 存在本地 SQLite 里且尚未在应用层加密。代码改动一律走 PR，合并权在你手上。"
+ },
+ {
+  "slug": "baoyu-design",
+  "rank": 57,
+  "title": "把 Claude Design 搬到本地 agent 上",
+  "desc": "实现是纯 Markdown 加几个 JSX 脚手架，没有构建步骤也没有运行时。它会探测自己跑在哪个 harness，读对应的工具映射，再按需只加载任务用得上的内置技能。",
+  "author": "宝玉",
+  "starsText": "3057 Star",
+  "stars": 3057,
+  "coverPath": "/images/skills/baoyu-design.webp",
+  "repos": [
+   "https://github.com/JimLiu/baoyu-design"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "设计师",
+   "开发者",
+   "创业者"
+  ],
+  "usages": [
+   "按这套设计系统出一版落地页原型，先起本地服务再预览。",
+   "把这个 Figma 文件导进来，资产直接抽出来别重画。",
+   "这份 deck 加上翻页动画，最后导成 PPTX。"
+  ],
+  "version": "1.2.0",
+  "cats": [
+   "设计与视频",
+   "文档与幻灯片",
+   "产品与项目"
+  ],
+  "tags": [
+   "图像与设计",
+   "幻灯片",
+   "开发"
+  ],
+  "detail": "设计系统是绑定契约：选定后把版本锁定的副本同步进项目，之后不许发明系统外的颜色和样式。Figma 文件完全离线解码，不需要账号、token 或 MCP，资产是从文件里抽出来复制、不重画。幻灯动画用属性族标注，一比一映射到 PowerPoint 的三种触发方式。要注意几点：PPTX 导出工具本地是缺的，需要一次性构建；多文件原型必须走 HTTP，file 协议打不开；项目声明与 Anthropic 无关。"
+ },
+ {
+  "slug": "avoid-ai-writing",
+  "rank": 58,
+  "title": "AI 写作检测：一个真能跑分的引擎",
+  "desc": "不只是规则文件，还有一个零依赖的检测引擎，Node 和浏览器都能跑。词表 112 条分三档，另有 61 个 pattern 类别。",
+  "author": "Conor Bronsdon",
+  "starsText": "2826 Star",
+  "stars": 2826,
+  "coverPath": "/images/skills/avoid-ai-writing.webp",
+  "repos": [
+   "https://github.com/conorbronsdon/avoid-ai-writing"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "职场人士",
+   "所有人"
+  ],
+  "usages": [
+   "跑一遍检测，把命中的 pattern 按严重度列给我。",
+   "重写这段，改完再跑一次，分数要降下来。",
+   "保护校验器过了吗？代码块和表格有没有被动过？"
+  ],
+  "version": "3.23.1",
+  "cats": [
+   "写作与研究",
+   "内容与知识"
+  ],
+  "tags": [
+   "写作",
+   "发布分发"
+  ],
+  "detail": "分档很讲究：一档恒标、二档成簇才标、三档高密度才标；一档还再拆成频率标记和清晰度编辑两类——同样的改法，但只有前者算「如何被生成」的证据，后者权重压低，免得一个啰嗦修正把文档推向「AI 生成」的判定。分数只有一个来源：引擎才算 0 到 100，规则本身只报命中和严重度。还有个保护校验器：重写若动了代码块、表格、URL 或标题结构，直接判失败。"
+ },
+ {
+  "slug": "shuohao-skills",
+  "rank": 59,
+  "title": "Shuohao Skills：小说到 AI 短剧的五段生产线",
+  "desc": "五个可独立运行又能接力的 Skill，把小说依次做成改编大纲、角色设定、美术设定、分集剧本和分镜投产包；每一段都产出 JSON、Markdown 与可评审的 HTML 报告。",
+  "author": "eternityspring",
+  "starsText": "2550 Star",
+  "stars": 2550,
+  "coverPath": "/images/skills/shuohao-skills.webp",
+  "repos": [
+   "https://github.com/eternityspring/shuohao-skills"
+  ],
+  "date": "2026-09-03",
+  "bestFor": [
+   "内容创作者",
+   "职场人士"
+  ],
+  "usages": [
+   "把这本小说先改成 30 集短剧大纲，跑完所有质量门并输出单页评审报告。",
+   "根据 outline.json 接着做角色与场景设定，生成跨集一致的提示词和设定图。",
+   "把前 3 集写成剧本并切成分镜段，最后导出 MiniMax H3 提示词与投产包。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频",
+   "写作与研究"
+  ],
+  "tags": [
+   "视频",
+   "写作",
+   "图像与设计",
+   "自动化"
+  ],
+  "detail": "novel-outline 先收敛集数、人物、爽点、分集梗概与资产清单；novel-characters 和 novel-art 再把角色外形、音色、场景、光照状态与叙事道具固定成跨集一致的设定；novel-script 把每集写成动作节拍和台词交替的场次，并按语速核算时长；novel-storyboard 最后切成一次生成不超过 15 秒的段、段内 2–5 秒的镜头和钉在切点的关键帧，同时导出 MiniMax H3 提示词与投产清单。结构由大纲决定，剧本、场景与角色同步迭代，分镜只负责把已定内容变成可拍方案，不在末端新增决定。五阶段报告可以合成一个带导航的页面；各 Skill 还带不调用模型的自测与确定性质量门。脚本只需 Node 18 及以上、没有 npm 依赖或额外 API key，Codex 的图像生成能力只在需要设定图和分镜图时可选使用。仓库采用 Apache 2.0 许可，目前是中文优先的生产流程。"
+ },
+ {
+  "slug": "supabase-agent-skills",
+  "rank": 60,
+  "title": "Supabase 的两条技能",
+  "desc": "只有两条：一条管 Supabase 本身，一条是 Postgres 最佳实践。后者的参考目录有 34 份文档，按影响力分八类并标了优先级。",
+  "author": "supabase",
+  "starsText": "2475 Star",
+  "stars": 2475,
+  "coverPath": "/images/skills/supabase-agent-skills.webp",
+  "repos": [
+   "https://github.com/supabase/agent-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "加这个表之前先扫一遍 changelog 有没有破坏性变更。",
+   "这条 RLS 策略用了 user_metadata，帮我改成安全的写法。",
+   "这个查询慢，按 Postgres 那条的优先级排查。"
+  ],
+  "version": "0.1.7",
+  "cats": [
+   "工程开发"
+  ],
+  "tags": [
+   "开发",
+   "数据分析"
+  ],
+  "detail": "第一条核心原则是「不要相信训练数据」——动手前先拉官方 changelog 扫破坏性变更标签。第三条写死：同一方法失败两三次就停，别循环重试。安全清单里点名了 Supabase 特有的陷阱：user_metadata 用户自己可改，绝不能进 RLS 授权判断，要用 app_metadata；删用户不会让已签发的访问令牌失效。构建脚本作者自己标为临时方案，等官方 Action 就位后要整体替换。"
+ },
+ {
+  "slug": "paper-search-mcp",
+  "rank": 61,
+  "title": "论文检索 MCP：能下和不能下分得很清",
+  "desc": "Python 写的 MCP 服务，统一一个搜索工具做多源并发去重，另一个负责带回退的下载。README 有一张能力矩阵，实测标注哪些源支持下载。",
+  "author": "openags",
+  "starsText": "2351 Star",
+  "stars": 2351,
+  "coverPath": "/images/skills/paper-search-mcp.webp",
+  "repos": [
+   "https://github.com/openags/paper-search-mcp"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "学生与研究者",
+   "职场人士",
+   "开发者"
+  ],
+  "usages": [
+   "搜这个主题最近的论文，多源并发，去重后给我。",
+   "这几篇能下全文吗？不能的直接告诉我。",
+   "配一下 Unpaywall 的邮箱，其他源先不动。"
+  ],
+  "version": "0.1.4",
+  "cats": [
+   "内容与知识",
+   "写作与研究"
+  ],
+  "tags": [
+   "写作",
+   "知识管理",
+   "教学与研究"
+  ],
+  "detail": "回退链有明确顺序：源生下载、OA 聚合库、Unpaywall 的 DOI 解析，最后才是可选的 Sci-Hub——作者单开一节声明镜像不稳、法律风险因辖区而异、由用户自负，绝不作为默认路径。Unpaywall 是唯一必填项，不填邮箱整个源直接跳过。IEEE 和 ACM 只是骨架，下载和阅读直接抛未实现。作者还列了一整张上游失效表：Google Scholar 被验证码拦、匿名调用会限流、部分端点已无解。"
+ },
+ {
+  "slug": "learning-opportunities",
+  "rank": 62,
+  "title": "写完代码顺手做一道练习",
+  "desc": "完成架构性工作后，它会问要不要做一个十到十五分钟的练习：预测再观察、生成再比对、逐步追踪执行路径、debug、讲给新人听，或开场检索回顾。",
+  "author": "Dr. Cat Hicks",
+  "starsText": "2328 Star",
+  "stars": 2328,
+  "coverPath": "/images/skills/learning-opportunities.webp",
+  "repos": [
+   "https://github.com/DrCatHicks/learning-opportunities"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "学生与研究者"
+  ],
+  "usages": [
+   "刚做完这个重构，出一道十分钟的练习让我自己想。",
+   "用 orient 帮我给这个陌生仓库做一份定向说明。",
+   "这周做过的几个决定，出一轮检索回顾。"
+  ],
+  "version": "",
+  "cats": [
+   "工程开发",
+   "内容与知识"
+  ],
+  "tags": [
+   "开发",
+   "教学与研究",
+   "知识管理"
+  ],
+  "detail": "核心设计是提问后暂停等你输入，而不是自问自答——这正好顶着模型「总要给出完整答案」的默认倾向，作者明说这可能让人觉得挫败。有两条自动抑制：本次会话已拒绝过一次、或已完成两次练习，就不再提示。市场里还有两个插件：一个 post-commit 提示钩子，一个给陌生仓库做定向的 orient，依据是专家靠策略性抽样而非通读的研究。作者是研究软件团队的心理学家，附了二十篇文献。"
+ },
+ {
+  "slug": "oil-motion",
+  "rank": 63,
+  "title": "Oil Motion：把生成动画接到网页交互上",
+  "desc": "先锁定关键帧，用视频模型补出连续运动，再逐帧清理并压成可控素材；最后把时间轴接到滚动、鼠标、拖拽、触摸、设备方向或组件状态。",
+  "author": "oil-oil",
+  "starsText": "2147 Star",
+  "stars": 2147,
+  "coverPath": "/images/skills/oil-motion.webp",
+  "repos": [
+   "https://github.com/oil-oil/oil-motion"
+  ],
+  "date": "2026-09-03",
+  "bestFor": [
+   "内容创作者",
+   "设计师",
+   "开发者"
+  ],
+  "usages": [
+   "用 Oil Motion 把这两张产品图做成随滚动逐步拆解的交互动画，桌面保持清晰，移动端使用轻量素材。",
+   "先为这个角色跟随鼠标的动作提出三种方向，只在我选定后生成关键帧和连续视频。",
+   "检查现有帧序列，清掉停顿、重复帧和闪烁，再接成支持减少动态效果的网页动画。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "视频",
+   "开发",
+   "自动化"
+  ],
+  "detail": "它先把主体、风格、动作、背景归属、输入方式和连续性写成 Concept Contract，再为起点、中段与终点做关键帧；完整视频要先通过小规模 Pilot，之后才批量生成。交付路线会按场景和设备预算在全关键帧 MP4、透明 WebP sprite sheet 与色键 MP4 之间选择，运行时则独立选择连续拖动时间轴、事件触发分段播放或自主播放。生成后会检查每一帧，剪掉首尾停顿和近重复帧，处理闪烁、接缝、透明边缘、快速反向与移动端负载，并提供静态首帧、加载失败和减少动态效果的回退。确定性处理依赖 Python 3、Pillow、ffmpeg 与 ffprobe；视频生成需要首次配置模型服务密钥。仓库采用 MIT 许可。"
+ },
+ {
+  "slug": "logo-generator",
+  "rank": 64,
+  "title": "Logo Generator：SVG 标志与高端展示套件",
+  "desc": "从品牌名、行业、核心概念和视觉偏好出发，生成至少六个真正不同的 SVG 标志方案，再做成交互式比较页、PNG 导出和多背景品牌展示图。",
+  "author": "歸藏",
+  "starsText": "1987 Star",
+  "stars": 1987,
+  "coverPath": "/images/skills/logo-generator.webp",
+  "repos": [
+   "https://github.com/op7418/logo-generator-skill"
+  ],
+  "date": "2026-08-28",
+  "bestFor": [
+   "创业者",
+   "内容创作者",
+   "设计师",
+   "开发者"
+  ],
+  "usages": [
+   "为 DataFlow 设计六个彼此不同的几何 SVG Logo，并做成交互式比较页。",
+   "为一个区块链安全平台探索点阵、线条和节点网络三类标志方向。",
+   "把我选中的方案导出为多尺寸 PNG，再用四种适合 SaaS 的背景做展示图。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "图像与设计",
+   "开发",
+   "发布分发"
+  ],
+  "detail": "它先用极简几何、点阵、线条系统、节点网络和混合构图等范式探索六个以上方向，而不是只改颜色或旋转角度；每个方案都有设计理由，并使用 100×100 viewBox 和 currentColor 保持矢量可缩放、易换色。用户选出两三个方向后，可以继续调尺寸、间距、旋转或组合不同方案的元素。最终工作流会把 SVG 转为 PNG，再按产品气质从十二种深浅背景里挑四种做展示，包括绝对虚空、流体深渊、编辑纸张、临床工作室和瑞士扁平等，并汇总成可交互的 HTML 页面。基础矢量方案可以直接生成；高端展示图需要 Python 3.8+、CairoSVG 等依赖，以及可用的 Gemini API 密钥和 Nano Banana 图像模型。"
+ },
+ {
+  "slug": "mono-color-skill",
+  "rank": 65,
+  "title": "Mono Color：单色与受控双色编辑印刷",
+  "desc": "把主题、短句、物件、文章想法或照片转成原创编辑印刷图：默认使用职责分明的一主一辅两块印版，明确要求单色时保持单墨，并把留白、网点、字体张力和套印偏差收进同一套可检查的视觉系统。",
+  "author": "Yan Liu",
+  "starsText": "1906 Star",
+  "stars": 1906,
+  "coverPath": "/images/skills/mono-color-skill.webp",
+  "repos": [
+   "https://github.com/yanliudesign/mono-color-skill"
+  ],
+  "date": "2026-09-01",
+  "bestFor": [
+   "设计师",
+   "内容创作者"
+  ],
+  "usages": [
+   "用 mono-color 做一张关于凌晨便利店的竖版海报，主标题是“still open”，保留大面积纸面留白。",
+   "把这张人物照片做成钴蓝单色 zine 封面，保留人物身份、表情和最关键的面部特征。",
+   "用群青加安全橙做一张城市骑行叠印海报，让辅墨只负责日期、标注和局部交叉区域。"
+  ],
+  "version": "1.2.0",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "图像与设计"
+  ],
+  "detail": "它会先把输入解析成一份稳定配方：主体与意图、原文、写实保留或抽象符号提取、画幅、纸张基底、印刷模式、油墨与印版职责、版式、留白、字体层级和机械复制工艺都先确定，再编译生成 Prompt。未指定时采用 3:4、中性白、约 35% 留白，以及钴蓝为主、陶土橙为辅的受控双色；主墨通常承担 70%–85% 印刷面积，辅墨只负责标注、特定物件或叠印交叉，只有明确提出单色或某一种油墨时才切换为单墨。输入照片可以保留人物或物件身份，也能按要求提取 2–4 个识别锚点做更抽象的重构。每次交付一张生成位图、实际使用的完整 Prompt，以及注明配色、版式、字体和印刷工艺的简短配方；没有图像生成能力时会明确退回 Prompt。仓库还提供机器可读的 design-system 目录、评测用例与校验脚本。Claude Code 的安装方式是把仓库克隆到 ~/.claude/skills/mono-color 后重启，其他 Agent 可直接加载根目录 SKILL.md。源代码和脚本采用 MIT 许可，但 examples 里的示范图片不在 MIT 范围内，只能查看与分享原仓库链接，不能直接拿来再发布。"
+ },
+ {
+  "slug": "deep-research-skills",
+  "rank": 66,
+  "title": "大纲先行的深度调研",
+  "desc": "五条命令：生成大纲、补条目、补字段、并行深查、出报告。中间产物是 JSON，报告是最后一步单独生成的，不是边查边写。",
+  "author": "Weizhena",
+  "starsText": "1876 Star",
+  "stars": 1876,
+  "coverPath": "/images/skills/deep-research-skills.webp",
+  "repos": [
+   "https://github.com/Weizhena/Deep-Research-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "学生与研究者",
+   "开发者"
+  ],
+  "usages": [
+   "先给这个题目生成调研大纲，我要补几条再开查。",
+   "大纲里加一列「落地难度」，然后并行深查。",
+   "把 JSON 结果生成一份带目录的报告。"
+  ],
+  "version": "",
+  "cats": [
+   "写作与研究",
+   "内容与知识"
+  ],
+  "tags": [
+   "写作",
+   "知识管理",
+   "教学与研究"
+  ],
+  "detail": "灵感来自 RhinoInsight 那篇论文。人工干预点很明确：大纲出来后你可以补条目和补字段，补完再进深查阶段，深查是多个 agent 并行逐项做。有中英两套、Claude Code 与 Codex 两套，共四个变体。装的时候注意：必须另外拷 agent 配置目录、要装 pyyaml。最容易漏的是 OpenCode 下必须设一个环境变量才有联网搜索，不设就只剩抓取，作者直言深查阶段会弱很多。"
+ },
+ {
+  "slug": "wondelai-skills",
+  "rank": 67,
+  "title": "62 条技能：50 本书 + 12 条元技能",
+  "desc": "五十条从畅销书方法论提炼，每条标着出处书目与作者；十二条元技能负责编排——创建、改进、增长各对应业务、网站、应用三个方向。",
+  "author": "wondelai",
+  "starsText": "1850 Star",
+  "stars": 1850,
+  "coverPath": "/images/skills/wondelai-skills.webp",
+  "repos": [
+   "https://github.com/wondelai/skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "创业者",
+   "开发者",
+   "职场人士"
+  ],
+  "usages": [
+   "用创建业务那条元技能开始，一步步问我，把状态写进 docs。",
+   "按 JTBD 那条梳理我们的客户到底在雇这个产品做什么。",
+   "用改进网站那条审一遍现有落地页。"
+  ],
+  "version": "1.5.1",
+  "cats": [
+   "营销增长",
+   "产品与项目",
+   "工程开发"
+  ],
+  "tags": [
+   "写作",
+   "开发",
+   "项目管理"
+  ],
+  "detail": "元技能的机制值得说：它分阶段向你提决策问题，把状态写成 docs 目录下的活文档，所以中断之后能跨会话续跑。比如创建业务那条按固定顺序编排十条技能，产出六份定位与产品文档。作者在免责声明里写明这些技能没有直接复制或复现原书内容，只基于公开的方法论信息，并提醒这是实用辅助、不能替代原书。另有两条不出自书：设计那条来自获奖机构的技法，iOS 那条来自苹果官方规范。"
+ },
+ {
+  "slug": "renwei-writing",
+  "rank": 68,
+  "title": "人味儿写作：只做减法",
+  "desc": "它不追求把文字改得更好，而是清掉绊脚的地方、其余原样。作者把「人味儿」拆成三件事：说话人站在具体位置、判断是拿身体换来的、留着手迹。",
+  "author": "橘子 (Orange)",
+  "starsText": "985 Star",
+  "stars": 985,
+  "coverPath": "/images/skills/renwei-writing.webp",
+  "repos": [
+   "https://github.com/orange2ai/renwei-writing"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "职场人士",
+   "所有人"
+  ],
+  "usages": [
+   "按这套心法改这段，逐处说明原文哪里打绊。",
+   "这段我不想它变工整，只把读起来卡的地方清掉。",
+   "先讲原理再上清单，不要直接拿清单扫全文。"
+  ],
+  "version": "",
+  "cats": [
+   "写作与研究",
+   "内容与知识"
+  ],
+  "tags": [
+   "写作"
+  ],
+  "detail": "七条规则全是收敛型：每处改动要能说出原文哪里打绊、一段文字动三处是常态而动十处是事故、毛边先假设是手迹不是瑕疵、不写金句、拿不准就白描、逐处交代改动并把否决权留给作者。它写明上限是隐形——最好的结果是读者完全感觉不到改稿者来过。结构上先原理后清单且顺序固定，作者说跳过原理直接拿清单扫全文，会把手迹当瑕疵修掉。"
+ },
+ {
+  "slug": "claude-deep-research-skill",
+  "rank": 69,
+  "title": "深度研究：四档模式，最长四十五分钟",
+  "desc": "快速三阶段两到五分钟，标准六阶段五到十分钟，深度八阶段十到二十分钟，超深二十到四十五分钟。默认是标准档，不是最长那档。",
+  "author": "199-biotechnologies",
+  "starsText": "969 Star",
+  "stars": 969,
+  "coverPath": "/images/skills/claude-deep-research-skill.webp",
+  "repos": [
+   "https://github.com/199-biotechnologies/claude-deep-research-skill"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "学生与研究者",
+   "开发者"
+  ],
+  "usages": [
+   "用标准档研究这个题目，写完把来源清单一起给我。",
+   "这份报告里的引用帮我核一遍，哪些是编的？",
+   "切到深度档，加一轮红队：找出这份结论最脆弱的地方。"
+  ],
+  "version": "",
+  "cats": [
+   "写作与研究",
+   "内容与知识"
+  ],
+  "tags": [
+   "写作",
+   "数据分析",
+   "知识管理"
+  ],
+  "detail": "质量门是数字化的：至少十个来源、每条主要论断至少三个来源、执行摘要两百到四百词、每条发现六百到两千词。一个脚本跑九项结构检查，另一个查 DOI 和幻觉引用，验证循环最多三轮。第零步是先取当前日期再开搜，专门防模型拿训练数据里的旧年份当今年。多角色红队只在深度和超深两档才有。作者也写明了不该用它的场合：一两次搜索能答的问题、调试、时效性快问快答。"
+ },
+ {
+  "slug": "cc-thinking-skills",
+  "rank": 70,
+  "title": "28 个思维模型，零个被证明有效",
+  "desc": "入口是一条路由元技能，另有一条负责多模型组合。理论来源点名芒格、梅多斯、卡尼曼、高德拉特、TRIZ 和 OODA。",
+  "author": "TJ Boudreaux",
+  "starsText": "933 Star",
+  "stars": 933,
+  "coverPath": "/images/skills/cc-thinking-skills.webp",
+  "repos": [
+   "https://github.com/tjboudreaux/cc-thinking-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "这个决策用哪几个思维模型合适？先走路由那条。",
+   "用两个不同模型分别过一遍这个方案，说明各自结论。",
+   "这条技能的评测结论是什么？有没有复现过？"
+  ],
+  "version": "1.0.0",
+  "cats": [
+   "工程开发",
+   "内容与知识",
+   "产品与项目"
+  ],
+  "tags": [
+   "开发",
+   "项目管理",
+   "知识管理"
+  ],
+  "detail": "最该知道的是作者把负面结论摆在最前面：目前没有任何一条技能拿到稳健且可复现的提升判定，二十八条全部人工调用；最接近的那条最终判定是「方向性但未复现」；历史上三十九条在证据核查后被砍掉十一条。作者自己的结论是：把它们当结构化推理的脚手架，不是准确率保证。评测体系倒是做得很实：结构校验、路由误触发控制、盲配对评测，还有证据登记表不全就直接判失败。"
+ },
+ {
+  "slug": "qiaomu-goal-meta-skill",
+  "rank": 71,
+  "title": "把模糊需求写成一条 /goal 指令",
+  "desc": "它自己不执行目标，只产出一条能直接复制的 Codex /goal 指令，固定含七个字段：结果、验证、约束、边界、迭代策略、完成条件、暂停条件。",
+  "author": "向阳乔木",
+  "starsText": "846 Star",
+  "stars": 846,
+  "coverPath": "/images/skills/qiaomu-goal-meta-skill.webp",
+  "repos": [
+   "https://github.com/joeseesun/qiaomu-goal-meta-skill"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "把这个需求写成一条 /goal，暂停条件帮我想全。",
+   "这条 /goal 跑一遍 linter，占位符和空验证都揪出来。",
+   "「做得高级一点」这句翻译成可验证的检查动作。"
+  ],
+  "version": "",
+  "cats": [
+   "产品与项目",
+   "工程开发",
+   "写作与研究"
+  ],
+  "tags": [
+   "写作",
+   "开发",
+   "项目管理",
+   "自动化"
+  ],
+  "detail": "交互形态是先给答案再给选项：默认直接输出推荐执行版和一句选择理由，再附四道编号选择题，你回「按默认」就收敛。风险分层写得很实：低风险不确定性直接做假设推进，只有凭证账号支付、生产数据与破坏性操作、法律医疗金融判断、上架发布这几类才写进暂停条件。「高级」「有质感」这类模糊词不删除，而是翻译成可验证的检查动作，并压到最多三轮聚焦改进。附带的 linter 专拦占位符、空验证和无限重试。"
+ },
+ {
+  "slug": "live-panel-skill",
+  "rank": 72,
+  "title": "live-panel-skill：让架构图动起来",
+  "desc": "用一份 JSON 生成终端风或浅色信息图风的动态架构图，展示数据流、日志和状态变化，输出 MP4 或循环播放的网页。",
+  "author": "ythx-101",
+  "starsText": "760 Star",
+  "stars": 760,
+  "coverPath": "/images/skills/live-panel-skill.webp",
+  "repos": [
+   "https://github.com/ythx-101/live-panel-skill"
+  ],
+  "date": "2026-10-16",
+  "bestFor": [
+   "开发者",
+   "内容创作者",
+   "教育工作者"
+  ],
+  "usages": [
+   "用 live-panel 把“用户请求 → 主代理 → 搜索与代码工具 → 返回结果”做成 4:5 终端风架构动画。保留完整布局，加入流动的数据包和日志，输出 MP4、HTML 和 JSON。",
+   "用浅色主题和 loop 视图展示“计划 → 执行 → 检查 → 未通过则重试”的流程，做成 3:4 信息图动画；模拟计数请明确标注，并保留引用来源。",
+   "检查这份 live-panel 配置在多个时间点的文字溢出和重叠，验证重播一致性，修正后导出 1:1 视频和预览截图。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "视频",
+   "图像与设计",
+   "开发",
+   "教学与研究"
+  ],
+  "detail": "将仓库放入助手的技能目录，以 live-panel 调用。从示例生成 JSON，设置节点、连线和日志，再渲染并检查文字溢出、重叠及重播一致性。内置环形、漏斗和嵌套循环视图，支持 4:5、3:4、1:1 画幅。需 Python 3.8+、Chrome/Chromium 和 ffmpeg，无需 API 密钥；支持 macOS、Linux，Windows 需 WSL。适合流程讲解，动画计数须标明模拟，不接入真实监控数据。"
+ },
+ {
+  "slug": "swarmvault",
+  "rank": 73,
+  "title": "SwarmVault：边带来源标签的知识图谱",
+  "desc": "一条命令起步：初始化、摄入本地文件或公开仓库、编译 wiki 和图谱、打开本地查看器。它不只是 CLI，还有 MCP 服务和跨三平台的桌面应用。",
+  "author": "swarmclawai",
+  "starsText": "644 Star",
+  "stars": 644,
+  "coverPath": "/images/skills/swarmvault.webp",
+  "repos": [
+   "https://github.com/swarmclawai/swarmvault"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "开发者",
+   "职场人士",
+   "学生与研究者",
+   "所有人"
+  ],
+  "usages": [
+   "把这个仓库摄入进来，编译出图谱再打开查看器。",
+   "图里哪些边是推断的？把存疑的单独列出来。",
+   "给这个目标产出一个八千 token 以内的交接包，注明省略了什么。"
+  ],
+  "version": "3.20.0",
+  "cats": [
+   "内容与知识",
+   "写作与研究",
+   "工程开发"
+  ],
+  "tags": [
+   "知识管理",
+   "写作",
+   "数据分析",
+   "开发",
+   "项目管理"
+  ],
+  "detail": "每条边都打上「抽取的 / 推断的 / 存疑的」标签，矛盾检测自动跑并进图谱报告，新概念先落候选目录、要批准才合并——作者的原话是「不会有东西悄悄变掉」。摄入支持三十多种格式，含 PDF、邮件、日历、Slack 导出和音视频；代码走语法树并抽出 import 关系。隐私边界写得很清楚：代码内容永不外发，但文档和文本会发给你配置的模型服务，只有默认的启发式模式才是完全离线。"
+ },
+ {
+  "slug": "video-production-skills",
+  "rank": 74,
+  "title": "Video Production Skills：从动效导演到逐帧质检",
+  "desc": "四个可独立安装的视频 Skill：先从主题定运动主张和节奏，再做参考视频复刻质检、暗色 SaaS 成片或黑底白字片头；面向 HyperFrames、Remotion 等代码化工作流。",
+  "author": "Pluviobyte",
+  "starsText": "640 Star",
+  "stars": 640,
+  "coverPath": "/images/skills/video-production-skills.webp",
+  "repos": [
+   "https://github.com/Pluviobyte/video-production-skills"
+  ],
+  "date": "2026-09-03",
+  "bestFor": [
+   "内容创作者",
+   "职场人士",
+   "开发者"
+  ],
+  "usages": [
+   "用 ai-motion-director 把这份产品简报变成 30 秒视频方案，先定运动隐喻和 beat graph，别做成 PPT。",
+   "拆解这条参考视频，用 reference-video-replica-qc 复刻并说明能证明到哪一级保真度。",
+   "做一条暗色 SaaS 产品短片，并在最前面加一个带同步打字音效的黑底白字开场。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "视频",
+   "自动化",
+   "开发"
+  ],
+  "detail": "ai-motion-director 是上层导演：把主题、文章、脚本或简报转成视觉隐喻、beat graph、组件调度和素材计划，并用 anti-PPT gate 阻止结果退化成会动的幻灯片。reference-video-replica-qc 把复刻拆成五种不同保真度，要求素材、运行时和交付三道门都有全帧、时间偏移、边界帧和归档证据，同时把验证过的动作沉淀为 HyperFrames 或 Remotion 组件。另两条生成型 Skill 分别负责黑色空间、紫色底光与漂浮 UI 的暗色 SaaS 产品片，以及带逐字出现和同步打字音效的黑底白字开场；它们只承诺风格级创作，不冒充像素级复刻。仓库支持 Codex、Claude Code、Cursor 与 Skills CLI，每个一级目录都能按需单装。"
+ },
+ {
+  "slug": "ecommerce-skills",
+  "rank": 75,
+  "title": "跨平台电商技能，数字得打个问号",
+  "desc": "纯 markdown，无密钥无配置，覆盖亚马逊、Shopify、eBay、Etsy、TikTok Shop 和沃尔玛。注意数量：仓库自己写了 157、142、125 三个互相矛盾的数字。",
+  "author": "nexscope-ai",
+  "starsText": "595 Star",
+  "stars": 595,
+  "coverPath": "/images/skills/ecommerce-skills.webp",
+  "repos": [
+   "https://github.com/nexscope-ai/eCommerce-Skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "创业者",
+   "所有人"
+  ],
+  "usages": [
+   "按增长策略那条给这个店做九十天路线图。",
+   "这个品类做跨境，哪几个市场优先？税务怎么处理？",
+   "这条技能是 Beta 还是可用？"
+  ],
+  "version": "",
+  "cats": [
+   "营销增长",
+   "产品与项目",
+   "内容与知识"
+  ],
+  "tags": [
+   "数据分析",
+   "自动化",
+   "项目管理",
+   "写作"
+  ],
+  "detail": "更该知道的是成熟度：列出的条目里约六成仍标着 Beta，只有四十来条是可用状态。作者自己在「为什么免费」一节说清了边界——这些技能只是框架和公开数据，本身拿不到实时市场数据，要接第三方数据源得用他们的商业产品。亚马逊的深度工具也不在这个仓库，在另一个姊妹仓库。招牌那几条倒挺具体：增长策略用单位经济学诊断加安索夫矩阵加九十天路线图。"
+ },
+ {
+  "slug": "ecommerce-visual-copywriting-skill",
+  "rank": 76,
+  "title": "电商视觉文案：两道人工确认门",
+  "desc": "不是一键生成：先出视觉策划案停下等你确认，再出图片规划脚本停下等你确认，之后才写图内文案和生图提示词。",
+  "author": "feichanggege",
+  "starsText": "547 Star",
+  "stars": 547,
+  "coverPath": "/images/skills/ecommerce-visual-copywriting-skill.webp",
+  "repos": [
+   "https://github.com/feichanggege/ecommerce-visual-copywriting-skill"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "内容创作者",
+   "创业者"
+  ],
+  "usages": [
+   "先出视觉策划案，我确认了再往下。",
+   "这五张主图各自的分工是什么？先给我脚本。",
+   "按五个维度自审一遍，低于 80 分的那维重写。"
+  ],
+  "version": "",
+  "cats": [
+   "营销增长",
+   "设计与视频"
+  ],
+  "tags": [
+   "写作",
+   "图像与设计",
+   "项目管理"
+  ],
+  "detail": "风格锁死三件事：主辅强调不超过三色、主图产品画面占六到八成、光影与字体成体系。五张主图分工固定：视觉截流、痛点、差异对比、场景代入、行动引导，每张不超过五行字。自审是五个独立维度——合规性、利益翻译度、视觉第一落点、触感表达、叙事连贯性，任一维度低于八十分只重写那一维，不允许用其他高分抵消。安全边界写明：不替代法律结论、不编造检测报告和批准文号、不自动上架。"
+ },
+ {
+  "slug": "claude-skills",
+  "rank": 77,
+  "title": "103 条方法论技能，统一八段结构",
+  "desc": "分 16 类共 103 条，另有 490 份参考文件。每条 SKILL.md 结构固定：何时用、何时不用、需要什么输入、框架、流程、失败模式、输出格式、参考文件。",
+  "author": "rampstackco",
+  "starsText": "518 Star",
+  "stars": 518,
+  "coverPath": "/images/skills/claude-skills.webp",
+  "repos": [
+   "https://github.com/rampstackco/claude-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "创业者",
+   "内容创作者"
+  ],
+  "usages": [
+   "按创意方向那条给这个品牌定四个轴。",
+   "这条技能什么时候不该用？先看这一段。",
+   "跑一遍 lint，看看哪条超了行数上限。"
+  ],
+  "version": "1.2.0",
+  "cats": [
+   "营销增长",
+   "产品与项目",
+   "内容与知识"
+  ],
+  "tags": [
+   "项目管理",
+   "写作",
+   "数据分析"
+  ],
+  "detail": "行数也有上限：主文件不超过 250 行、参考文件不超过 400 行，靠 lint 脚本和 CI 校验而不是靠自觉。它自称是方法论层——模板、清单、判断框架，执行仍靠模型和人，没有任何自动化承诺。「与技术栈无关」有唯一例外：SEO 那七条依赖 Ahrefs 的 MCP。展示是 42 个虚构品牌站，作者说明用虚构产品是因为真实客户案例不能开源。"
+ },
+ {
+  "slug": "qiaomu-design",
+  "rank": 78,
+  "title": "风格试衣间：先挑方向再动手",
+  "desc": "先生成四个互斥方向的真实迷你 mockup，点选后经本地回调把选择传回工作流。三个拨盘按任务类型自适应：版式实验度、动效强度、信息密度。",
+  "author": "向阳乔木",
+  "starsText": "458 Star",
+  "stars": 458,
+  "coverPath": "/images/skills/qiaomu-design.webp",
+  "repos": [
+   "https://github.com/joeseesun/qiaomu-design"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "设计师",
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "先出四个互斥方向的迷你 mockup，我点一个再往下。",
+   "这个页面走打磨模式，别推倒重来。",
+   "按 58 站库里那种做法定一版排版规范，别照抄外观。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频",
+   "产品与项目"
+  ],
+  "tags": [
+   "图像与设计",
+   "开发",
+   "项目管理"
+  ],
+  "detail": "反 AI 味的禁令点名到具体项：禁紫渐变、禁 Inter、禁斜体、禁居中 Hero 套路、禁 revolutionary 这类词。58 个真实站点的设计规范做成库供参考，作者说明是借方法不复制外观。打磨模式六个动作不推倒重来，交付前有硬门禁，任一条不过不交付。作者写明了使用前提：建议用 GLM 5.2 或 Claude 执行，实测 Codex 里的 GPT 模型效果很差，保守、空洞、模板化。"
+ },
+ {
+  "slug": "photo-revival",
+  "rank": 79,
+  "title": "Photo Revival：把随手拍画成白纸小景",
+  "desc": "保留普通照片里最值得记住的主体、环境和一两个细节，再把它重画成白纸上的小尺寸手绘场景；铅笔边缘、水彩柔感和局部亮色只集中在画面一角。",
+  "author": "dacnay816y62-hub",
+  "starsText": "455 Star",
+  "stars": 455,
+  "coverPath": "/images/skills/photo-revival.webp",
+  "repos": [
+   "https://github.com/dacnay816y62-hub/photo-revival"
+  ],
+  "date": "2026-08-20",
+  "bestFor": [
+   "内容创作者",
+   "设计师"
+  ],
+  "usages": [
+   "用 photo-revival 把这张随手拍重画成 3:4 白纸手绘页，主体控制在一成五以内。",
+   "保留这辆车和路边招牌，其他细节简化成铅笔与淡水彩。",
+   "把这张废片做成旅行手账小景，只加一行很小的日期注释。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "图像与设计"
+  ],
+  "detail": "默认是 3:4 竖版，主体或焦点簇只占页面约一成到一成六，绝对不超过一成八，剩下八成到八成八都是白纸留白。它不追求逐像素复制照片，而是把识别信息简化后，用纸张、笔触、铅笔、水彩或少量拼贴痕迹重新组织；最强的颜色也必须留在那块小区域里，不能蔓延到空白。文字只能是一行很小的手写注释、日期、标签或诗意短句。满版填充、照片滤镜、巨型标题、扁平矢量和大块拼贴都属于失败方向。"
+ },
+ {
+  "slug": "esther-design-system",
+  "rank": 80,
+  "title": "不二设计系统：限制 AI 的自由度",
+  "desc": "核心主张是把审美写成操作手册：AI 不能自己发明布局，只能从 16 种里选；不能自己配色，只能用定好的品牌色；不能自己写样式，必须从 51 个组件里选。",
+  "author": "ESTHER不二",
+  "starsText": "447 Star",
+  "stars": 447,
+  "coverPath": "/images/skills/esther-design-system.webp",
+  "repos": [
+   "https://github.com/esthersjw/esther-design-system"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "设计师",
+   "职场人士"
+  ],
+  "usages": [
+   "按这套系统做一个活动落地页，每段用不同布局。",
+   "先把品牌基因改成我们的三色，再开始排版。",
+   "这版对照 P0 清单自检一遍，哪条没过？"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频",
+   "内容与知识"
+  ],
+  "tags": [
+   "图像与设计",
+   "发布分发",
+   "知识管理"
+  ],
+  "detail": "七步工作流顺序固定：问五个问题、读品牌基因、从模板改、选三到五种布局且每段不同、选组件、自检、交付。检查清单分三级，P0 必须全过：三色比例、无禁忌元素、暖底、衬线混搭、流体字号。禁忌清单点名拉黑蓝紫渐变、玻璃拟态、霓虹、bounce 动画和 Inter。P0 最后一条是可执行的验收标准：截图发出去不会被说「又是 AI 做的」。致谢里写明思路参考自歸藏的 PPT skill。"
+ },
+ {
+  "slug": "n8n-io-skills",
+  "rank": 81,
+  "title": "n8n 官方技能：先有实例才有用",
+  "desc": "十三条能力技能加一条负责路由的元技能。前提很硬：得有一个开了实例级 MCP 的 n8n 实例，版本不低于 2.2.0，否则这套东西一点用都没有。",
+  "author": "n8n-io",
+  "starsText": "407 Star",
+  "stars": 407,
+  "coverPath": "/images/skills/n8n-io-skills.webp",
+  "repos": [
+   "https://github.com/n8n-io/skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "所有人"
+  ],
+  "usages": [
+   "先确认我的 n8n 实例开了实例级 MCP，版本够不够。",
+   "按官方规范搭这条工作流，webhook 的数据结构注意一下。",
+   "这条工作流校验通过了，但还有哪些剩余风险？"
+  ],
+  "version": "1.1.0",
+  "cats": [
+   "工程开发",
+   "产品与项目"
+  ],
+  "tags": [
+   "自动化",
+   "开发",
+   "知识管理"
+  ],
+  "detail": "真正的机制在三个 hook 上：会话开始时注入路由技能，查高风险节点前把对应技能拉回上下文，校验之后再按节点类型路由到剩余风险所在的技能。官方把分工说得很清楚——MCP 负责连上，技能负责定标准，目标是一次做对。有两点要注意：走 npx 的普通安装没有 hook，得自己往 AGENTS.md 加引导语；如果你已在别处配过 n8n MCP，这个插件会再加一份自己的连接，要去把旧的禁掉。"
+ },
+ {
+  "slug": "tait-crt-interface-skill",
+  "rank": 82,
+  "title": "TaiT CRT Interface：早期电脑界面插画",
+  "desc": "把人物、群像、动物、物件或文字主题重新创作为 1980 年代位图编辑漫画，再叠进早期 Macintosh 或 Minitel 式窗口；不是给照片套像素滤镜。",
+  "author": "TaiT-tt",
+  "starsText": "401 Star",
+  "stars": 401,
+  "coverPath": "/images/skills/tait-crt-interface-skill.webp",
+  "repos": [
+   "https://github.com/TaiT-tt/tait-crt-interface-skill"
+  ],
+  "date": "2026-08-20",
+  "bestFor": [
+   "内容创作者",
+   "设计师"
+  ],
+  "usages": [
+   "用经典配色和 4:3 比例，把这张人物照做成 TaiT CRT 早期电脑界面插画。",
+   "用如图配色和 16:9 比例重画这组人物，保留每个人的身份和相对位置。",
+   "用街头怪诞预设、极客01配色和 3:4 比例生成一张 CRT 编辑漫画。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "图像与设计"
+  ],
+  "detail": "生成前必须先确定配色，再单独确定画幅；两项齐全才会一次生成一张最终图。它只从原图保留每个主体的三到五个身份锚点，主动改写轮廓、比例和局部结构，用五到九块扁平几何重新塑形，同时锁住群像人数、左右前后关系和动作。整张图共用同一套方形像素网格：主构图占六成到八成，前景有三到六个大小不等的复古窗口和一到三个局部放大窗，还要保留两到三成连通空场。颜色限制在选定的二到五色，最后叠加扫描线、错位、余辉、同步故障和四边外缘的桶形弯曲；右上标题栏必须保留精确字符串 tait-crt-interface-skill。街头怪诞、巨像符号、冷面几何三个预设只在用户明确点名时启用。"
+ },
+ {
+  "slug": "orange-line-illustration",
+  "rank": 83,
+  "title": "橙线插画：一个点缀色，人物极小",
+  "desc": "唯一点缀色写死 #F97316，纯白底，无阴影无渐变。人物必须极小——超过画面十分之一就算太大，作者提醒模型总想把人画大。",
+  "author": "橘子 (Orange)",
+  "starsText": "385 Star",
+  "stars": 385,
+  "coverPath": "/images/skills/orange-line-illustration.webp",
+  "repos": [
+   "https://github.com/orange2ai/orange-line-illustration"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "设计师"
+  ],
+  "usages": [
+   "给这篇文章出四张内页插画，人物压到十分之一以内。",
+   "这个概念用线猫来演，十二笔以内。",
+   "封面出五个方向并行生成，我来挑。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "图像与设计"
+  ],
+  "detail": "版式两制：内页 3:2 横版、左下角一段橙线配浅灰金句；封面 21:9 超宽，标题作锚点。三个可复用角色 IP，其中线猫十到十二笔画完、不闭合，靠观者补全。工作流的哲学是「抽卡，不是检查」：生成便宜、AI 自检昂贵且收益低，人的品味才是质量门。作者列了失败清单，还提醒尺度对比必须说两遍，人身上一次、物体上一次，否则模型会把两者拉平。"
+ },
+ {
+  "slug": "data-analytics-skills",
+  "rank": 84,
+  "title": "31 条数据分析技能，自带脚本",
+  "desc": "按数据质量、文档知识、分析、叙事可视化、干系人沟通、流程六类编排，仓库里带的是能直接跑的 Python 脚本，不只是提示词。",
+  "author": "Nimrod Fisher",
+  "starsText": "345 Star",
+  "stars": 345,
+  "coverPath": "/images/skills/data-analytics-skills.webp",
+  "repos": [
+   "https://github.com/nimrodfisher/data-analytics-skills"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "职场人士",
+   "所有人"
+  ],
+  "usages": [
+   "先跑一遍这张表的数据质量：空值、重复、引用完整性。",
+   "这个 AB 实验的结果帮我分析，把统计假设列清楚。",
+   "把这份分析改写成给业务方看的版本。"
+  ],
+  "version": "",
+  "cats": [
+   "内容与知识",
+   "产品与项目"
+  ],
+  "tags": [
+   "数据分析",
+   "知识管理",
+   "项目管理"
+  ],
+  "detail": "脚本是实的：空值统计、重复项查找、引用完整性校验、执行计划解析、AB 实验分析、SaaS 指标计算都各有一个。交互模式固定四步：先要最小可用上下文，再执行结构化流程，然后把假设显式说出来，最后按模板输出。作者写明它会优雅降级——上下文给不全时会声明自己在假设什么再继续，也就是结论质量取决于你补了多少料。定制方式是往任一技能里加参考文件，放公司的表结构、指标定义和业务规则。"
+ },
+ {
+  "slug": "skill-doctor",
+  "rank": 85,
+  "title": "Skill Doctor：从真实对话诊断并改进 Agent Skills",
+  "desc": "在本地抽样 Warp、Claude Code 或 Codex 的真实会话，给 Agent 工作效率、代码质量和 Skill 覆盖率打分，再把失败证据转成小而具体的 Skill 改进提案与单页报告。",
+  "author": "Warp",
+  "starsText": "326 Star",
+  "stars": 326,
+  "coverPath": "/images/skills/skill-doctor.webp",
+  "repos": [
+   "https://github.com/warpdotdev/common-skills"
+  ],
+  "date": "2026-08-29",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "运行 skill-doctor，只分析当前仓库最近的会话，并同时评估项目 Skills 与全局 Skills。",
+   "检查我全部本地 Codex、Claude Code 和 Warp 会话，告诉我哪些已安装 Skills 真正发挥了作用。",
+   "为这几个项目做一次合并体检；只提出能由失败会话证明的 Skill 修改，不要自动应用改动。"
+  ],
+  "version": "",
+  "cats": [
+   "工程开发",
+   "产品与项目"
+  ],
+  "tags": [
+   "开发",
+   "数据分析",
+   "自动化"
+  ],
+  "detail": "Skill Doctor 先让你选择要分析当前仓库、指定项目还是全部本地会话，以及只评估项目 Skills 还是连同全局 Skills 一起评估；默认回看 45 天并最多抽样 12 条会话。它从 Warp、Claude Code 和 Codex 的本地记录中建立清单，逐条按效率与代码质量量表评分，再计算 Skill 覆盖率和综合成绩；没有代码改动的会话不会被强行判定代码质量。改进建议只能来自真正失败的会话，并且必须指向一个可验证、可复用的指令缺口；同样的模型波动、已有规则被忽略或只能靠泛化提醒解决的问题不会被包装成改进。符合条件时，它会在临时目录中写出完整的候选 SKILL.md、统一差异和一页式 HTML 报告，报告还能在本地导出分享图。整个过程不把对话、会话文件或摘录上传到外部，也不会直接修改真实 Skill；当前只支持 Warp、Claude Code 和 Codex，需要 Python 3 与能读取本地会话、执行脚本的 Agent 环境。官方仓库采用 MIT 许可证；可用 skills CLI 安装，核心命令是 npx skills@latest add warpdotdev/common-skills --skill skill-doctor，再按目标 Agent 与安装范围补充参数。"
+ },
+ {
+  "slug": "qiaomu-cut",
+  "rank": 86,
+  "title": "视频剪辑流水线：三档渲染，四条判定",
+  "desc": "命令行加技能的组合：先出中间表示、再建工程、填时间轴、按预览、标准、终版三档渲染。它把「能不能交付」定义成四条同时成立的判定。",
+  "author": "向阳乔木",
+  "starsText": "309 Star",
+  "stars": 309,
+  "coverPath": "/images/skills/qiaomu-cut.webp",
+  "repos": [
+   "https://github.com/joeseesun/qiaomu-cut-skill"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "所有人"
+  ],
+  "usages": [
+   "先跑一遍环境检查，再建工程。",
+   "这条时间轴先出预览档我看看节奏。",
+   "终版渲染，跑完把可发布判定的四条都报给我。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "视频"
+  ],
+  "detail": "那四条是：终版档、完整校验、技术检查通过、字幕字体已核实——四条都成立才标记为可发布。三档参数写得很细：预览长边不超过 960、24 帧；标准 1280、30 帧；终版用原始尺寸、两遍响度、全片黑场扫描。作者把未实现的部分放在第一屏自曝：HTML 视频捕获、Manim 直出、复杂遮罩、完整转场库目前仍是接口和方向，不冒充已内置；Windows 未支持。"
+ },
+ {
+  "slug": "bloom",
+  "rank": 87,
+  "title": "Bloom：把一对一辅导的效应搬给 AI",
+  "desc": "依据是 1984 年的「两个标准差问题」——接受一对一辅导的学生比传统课堂高两个标准差，跃到前百分之二。注意不是布鲁姆教育目标分类法。",
+  "author": "Li-Evan",
+  "starsText": "222 Star",
+  "stars": 222,
+  "coverPath": "/images/skills/bloom.webp",
+  "repos": [
+   "https://github.com/Li-Evan/Bloom"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "学生与研究者",
+   "所有人",
+   "职场人士"
+  ],
+  "usages": [
+   "用这份 PDF 建一门课，标准深度就行。",
+   "这段我没看懂，划线问一下。",
+   "这门课学完了，出评估篇和总结。"
+  ],
+  "version": "1.0.0",
+  "cats": [
+   "内容与知识",
+   "其他"
+  ],
+  "tags": [
+   "教学与研究",
+   "知识管理",
+   "写作"
+  ],
+  "detail": "固定闭环：大纲、课文、批注、反馈、下一篇、评估、总结，走完大纲所有掌握项后自动出评估篇再出总结。划线问答是它最有辨识度的地方：选中文字冒出图标、划线处持续标黄，每条会话的上下文是整篇课文加划线段落加本次对话，而且你的提问会喂进下一篇课文的生成。网页版要自托管并自备模型密钥，命令行版只要 Claude Code。"
+ },
+ {
+  "slug": "qiaomu-ai-prd",
+  "rank": 88,
+  "title": "AI 产品需求文档：11 章不许跳",
+  "desc": "输出骨架写死十一章，从产品概述、布局导航一路到开发优先级和开发者交接，精简模式也要全出，不许跳章。每章前有一张十行以内的速读卡。",
+  "author": "向阳乔木",
+  "starsText": "203 Star",
+  "stars": 203,
+  "coverPath": "/images/skills/qiaomu-ai-prd.webp",
+  "repos": [
+   "https://github.com/joeseesun/qiaomu-ai-prd"
+  ],
+  "date": "2026-08-06",
+  "bestFor": [
+   "内容创作者",
+   "开发者",
+   "创业者"
+  ],
+  "usages": [
+   "按这套骨架给这个功能写 PRD，性能指标全写成数字。",
+   "把这份 PRD 里的硬约束和发挥空间重新分一下。",
+   "跑一遍 lint，占位符和「待定」都揪出来。"
+  ],
+  "version": "",
+  "cats": [
+   "产品与项目",
+   "写作与研究"
+  ],
+  "tags": [
+   "写作",
+   "项目管理",
+   "开发"
+  ],
+  "detail": "v0.2 加了三分区：硬约束、推荐默认、发挥空间，用来告诉下游 AI 哪里不能偏、哪里可以放开。质量门是硬的：性能指标必须是数字，不许写「快」「流畅」；数据模型每个字段带注释且顶层含版本号；交接那章至少三条验收剧本。自带一个 lint 脚本查占位符残留。作者在排障表里点了自己的坑：PRD 把 AI 限制得太死，多半是把低风险实现细节误写成了硬约束。"
+ },
+ {
+  "slug": "ip_illustration_for_yourself",
+  "rank": 89,
+  "title": "IP Mini Illustration System：建立自己的系列角色",
+  "desc": "从个人照片或角色参考里提炼固定身份锚点，先做正面全身像和前侧后三视图，再为文章连续生成一致的小尺寸钢笔涂鸦或 3:4 信息图。",
+  "author": "EverettFish",
+  "starsText": "198 Star",
+  "stars": 198,
+  "coverPath": "/images/skills/ip_illustration_for_yourself.webp",
+  "repos": [
+   "https://github.com/EverettFish/ip_illustration_for_yourself"
+  ],
+  "date": "2026-08-20",
+  "bestFor": [
+   "内容创作者",
+   "设计师",
+   "职场人士"
+  ],
+  "usages": [
+   "根据这几张个人照片建立一个萌粒 IP，先给我正面全身像和前侧后三视图。",
+   "读完这篇文章，用这个 IP 做五张彼此不同、但角色一致的正文配图。",
+   "把这篇长文做成一组 3:4 信息图，页数按信息模块自动决定。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频",
+   "内容与知识"
+  ],
+  "tags": [
+   "图像与设计",
+   "发布分发"
+  ],
+  "detail": "角色通常只占纯白画布的两成到三成半：黑色钢笔轮廓要有自然断点，平涂色块与线稿故意轻微错位，但颜色保持清楚、正常饱和，不能套灰褐复古滤镜。用户角色的脸、发型、服装、配饰和标志色优先级最高；仓库的三张样图只控制笔触、比例和线色错位，不能借用猫耳、绿发等身份特征。长文章默认规划五张不同语义的配图，不按段落机械切分；信息图则按信息模块自动决定一到八页，每页约四到六个模块，并锁定日期、数值、单位和标签，不得编造。直接生图要求 Codex 中明确可用的 GPT Image 2；环境不满足时只交付角色锚点、分镜和完整 Prompt 包。"
+ },
+ {
+  "slug": "heytea-style",
+  "rank": 90,
+  "title": "Heytea Doodle Poster：实物与儿童涂鸦海报",
+  "desc": "从生活照里保留一个杯子、食物或书之类的真实物件，再放进大面积白底、粗黑小人和歪扭中文手写字；带字版与无字版是两套独立构图。",
+  "author": "Hchen1218",
+  "starsText": "176 Star",
+  "stars": 176,
+  "coverPath": "/images/skills/heytea-style.webp",
+  "repos": [
+   "https://github.com/Hchen1218/heytea-style"
+  ],
+  "date": "2026-08-20",
+  "bestFor": [
+   "内容创作者",
+   "设计师"
+  ],
+  "usages": [
+   "把这张照片做成喜茶那种儿童简笔画海报，两套都出。",
+   "做带字版，标题要像参考里那种歪歪扭扭的小孩写坏了的中文。",
+   "做无字版，不要任何文字，只靠小人动作和物件关系讲故事。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频"
+  ],
+  "tags": [
+   "图像与设计",
+   "发布分发"
+  ],
+  "detail": "真实物件通常只占画面两成到四成半，微型小人用断笔、硬折和不完整连接去搬、爬、倒、洗或修理它，不能把整张照片卡通化。带字版把字体当第一视觉重点：先生成留出标题区的无字底图，再根据仓库内的字形切片建立标题参考板，最后单独生成或放置黑色标题层；无字版则完全重构画面，不是从带字版删掉文字。默认画幅是 3:4 或 2:3。它只是受喜茶海报语言启发的非官方工作流，不得生成官方 Logo、头像、包装标识或品牌从属声明。"
+ },
+ {
+  "slug": "keel",
+  "rank": 91,
+  "title": "Keel：设计、评审并治理承重型架构",
+  "desc": "面向新旧系统的架构决策、评审与长期治理：找出真正承重的边界、权责、契约、依赖与恢复路径，用与风险相称的证据把架构变成可执行、可迁移、可删除的约束。",
+  "author": "lencx",
+  "starsText": "170 Star",
+  "stars": 170,
+  "coverPath": "/images/skills/keel.webp",
+  "repos": [
+   "https://github.com/lencx/skills"
+  ],
+  "date": "2026-08-29",
+  "bestFor": [
+   "开发者",
+   "职场人士",
+   "创业者"
+  ],
+  "usages": [
+   "用 Keel 为这个支付模块做架构决策：只比较真实可行的方向，划出最小承重骨架，并写清权责、依赖和恢复边界。",
+   "只评审这份 API 与 schema 方案，不替它另做设计；逐项判断承诺等级、兼容切换和失败处理是否闭合。",
+   "这套架构反复出现绕过守卫和例外增长，请比较恢复、保留、迁移、退役、移除与不行动中真正适用的治理选择。"
+  ],
+  "version": "",
+  "cats": [
+   "工程开发",
+   "产品与项目"
+  ],
+  "tags": [
+   "开发",
+   "项目管理"
+  ],
+  "detail": "Keel 会先判断当前问题属于建立或比较方向的“决策”、检验既定设计的“评审”、处理漂移与例外的“治理”，还是架构已定、应交回普通执行流程的“退出”。它只映射真正承重的脊柱，并逐项说明事实依据、决策权、责任人、写入路径，以及必要的数据分区、复制、提交、冲突和恢复关系；公共、持久化和跨边界接口必须有明确的兼容或切换方案，私有实现则保持便宜可改。对超时、重复、并发、重试、重启和提交状态不明等真实负路径，它要求给出检测方式、恢复责任、修复或对账动作、终态证据与升级办法。重要规则才配可失败的检查，例外默认只能收缩；反复绕过规范时，先降低正确路径的成本。它不替你选择微服务、DDD 或框架，也不接管编码和测试，而是让架构方向、取舍、迁移、退役与删除都有证据、责任和退出条件。"
+ },
+ {
+  "slug": "diffusion-studio-skills",
+  "rank": 92,
+  "title": "Diffusion Studio Skills：让 Agent 看懂并剪好素材",
+  "desc": "两条 Skill 共用 Diffusion Studio 的 dapi CLI：watch 负责探测、转写、听取、抽帧并按时间回答素材问题；editor 再把主素材、补充画面、字幕、音效和生成素材编排成可检查的 JSX 时间线。",
+  "author": "diffusionstudio",
+  "starsText": "136 Star",
+  "stars": 136,
+  "coverPath": "/images/skills/diffusion-studio-skills.webp",
+  "repos": [
+   "https://github.com/diffusionstudio/skills"
+  ],
+  "date": "2026-09-03",
+  "bestFor": [
+   "内容创作者",
+   "职场人士",
+   "开发者"
+  ],
+  "usages": [
+   "用 watch 总结这段采访，按内容结构列出时间段，并找出谈到定价的准确位置。",
+   "先分析这批素材，再用 editor 搭好主线，加入补充画面、字幕和音效，暂时不要导出。",
+   "检查这个 Diffusion Studio 工程的黑帧、失效素材和节奏问题，修完后用 capture 复核关键时刻。"
+  ],
+  "version": "",
+  "cats": [
+   "设计与视频",
+   "工程开发"
+  ],
+  "tags": [
+   "视频",
+   "自动化",
+   "开发"
+  ],
+  "detail": "watch 不会盲看整条视频：它先探测音视频轨道，用波形与 filmstrip 找结构，再按问题选择逐字转写、音频理解或带时间点抽帧，回答时给出可跳转的时间范围。editor 复用同一套素材理解流程，先把剪辑意图写成 brief，再搭主素材骨架，分层加入补充画面、字幕、音效和生成资产；工程本身是一个 JSX 文件夹，保存后由 Diffusion Studio 重新编译并刷新画布。验收不是看保存是否成功，而是先用 dapi check 抓黑帧、不可见片段和失效素材，再用 capture 查看观众真正会看到的帧；只有用户明确要求时才导出视频。使用它需要 Diffusion Studio 与随应用提供的 dapi，macOS 可通过 Homebrew cask 安装，也能从源码运行。Skills 仓库采用 MIT 许可。"
+ },
+ {
+  "slug": "ericzakariasson-skills",
+  "rank": 93,
+  "title": "Game Builder：用多角色协作打磨游戏",
+  "desc": "Eric Zakariasson 的两项游戏开发技能：game-builder 组织规划、制作与独立画面评审；配套 Blender 技能负责关键 3D 资产，让可玩原型继续经过视觉打磨与验证。",
+  "author": "Eric Zakariasson",
+  "starsText": "4 Star",
+  "stars": 4,
+  "coverPath": "/images/skills/ericzakariasson-skills.webp",
+  "repos": [
+   "https://github.com/ericzakariasson/skills"
+  ],
+  "date": "2026-09-30",
+  "bestFor": [
+   "开发者",
+   "设计师",
+   "内容创作者"
+  ],
+  "usages": [
+   "用 game-builder 做一款原创像素风农场小游戏：先明确核心玩法和参考画面，再实现种植、收获与重开流程，逐轮截图检查。",
+   "用 game-builder 检查这个已经能玩的赛车原型，让独立评审对照参考画面列出灯光、材质和界面问题，再逐项修改并重新验证。",
+   "这个项目已经确定采用 3D。用 game-builder-blender-assets 为主角制作一个 Blender 资产，导出 GLB 并检查正面、侧面和背面，再接入现有动画。"
+  ],
+  "version": "",
+  "cats": [
+   "工程开发",
+   "设计与视频"
+  ],
+  "tags": [
+   "开发",
+   "图像与设计"
+  ],
+  "detail": "用 npx skills add ericzakariasson/skills 安装整个合集，或加上 --skill game-builder 只装主技能。它先确定玩法、参考截图和视觉验收标准，再完成可玩流程，逐步处理灯光、材质、模型、界面与动作；每轮由独立评审角色对照真实游戏截图检查运行画面，提出可验证的问题，制作角色修改后重新截图。连续多轮未通过时会先诊断原因，避免反复做同样的修改。参考图只用于比较，成品需使用原创名称、美术与音频。另一项 game-builder-blender-assets 用于确实需要 3D 的项目：为主角、第一人称武器等关键资产分别安排制作角色，在 Blender 中建模、贴图并导出 GLB，先检查多角度预览，再接入游戏；2D 和像素风项目优先使用精灵图。主技能需要能运行独立子代理或会话、并能查看原尺寸图片的 Agent 环境；配套技能另需 Blender 和支持 GLB 的渲染器。多轮制作与评审可能耗时较长，公开发布默认需另行授权。仓库采用 MIT 许可，未提供统一版本号。"
+ }
+]
